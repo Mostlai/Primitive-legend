@@ -28,6 +28,13 @@
 		"max": -1
 	},
 	{
+		"id": "cttime",
+		"name": "超脱次数",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
 		"id": "xiuliansudu_click",
 		"name": "修炼速度",
 		"group": "修为",
