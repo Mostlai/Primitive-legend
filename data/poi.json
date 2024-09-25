@@ -1,0 +1,18 @@
+[
+	{
+		"id": "poi_crylesscity",
+		"name": "六日恸城",
+		"desc": "",
+		"x": [49,50],
+		"y": [26,27],
+		"scena": [
+			"scena_get_flicense",
+			"scena_seed_trader_sun",
+			"scena_plant_trader_li",
+			"scena_xueshi_zhumiu",
+			"scena_furniture_jiangren",
+			"scena_butcher_shiwensong",
+			"scena_danshi_quezi"
+		]
+	}
+]

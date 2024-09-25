@@ -1,0 +1,1832 @@
+[
+	{
+		"id": "jingjie",
+		"name": "境界",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "xiuwei",
+		"name": "修为",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "lingshi",
+		"name": "灵石",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "xiuliansudu_click",
+		"name": "修炼速度",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "xiuliannandu",
+		"name": "修炼难度",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "fali",
+		"name": "法力",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "wulifangyu",
+		"name": "物理防御",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "fashufangyu",
+		"name": "法术防御",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "wuligongji",
+		"name": "物理攻击",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "fashugongji",
+		"name": "法术攻击",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "wulichuantou",
+		"name": "物理穿透",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "fashuchuantou",
+		"name": "法术穿透",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "baojilv",
+		"name": "暴击率",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "guajisudu",
+		"name": "挂机速度",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "yuanshenfenshen",
+		"name": "元神分身",
+		"group": "修为",
+		"locked": false,
+		"val": 0,
+		"max": -1
+	},
+	{
+		"id": "yuanshenqiangdu",
+		"name": "元神强度",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "yuanshenshentong",
+		"name": "元神神通",
+		"group": "修为",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "hongmengziqi",
+		"name": "鸿蒙紫气",
+		"group": "修为",
+		"locked": false,
+		"val": 0,
+		"max": -1
+	},
+	{
+		"id": "r_g",
+		"name": "r_g",
+		"group": "",
+		"locked": false,
+		"val": 1,
+		"max": -1
+	},
+	{
+		"id": "xuantie",
+		"name": "玄铁",
+		"group": "",
+		"locked": false,
+		"val": 0,
+		"max": -1
+	},
+	{
+		"id": "leimu",
+		"name": "雷木",
+		"group": "",
+		"locked": false,
+		"val": 0,
+		"max": -1
+	},
+	{
+		"id": "tianchansi",
+		"name": "天蚕丝",
+		"group": "",
+		"locked": false,
+		"val": 0,
+		"max": -1
+	},
+	{
+		"id": "tianhezhongshui",
+		"name": "天河重水",
+		"group": "",
+		"locked": false,
+		"val": 0,
+		"max": -1
+	},
+	{
+	  "id": "wanzaikongjin",
+	  "name": "万载空金",
+	  "group": "",
+	  "locked": false,
+	  "val": 0,
+	  "max": -1
+	},
+	{
+	  "id": "wulianghengsha",
+	  "name": "无量恒砂",
+	  "group": "",
+	  "locked": false,
+	  "val": 0,
+	  "max": -1
+	},
+	{
+	  "id": "tianpolihuo",
+	  "name": "天魄灵火",
+	  "group": "",
+	  "locked": false,
+	  "val": 0,
+	  "max": -1
+	},
+	{
+	  "id": "jiuyougumu",
+	  "name": "九幽灵机",
+	  "group": "",
+	  "locked": false,
+	  "val": 0,
+	  "max": -1
+	},
+	{
+		"id": "money",
+		"name": "钱币",
+		"desc": "钱币",
+		"group": "货币",
+		"locked": false,
+		"max": 10
+	},
+	{
+		"id": "back_dream",
+		"name": "归梦",
+		"desc": "非实的存在,游离在虚幻中",
+		"group": "货币",
+		"require": "g.yndm>=1",
+		"max": 10
+	},
+	{
+		"id": "death",
+		"name": "死寂之刻",
+		"desc": "寂静...",
+		"group": "死亡",
+		"require": "g.death>0",
+		"max": 1,
+		"mod": {
+			"stamina.rate": -2000,
+			"tili.rate": -2000,
+			"hp.rate": -2000
+		}
+	},
+	{
+		"id": "shuaibai",
+		"name": "衰败",
+		"desc": "熵的增加",
+		"group": "死亡",
+		"locked": true,
+		"max": 1,
+		"mod": {
+			"stamina.rate": -2,
+			"tili.rate": -2,
+			"hp.rate": -2,
+			"time.rate": 0.6,
+			"heli.rate": -3,
+			"chaos.rate": -3,
+			"shenshi.rate": -3
+		}
+	},
+	{
+		"id": "shuaibai_core",
+		"name": "衰败核心",
+		"desc": "凝结了虚幻,像寂静",
+		"group": "死亡",
+		"require": "g.huangquandy>=1",
+		"max": 15,
+		"mod": {
+			"hp.rate": 0.1
+		}
+	},
+	{
+		"id": "hunti_core",
+		"name": "魂体核心",
+		"desc": "纯洁灵体",
+		"group": "结晶",
+		"require": "g.canglanchaoben>=1 && g.bafangwfs>=1 && g.flont_hqhhjz>=1",
+		"max": 9,
+		"mod": {
+			"hp.rate": 0.1
+		}
+	},
+	{
+		"id": "jihun",
+		"name": "基魂",
+		"desc": "筑基所凝聚的真魂",
+		"group": "真魂",
+		"locked": true,
+		"max": 1,
+		"mod": {
+			"max_rs.max": 1,
+			"shuaibai.rate": -1,
+			"hp.rate": 0.2
+		}
+	},
+	{
+		"id": "zhenhun_pice_1",
+		"name": "游空真魂",
+		"group": "真魂",
+		"desc": "游离的微弱真魂碎片,虽然无法直接吸收里面的能量,但还是可以用于强化或者合成真魂",
+		"require": "g.xiulian_lj_zhenhun_6>=1",
+		"more_info":"在市场购买【五轮】后，在铭刻处对其镶嵌对应玉珠获得游空真魂",
+		"val":0,
+		"max": 0
+	},
+	{
+		"id": "zhenhun_pice_2",
+		"name": "崩解真魂",
+		"group": "真魂",
+		"desc": "崩解的真魂,虽然无法直接吸收里面的能量,但还是可以用于强化或者合成真魂",
+		"require": "g.xiulian_lj_zhenhun_6>=999",
+		"val":0,
+		"max": 0
+	},
+	{
+		"id": "ganwu",
+		"name": "感悟",
+		"desc": "瞬然所得",
+		"group": "修行",
+		"tags": "",
+		"require": "g.ganwu>0",
+		"max": 3
+	},
+	{
+		"id": "lg",
+		"name": "灵光",
+		"desc": "感悟的结晶",
+		"group": "修行",
+		"tags": "",
+		"require": "g.ganwu>=60",
+		"max": 5,
+		"mod":{
+			"ganwu.rate": 0.08
+		}
+	},
+	{
+		"id": "gubenxianling",
+		"name": "古本险灵",
+		"desc": "在古本纪发现的有助于修行的资源",
+		"group": "修行",
+		"tags": "",
+		"require": "g.weijibence>=1",
+		"max": 2,
+		"mod":{
+			"ganwu.max": 10,
+			"ganwu.rate": 1
+		}
+	},
+	{
+		"id": "books",
+		"name": "书籍",
+		"desc": "知识的载体",
+		"group": "知识",
+		"tags": "",
+		"require": "g.ganwu>0",
+		"max": 3
+	},
+	{
+		"id": "paper",
+		"name": "稿纸",
+		"desc": "空白的稿纸,给你发挥无限的想象",
+		"group": "知识",
+		"tags": "",
+		"require": "g.reading>0",
+		"max": 10
+	},
+	{
+		"id": "exe_paper",
+		"name": "经验记录",
+		"desc": "记录那一刻的感悟",
+		"group": "知识",
+		"tags": "",
+		"require": "g.reading>0",
+		"max": 3
+	},
+	{
+		"id": "zero_crystal",
+		"name": "零结晶",
+		"desc": "一种光滑的奇异的结晶体",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.reading>0",
+		"max": 5
+	},
+	{
+		"id": "life_crystal",
+		"name": "活性结晶",
+		"desc": "低温下生物结晶",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.life_crystal>0",
+		"mod": {
+			"zero_crystal.rate": 0.1
+		},
+		"max": 6
+	},
+	{
+		"id": "frs",
+		"name": "废热水",
+		"desc": "高污染的流体,不可直接倾倒在自然环境中",
+		"group": "流体",
+		"tags": "",
+		"require": "g.frs>=1",
+		"max": 10,
+		"mod": {
+			"stamina.rate": -0.01,
+			"tili.rate": -0.01,
+			"hp.rate": -0.01
+		}
+	},
+	{
+		"id": "jls",
+		"name": "晶流水",
+		"desc": "低温流体,有着优良的散热性,是用途广泛的一种流体",
+		"group": "流体",
+		"tags": "",
+		"require": "g.liu_yy>=3 &&g.cold_core>=1",
+		"max": 1
+	},
+	{
+		"id": "gwl",
+		"name": "高温流",
+		"desc": "极度高温的流体",
+		"group": "流体",
+		"tags": "",
+		"require": "g.cbclb>=1 &&g.xiulian_struct_gaowenfh>=1 &&g.hotlab>=1",
+		"max": 1
+	},
+	{
+		"id": "qiyiyeti",
+		"name": "奇异液体",
+		"desc": "具有扭曲性质的液体,能将五环点扭曲为落日点",
+		"group": "流体",
+		"tags": "",
+		"require": "g.xiulian_fc_niuquhanshu>=1 &&g.xiulian_fc_niuqushuxues>=1",
+		"max": 1
+	},
+	{
+		"id": "lxue",
+		"name": "灵血",
+		"desc": "至纯的流体,芬芳的香气",
+		"group": "流体",
+		"tags": "",
+		"require": "g.huangquandy>=1",
+		"max": 20
+	},
+	{
+		"id": "cold_core",
+		"name": "冰冻核心",
+		"desc": "一块寒冷的晶体,从极寒之地获得,广泛应用于低温生产工作",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.cold_core>=1",
+		"max": 12
+	},
+	{
+		"id": "dirty_core",
+		"name": "污浊核心",
+		"desc": "一块凝结了高能污浊的晶体,由于有着外壳保护,所以不会对自身造成伤害",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.frs_nj>=1",
+		"max": 0
+	},
+	{
+		"id": "nolight_core",
+		"name": "无光核心",
+		"desc": "折射不出一点光芒",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.xiulian_modaozhiyin>=1 && g.dream_death_mo && g.spirit_light>=1 && g.spirit_mo>=1",
+		"max": 10
+	},
+	{
+		"id": "yqlm",
+		"name": "源泉灵木",
+		"desc": "凝结了大量生命精华的木材",
+		"group": "精华",
+		"tags": "",
+		"require": "g.zcx>=1",
+		"max": 20,
+		"mod": {
+			"heli.rate": 0.03,
+			"chaos.rate": 0.03
+		}
+	},
+	{
+		"id": "cbjs",
+		"name": "纯白金石",
+		"desc": "纯白的石头,有着普通材料无法比拟的坚固",
+		"group": "精华",
+		"tags": "",
+		"require": "g.zcx>=1",
+		"max": 20,
+		"mod": {
+			"heli.rate": 0.01,
+			"chaos.rate": 0.01
+		}
+	},
+	{
+		"id": "yxls",
+		"name": "阳息烈石",
+		"desc": "总是散发出高温,杀灭周围的所有不净",
+		"group": "精华",
+		"tags": "",
+		"require": "g.zcx>=1",
+		"max": 20,
+		"mod": {
+			"heli.rate": 0.02,
+			"chaos.rate": 0.02
+		}
+	},
+	{
+		"id": "wgys",
+		"name": "无垢玉髓",
+		"desc": "无论怎么观察,你似乎都找不到一丝瑕疵",
+		"group": "精华",
+		"tags": "",
+		"max": 20,
+		"require": "g.zcx>=1",
+		"mod": {
+			"heli.rate": 0.02,
+			"chaos.rate": 0.02
+		}
+	},
+	{
+		"id": "zdht",
+		"name": "载德厚土",
+		"desc": "一团极为轻盈,但重物压在上面也不会变形的物质",
+		"group": "精华",
+		"tags": "",
+		"max": 20,
+		"require": "g.zcx>=1",
+		"mod": {
+			"heli.rate": 0.01,
+			"chaos.rate": 0.01
+		}
+	},
+	{
+		"id": "huiguang",
+		"name": "辉光精华",
+		"desc": "天体运行之精华",
+		"group": "精华",
+		"tags": "",
+		"max": 9,
+		"require": "g.yangzhoaganuw>=9 && g.zhenyeganwu>=9",
+		"mod": {
+			"heli.rate": 0.02,
+			"chaos.rate": 0.02
+		}
+	},
+	{
+		"id": "canglan",
+		"name": "苍蓝精华",
+		"desc": "五环运行之精华",
+		"group": "精华",
+		"tags": "",
+		"max": 9,
+		"require": "g.yangzhoaganuw>=9 && g.zhenyeganwu>=9",
+		"mod": {
+			"elect.rate": 0.9,
+			"heli.rate": 0.09,
+			"chaos.rate": 0.09
+		}
+	},
+	{
+		"id": "shenglingshi",
+		"name": "生灵石",
+		"desc": "大规模战争留下的神秘物质",
+		"group": "精华",
+		"tags": "",
+		"max": 20,
+		"require": "g.shenglingshi>=1",
+		"mod": {
+			"f_power.max": 10,
+			"f_power":10
+		}
+	},
+	{
+		"id": "snp_data",
+		"name": "测绘资料",
+		"desc": "对自然结构的测绘资料,对于研究很有帮助",
+		"group": "知识",
+		"tags": "",
+		"require": "g.Knowledge_integration_1>=1&&g.Knowledge_class_1>=1",
+		"mod": {
+			"ganwu.max": 0.5,
+			"ganwu.rate": 0.02
+		},
+		"max": 5
+	},
+	{
+		"id": "star_map",
+		"name": "粗糙天文记录",
+		"desc": "对天文学的研究笔记",
+		"group": "知识",
+		"tags": "",
+		"require": "g.xiulian_astro_zhuji_2>=1",
+		"mod": {
+			"ganwu.max": 1.1
+		},
+		"max": 5
+	},
+	{
+		"id": "star_map_1",
+		"name": "虚灵星图",
+		"desc": "低温降噪环境的观测记录",
+		"group": "知识",
+		"tags": "",
+		"require": "g.star_map_1>0",
+		"mod": {
+			"ganwu.max": 3
+		},
+		"max": 6
+	},
+	{
+		"id": "super_mind",
+		"name": "超识",
+		"desc": "集群思维",
+		"group": "知识",
+		"tags": "",
+		"locked": true,
+		"mod": {
+			"ganwu.max": 2
+		},
+		"max": 5
+	},
+	{
+		"id": "jingdian",
+		"name": "经典",
+		"desc": "传世",
+		"group": "知识",
+		"tags": "",
+		"require": "g.yingmidianji>=1",
+		"mod": {
+			"ganwu.max": 20,
+			"ganwu.rate": 1
+		},
+		"max": 10
+	},
+	{
+		"id": "fsbdsj",
+		"name": "非实波段数据",
+		"desc": "记载了黄泉的地貌信息和波段数据",
+		"group": "知识",
+		"tags": "",
+		"require": "g.hqbdtj>=1",
+		"mod": {
+			"lg.rate": 0.001,
+			"super_mind.rate": 0.001,
+			"star_map_1.rate": 0.001
+		},
+		"max": 0.1
+	},
+	{
+		"id": "adv_snp_data",
+		"name": "进阶测绘资料",
+		"desc": "清理自然地貌获得的测绘资料",
+		"group": "知识",
+		"tags": "",
+		"require": "g.hqbdtj>=1",
+		"mod": {
+			"lg.rate": 0.001,
+			"super_mind.rate": 0.001,
+			"star_map_1.rate": 0.001
+		},
+		"max": 0.1
+	},
+	{
+		"id": "dirty_lingti",
+		"name": "纯浊灵体",
+		"desc": "纯净灵体,但表达了污浊核心的反相性质",
+		"group": "灵体",
+		"tags": "",
+		"require": "g.xiulian_bio_dirty_1>=1 &&g.lingti_xue>=1",
+		"max": 2
+	},
+	{
+		"id": "fypyj",
+		"name": "富养培养基",
+		"desc": "能够存储大量营养的培养基",
+		"group": "生物",
+		"tags": "",
+		"require": "g.xiulian_life_swpy>=1",
+		"max": 10
+	},
+	{
+		"id": "pyy",
+		"name": "培养液",
+		"desc": "基本的生物培养液",
+		"group": "生物",
+		"tags": "",
+		"require": "g.xiulian_life_swyz>=1",
+		"max": 10
+	},
+	{
+		"id": "yjswyb",
+		"name": "一阶生物样本",
+		"desc": "一阶生物样本，囊括了低温高温和高电流下的生物样本",
+		"group": "生物",
+		"tags": "",
+		"require": "g.dchjsm>=1 && g.gwfayu>=1 && g.dwswgz>=1",
+		"max": 10
+	},
+	{
+		"id": "swzhi",
+		"name": "生物质",
+		"desc": "生物学研究的基础材料",
+		"group": "生物",
+		"tags": "",
+		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
+		"max": 0.1
+	},
+	{
+		"id": "cu_iron",
+		"name": "铁板",
+		"tags": "金属",
+		"desc": "最普通的金属",
+		"group": "金属",
+		"tags": "",
+		"require": "g.metal_1>=1",
+		"max": 10
+	},
+	{
+		"id": "cu_copper",
+		"name": "铜板",
+		"tags": "金属",
+		"desc": "高导电率",
+		"group": "金属",
+		"tags": "",
+		"require": "g.metal_1>=4",
+		"max": 10
+	},
+	{
+		"id": "iron_copper",
+		"name": "合成金属F-C",
+		"tags": "金属",
+		"desc": "第一代合金,硬度和导电率良好",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_1>=1",
+		"max": 5
+	},
+	{
+		"id": "sj_met",
+		"name": "神经材料",
+		"tags": "金属",
+		"desc": "将神识附着在FC合金上,达到更优良的金属性能。扩展5上限方法:右上角Wiki搜索[灵反空间存储]",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_2>=1",
+		"max": 5
+	},
+	{
+		"id": "tian",
+		"name": "钛板",
+		"tags": "金属",
+		"desc": "具有金属光泽,有延展性,密度小,容易加工",
+		"group": "金属",
+		"tags": "",
+		"require": "g.land_wa>=3 &&g.metal_1>=8",
+		"max": 5
+	},
+	{
+		"id": "cbclb",
+		"name": "纯白材料包",
+		"desc": "多种金属打包而来的材料学基础包",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_cailiaozuhe>=1",
+		"max": 10
+	},
+	{
+		"id": "yjdl",
+		"name": "亚极电缆",
+		"desc": "亚极电缆是一种利用了黄泉技术的高传导率电缆",
+		"group": "电子",
+		"tags": "",
+		"require": "g.cxdnsy>=10 && g.gwl>=1 && g.ytjn>=1",
+		"max": 10
+	},
+	{
+		"id": "laser_ene",
+		"name": "高能电容",
+		"desc": "激光发射使用的高能电源",
+		"group": "电子",
+		"tags": "",
+		"require": "g.red_jgsys>=1",
+		"max": 0
+	},	
+	{
+		"id": "ljdy",
+		"name": "逻辑单元",
+		"desc": "蚀刻了基础逻辑的单元模板",
+		"group": "电子",
+		"tags": "",
+		"require": "g.xinghaokz>=1 && g.luojibo>=1",
+		"max": 10
+	},
+	{
+		"id": "heiyan",
+		"name": "黑焰",
+		"desc": "黑色火焰",
+		"group": "真魂衍生",
+		"tags": "",
+		"require": "g.xunqiuhy>=1",
+		"max": 0
+	},
+	{
+		"id": "zhuji_tianjie_1",
+		"name": "命玄-真魂",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "zhuji_tianjie_3",
+		"name": "命玄-破道",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "zhuji_tianjie_2",
+		"name": "落日-真魂",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "yichongyuesheng",
+		"name": "一重跃升",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_hide",
+		"name": "隐藏修炼",
+		"desc": "隐藏修炼",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "herbal_hide",
+		"name": "隐藏药材",
+		"desc": "隐藏药材",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "updata_res_1",
+		"name": "更新",
+		"desc": "更新",
+		"hide": true,
+		"group": "更新",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_wiki",
+		"name": "wiki",
+		"desc": "wiki",
+		"hide": true,
+		"group": "wiki",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "tapestries",
+		"name": "tapestries",
+		"desc": "History, lore, and even spells, may be woven in their threads.",
+		"max": 3,
+		"mod": {
+			"research.max": 5
+		}
+	},
+	{
+		"id": "runestones",
+		"name": "rune stones",
+		"group": "runes",
+		"desc": "Runes carved on pieces of stone.",
+		"tags": "t_runes",
+		"max": 10,
+		"mod": {
+			"research.max": "1%",
+			"runelore.rate": 0.1,
+			"runelore.max": 0.03
+		},
+		"flavor": ""
+	},
+	{
+		"id": "firerune",
+		"name": "flame runes",
+		"tags": "t_runes,elementalrunes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune etched with lines of fire",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "waterrune",
+		"name": "water runes",
+		"tags": "t_runes,elementalrunes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune lined in flowing water",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "spiritrune",
+		"name": "spirit runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "A Runestone carved in bone; it seems to whisper.",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "airrune",
+		"name": "air runes",
+		"tags": "t_runes,elementalrunes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune etched with solid air",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "earthrune",
+		"name": "earth runes",
+		"tags": "t_runes,elementalrunes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune ingrained with moonstone",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "lightrune",
+		"name": "light runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune ingrained with sparkling diamond",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "shadowrune",
+		"name": "shadow runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "Black upon black, only a trained eye can distinguish the tiniest difference in the shades of black.",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "manarune",
+		"name": "mana runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "The surging energy of this rune can be felt even by the least talented of mages.",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "naturerune",
+		"name": "nature runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "Formed out of a complicated tangle of stems and leaves.",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "chaosruna",
+		"name": "chaos runes",
+		"tags": "primordialrunes",
+		"group": "runes",
+		"desc": "Unmistakably a rune, even if it's impossible to tell quite what it looks like.",
+		"val": 0,
+		"max": 1,
+		"mod": {
+			"chaos.max": 1
+		},
+		"flavor": "You can do anything!"
+	},
+	{
+		"id": "timerune",
+		"name": "time runes",
+		"tags": "primordialrunes",
+		"group": "runes",
+		"desc": "Time flows along the grooves of the rune",
+		"mod": {
+			"tempus.rate": 0.001,
+			"bf.rate": 0.01
+		},
+		"max": 3,
+		"flavor": "It's not easy to look at."
+	},
+	{
+		"id": "bodies",
+		"group": "necromancy",
+		"desc": "Bodies for necromantic magic",
+		"max": 1,
+		"mod": {
+			"dissection.rate": 0.01,
+			"embalming.rate": 0.01
+		}
+	},
+	{
+		"id": "bomes",
+		"group": "necromancy",
+		"desc": "Human Bones",
+		"val": 0,
+		"max": 1
+	},
+	{
+		"id": "skulls",
+		"group": "necromancy",
+		"desc": "Human Skull",
+		"max": 5
+	},
+	{
+		"id": "bonedust",
+		"name": "bone dust",
+		"group": "necromancy",
+		"desc": "The dust of human bones.",
+		"max": 10
+	},
+	{
+		"id": "souls",
+		"group": "necromancy",
+		"desc": "Imprisoned souls of living creatures.",
+		"max": 1,
+		"mod": {
+			"shadow.rate": 0.001,
+			"spirit.rate": 0.001,
+			"spiritlore.rate": 0.01
+		},
+		"flavor": "Is it wrong?"
+	},
+	{
+		"id": "schemetic",
+		"name": "schematics",
+		"desc": "Schematic of Thurn the Artificer",
+		"val": 0,
+		"max": 1,
+		"mod": {
+			"crafting.max": 0.1,
+			"crafting.rate": "5%"
+		}
+	},
+	{
+		"id": "codices",
+		"name": "codices",
+		"group": "books",
+		"desc": "Codex of arcane lore",
+		"max": 10,
+		"mod": {
+			"research.rate": 0.07,
+			"research.max": 5,
+			"lore.rate": 0.1
+		}
+	},
+	{
+		"id": "tomese",
+		"name": "tomes",
+		"group": "books",
+		"desc": "A hefty tome of knowledge.",
+		"val": 0,
+		"max": 1,
+		"mod": {
+			"research.max": 7,
+			"arcana.rate": 0.001,
+			"lore.rate": 0.1,
+			"lore.max": 0.1
+		}
+	},
+	{
+		"id": "gams",
+		"name": "gemstones",
+		"group": "gems",
+		"desc": "Various fine gemstones.",
+		"val": 0,
+		"max": 1
+	},
+	{
+		"id": "managem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "arcane gem",
+		"desc": "Gem infused with arcane energy.",
+		"max": 2
+	},
+	{
+		"id": "firegem",
+		"tags": "magicgems,prismaticgems,elementalgems",
+		"group": "gems",
+		"name": "fire gem",
+		"desc": "Gem imbued with the essence of fire.",
+		"max": 2
+	},
+	{
+		"id": "watergem",
+		"tags": "magicgems,prismaticgems,elementalgems",
+		"group": "gems",
+		"name": "water gem",
+		"desc": "Gem imbued with the essence of water.",
+		"max": 2
+	},
+	{
+		"id": "naturegem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "nature gem",
+		"desc": "Physical essence of life.",
+		"max": 2,
+		"flavor": "The force from the beginning"
+	},
+	{
+		"id": "earthgam",
+		"tags": "magicgems,prismaticgems,elementalgems",
+		"group": "gems",
+		"name": "earth gem",
+		"desc": "Gem imbued with the essence of earth.",
+		"val": 0,
+		"max": 1
+	},
+	{
+		"id": "airgem",
+		"tags": "magicgems,prismaticgems,elementalgems",
+		"group": "gems",
+		"name": "air gem",
+		"desc": "Gem imbued with the essence of air.",
+		"max": 2
+	},
+	{
+		"id": "shadowgem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "shadow gem",
+		"desc": "Gem imbued with the essence of darkness.",
+		"max": 2
+	},
+	{
+		"id": "lightgem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "light gem",
+		"desc": "Gem imbued with the essence of light.",
+		"max": 2
+	},
+	{
+		"id": "scrolls",
+		"name": "卷轴",
+		"desc": "卷轴",
+		"group": "卷轴",
+		"tags": "",
+		"locked":true,
+		"max": 20
+	},
+	{
+		"id": "splritgem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "spirit gem",
+		"desc": "Gem imbued with raw spirit.",
+		"val": 0,
+		"max": 1
+	},
+	{
+		"id": "bloodgem",
+		"tags": "magicgems",
+		"group": "gems",
+		"name": "blood gem",
+		"desc": "A little magic and a lot of blood",
+		"max": 2,
+		"mod": {
+			"hp.max": 1
+		}
+	},
+	{
+		"id": "timegem",
+		"name": "time gem",
+		"tags": "magicgems,primordialgems",
+		"group": "gems",
+		"desc": "Crafted from gems which do not yet exist.",
+		"mod": {
+			"gems.rate": -0.005,
+			"tempus.rate": 0.01
+		},
+		"max": 3
+	},
+	{
+		"id": "voidgem",
+		"name": "void gem",
+		"tags": "magicgems,primordialgems",
+		"group": "gems",
+		"desc": "The space where a gem once was.",
+		"mod": {
+			"player.resist.void": 1
+		},
+		"max": 3,
+		"flavor": "There was a GEM here.  It's gone now"
+	},
+	{
+		"id": "chaosgem",
+		"name": "chaos gem",
+		"tags": "magicgems,primordialgems",
+		"group": "gems",
+		"desc": "Every time you look at it, it looks different.",
+		"mod": {
+			"chaos.rate": 0.01
+		},
+		"max": 3,
+		"flavor": "Chaos,chaos!"
+	},
+	{
+		"id": "ichqr",
+		"tags": "reagent",
+		"desc": "The blood of gods.",
+		"flavor": "The secret courtesy that courses like ichor",
+		"val": 0,
+		"max": 1
+	},
+	{
+		"id": "sindel",
+		"name": "star shard",
+		"desc": "A glowing cinder of the stars.",
+		"flavor": "The pillars broke; the stars fell screaming from the sky",
+		"max": 3,
+		"mod": {
+			"light.rate": 0.1,
+			"player.resist.shadow": 1
+		}
+	},
+	{
+		"id": "dreams",
+		"desc": "We are such stuff as dreams are made of. And our little life is rounded with a sleep.",
+		"max": 3,
+		"mod": {
+			"weary.rate": -0.1,
+			"arcana.rate": "1%"
+		},
+		"flavor": "In your wildest..."
+	},
+	{
+		"id": "harbs",
+		"group": "reagent",
+		"desc": "Special plants for potions and alchemy.",
+		"val": 0,
+		"max": 1
+	},
+	{
+		"id": "potionessence",
+		"name": "potion base",
+		"group": "reagent",
+		"desc": "Basic essence for creating advanced potions.",
+		"flavor": "Smells faintly of milk.",
+		"max": 3
+	},
+	{
+		"id": "space",
+		"name": "地板空间",
+		"desc": "Space Available",
+		"hide": true,
+		"reverse": true,
+		"max": 0
+	},
+	{
+		"id": "exchange_code_1",
+		"desc": "2022兑换码",
+		"info": "2022新年快乐",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"money": 22
+		}
+	},
+	{
+		"id": "exchange_code_wiki",
+		"desc": "打开wiki",
+		"info": "感谢你打开本游戏的Wiki百科,目前百科只提供解锁关系,点击Wiki中的The brain标签显示条目解锁内容",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"xiulian_wiki": 1
+		}
+	},
+	{
+		"id": "exchange_code_2",
+		"desc": "十个零结晶兑换码",
+		"info": "十个零结晶!!!",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"zero_crystal": 10
+		}
+	},
+	{
+		"id": "exchange_code_3",
+		"desc": "时间倒退十年",
+		"info": "时间倒退十年,续下命哥们",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"time": -3650
+		}
+	},
+	{
+		"id": "exchange_code_4",
+		"desc": "获得一块钱(向天再借五百年)",
+		"info": "但是我只有一块钱",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"money": 1
+		}
+	},
+	{
+		"id": "exchange_code_5",
+		"desc": "我不到啊",
+		"info": "我不到啊",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"drop":{
+			"xwdsnzyd": "100%"
+		}
+	},
+	{
+		"id": "exchange_code_6",
+		"desc": "我在马路边捡到一块钱",
+		"info": "我在马路边捡到一块钱",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 2022,
+		"coderesult":{
+			"money": 1
+		}
+	},
+	{
+		"id": "exchange_code_7",
+		"desc": "输入",
+		"equneed": "g.ganwu>=300",
+		"info": "老实人....",
+		"needinfo": "你还不能兑换此兑换码[需要感悟大于300]",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"ganwu.rate": 1
+		}
+	},
+	{
+		"id": "exchange_code_8",
+		"desc": "不告诉你",
+		"equneed": "g.evilamt>0",
+		"info": "不告诉你",
+		"needinfo": "你还不能兑换此兑换码",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"evilamt": 49
+		}
+	},
+	{
+		"id": "exchange_code_9",
+		"desc": "我不知道",
+		"equneed": "g.evilamt<=0",
+		"info": "我不知道,经验+3,告辞",
+		"needinfo": "你还不能兑换此兑换码",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"player.exp": 3
+		}
+	},
+	{
+		"id": "exchange_code_10",
+		"desc": "?",
+		"info": "?",
+		"needinfo": "你还不能兑换此兑换码",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"ganwu": 100
+		}
+	},
+	{
+		"id": "exchange_code_11",
+		"desc": "2023兑换码",
+		"info": "2023新年快乐",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"money": 2023
+		}
+	},
+	{
+		"id": "time",
+		"desc": "",
+		"flavor": "餐玉驻年龄，吞霞反容颜",
+		"hide": true,
+		"name": "时间",
+		"val":1,
+		"max": 100000000000000000000000000000
+	},
+	{
+		"id": "alculation",
+		"desc": "计算力的多少决定了你的建造水准和施法水平。每1000计算力提供0.9法术强度。",
+		"hide": true,
+		"name": "计算力",
+		"val":1,
+		"max": 1,
+		"mod":{
+			"player.spell_class": "0.9:1000",
+			"1级.max": 0.005,
+			"2级.max": 0.004,
+			"3级.max": 0.003,
+			"4级.max": 0.002,
+			"5级.max": 0.001,
+			"6级.max": 0.0005
+		}
+	},
+	{
+		"id": "f_power",
+		"desc": "战斗评级",
+		"flavor": "战斗评级",
+		"hide": true,
+		"name": "战斗评级",
+		"val":1,
+		"max": 100000000000000000000000000000
+	},
+	{
+		"id": "f_stress",
+		"desc": "战斗压迫指的是其他大型集团力量对你产生的压迫力",
+		"flavor": "钢铁是没有主人的",
+		"hide": true,
+		"locked":false,
+		"name": "战斗压迫",
+		"val":0,
+		"max": 10,
+		"mod":{
+			"shuaibai.rate": 0.1,
+			"self.resist.chaos": -2,
+			"self.resist.heli": -2,
+			"self.speed": -1,
+			"hp.max": -2,
+			"heli.max": -2,
+			"chaos.max": -2
+		}
+	},
+	{
+		"id": "f_area",
+		"desc": "领土面积",
+		"flavor": "领土面积",
+		"hide": true,
+		"name": "领土面积",
+		"val":1,
+		"max": 100000000000000000000000000000
+	},
+	{
+		"id": "human_power",
+		"desc": "能指挥的劳动力。每1000人力提供0.25物理强度。",
+		"hide": true,
+		"name": "人力",
+		"val":0,
+		"max": 1,
+		"mod":{
+			"player.physical_class": "0.25:1000"
+		}
+	},
+	{
+		"id": "command_code",
+		"desc": "指令容量",
+		"hide": true,
+		"name": "指令占用",
+		"val":0,
+		"max": 3
+	},
+	{
+		"id": "yanzhandu",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "厌战度",
+		"val":0,
+		"max": 100
+	},
+	{
+		"id": "shiqi",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "士气",
+		"val":0,
+		"max": 50
+	},
+	{
+		"id": "zhuzhidu",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "组织度",
+		"val":0,
+		"max": 40
+	},
+	{
+		"id": "jczdxn",
+		"desc": "基础攻击性能是不计算征服对象属性的攻击性能,计算公式为:战斗评分X25%+战斗评分X【(士气X65%+组织度X75%)-[(厌战度/计算力)X厌战度]】/100",
+		"hide": true,
+		"locked": false,
+		"name": "基础攻击性能",
+		"val":0,
+		"max": 100
+	},
+	{
+		"id": "obstacles_info",
+		"desc": "地块障碍是你领土内较难开发的地形,每单位地块障碍有大量的地板占用和一些正面或者负面的资源加成。你建造的地块依赖性建筑会产生对应的地块占用(即地形名旁括号内的数字),你不能清理这个数字以下的地块。",
+		"hide": true,
+		"locked": false,
+		"name": "地块障碍",
+		"val":0,
+		"max": 1
+	},
+	{
+		"id": "age",
+		"desc": "",
+		"flavor": "餐玉驻年龄，吞霞反容颜",
+		"hide": true,
+		"name": "寿命",
+		"val":21900,
+		"max": 21900
+	},
+	{
+		"id": "hill_res",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "丘陵占用",
+		"val":0,
+		"max":1000000000000
+	},
+	{
+		"id": "water_res",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "湖泊占用",
+		"val":0,
+		"max":1000000000000
+	},
+	{
+		"id": "basin_res",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "盆地占用",
+		"val":0,
+		"max":1000000000000
+	},
+	{
+		"id": "mount_res",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "山脉占用",
+		"val":0,
+		"max":1000000000000
+	},
+	{
+		"id": "tili",
+		"tags": "Bar",
+		"desc": "每1体力提供0.2物理强度。",
+		"flavor": "行动所用",
+		"unit": false,
+		"name": "体力",
+		"val":10,
+		"color": "#29d61d",
+		"locked": false,
+		"max": 10,
+		"mod":{
+			"player.physical_class": 0.2
+		}
+	},
+	{
+		"id": "shenshi",
+		"tags": "Bar,prismatic",
+		"desc": "脑中奥秘。每1神识提供0.7法术抵抗。",
+		"unit": false,
+		"color": "#9400D3",
+		"require": "g.shenshi_1>=4",
+		"name": "神识",
+		"max": 1,
+		"mod":{
+			"player.spell_save": 0.7
+		}
+	},
+	{
+		"id": "heli",
+		"tags": "Bar,prismatic",
+		"desc": "合乎天地道理的力量。每1合理提供0.1物理抵抗。",
+		"unit": false,
+		"color": "#ffeb00",
+		"require": "g.touch_daoli",
+		"name": "合理",
+		"val": 0,
+		"max": 0,
+		"mod":{
+			"player.physical_save": 0.1
+		}
+	},
+	{
+		"id": "chaos",
+		"tags": "Bar,prismatic",
+		"desc": "无序的,不合理的。每1混沌提供0.1物理抵抗。",
+		"unit": false,
+		"color": "#808080",
+		"require": "g.xiulian_astro_zhuji_3>=1",
+		"name": "混沌",
+		"val": 0,
+		"max": 0,
+		"mod":{
+			"player.physical_save": 0.1
+		}
+	},
+	{
+		"id": "elect",
+		"tags": "Bar,prismatic",
+		"desc": "致命能量",
+		"unit": false,
+		"color": "#00BFFF",
+		"require": "g.energ_1>=1",
+		"name": "电能",
+		"val": 0,
+		"max": 1
+	},
+	{
+		"id": "mana",
+		"tags": "manas,prismatic",
+		"desc": "Raw magical energy",
+		"unit": false,
+		"require": "lore",
+		"name": "魔力",
+		"max": 5
+	},
+	{
+		"id": "fire",
+		"require": "firelore",
+		"unit": false,
+		"tags": "manas,element,prismatic",
+		"name": "火",
+		"desc": "Fire Mana",
+		"max": 0
+	},
+	{
+		"id": "air",
+		"require": "airlore",
+		"unit": false,
+		"tags": "manas,element,prismatic",
+		"name": "气",
+		"desc": "Air Mana",
+		"max": 0
+	},
+	{
+		"id": "earth",
+		"unit": false,
+		"tags": "manas,element,prismatic",
+		"require": "earthlore",
+		"name": "大地",
+		"desc": "Earth Mana",
+		"max": 0
+	},
+	{
+		"id": "water",
+		"unit": false,
+		"tags": "manas,element,prismatic",
+		"desc": "Water Mana",
+		"name": "水",
+		"require": "waterlore",
+		"max": 0
+	},
+	{
+		"id": "nature",
+		"tags": "manas,prismatic",
+		"unit": false,
+		"require": "naturelore",
+		"desc": "Nature Mana",
+		"max": 0
+	},
+	{
+		"id": "shadow",
+		"name": "shadow",
+		"tags": "manas,prismatic",
+		"unit": false,
+		"require": "shadowlore",
+		"name": "暗影",
+		"desc": "Shadow mana",
+		"max": 0
+	},
+	{
+		"id": "light",
+		"tags": "manas,prismatic",
+		"unit": false,
+		"require": "lightlore",
+		"name": "光",
+		"desc": "Light mana",
+		"max": 0
+	},
+	{
+		"id": "spirit",
+		"tags": "manas,prismatic",
+		"unit": false,
+		"desc": "Spirit mana",
+		"name": "精神",
+		"require": "spiritlore",
+		"max": 0
+	},
+	{
+		"id": "tempus",
+		"require": "chronomancy",
+		"tags": "manas,primordial",
+		"unit": false,
+		"name": "时",
+		"desc": "Time incarnate. If only...",
+		"max": 0
+	},
+	{
+		"id": "void",
+		"tags": "manas,primordial",
+		"unit": false,
+		"name": "虚",
+		"desc": "Nothingness. No current use.",
+		"flavor": "",
+		"max": 0
+	},
+	{
+		"id": "class_save_info",
+		"unit": false,
+		"locked": true,
+		"name": "强度/抵抗有效值说明",
+		"desc": "此处显示的强度/抗性为计算后的有效值，在有效值<20前，获得的每点强度/抵抗为1:1有效加成，>20且<40这个部分，为2:1，>40且<60这个部分，为3:1，>60且<80这个部分，为4:1，>80且<1000这个部分，为5:1，大于1000后的部分，为20:1"
+	},
+	{
+		"id": "overlord_symbol",
+		"name": "霸者之誓",
+		"desc": "霸者之誓",
+		"group": "霸者",
+		"locked": true,
+		"max": 0
+	}
+]

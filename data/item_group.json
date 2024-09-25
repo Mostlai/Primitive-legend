@@ -1,0 +1,135 @@
+[
+	{
+		"id": "item_group_seed_trader",
+		"item":[
+			{
+				"id": "seed_windgrass",
+				"weight": 15,
+				"amount": "1~5",
+				"chance": 0.9
+			},
+			{
+				"id": "plant_windgrass",
+				"weight": 5,
+				"amount": "1~5",
+				"chance": 0.9
+			},
+			{
+				"id": "seed_starapple",
+				"weight": 5,
+				"amount": "1~4",
+				"chance": 0.65
+			},
+			{
+				"id": "seed_spine",
+				"weight": 5,
+				"amount": "1~3",
+				"chance": 0.55
+			},
+			{
+				"id": "seed_earthgrass",
+				"weight": 5,
+				"amount": "1~5",
+				"chance": 0.9
+			},
+			{
+				"id": "seed_ginseng",
+				"weight": 5,
+				"amount": "1~3",
+				"chance": 0.75
+			},
+			{
+				"id": "seed_lingzhi",
+				"weight": 5,
+				"amount": "1~3",
+				"chance": 0.5
+			},
+			{
+				"id": "plant_lingzhi",
+				"weight": 5,
+				"amount": "1~2",
+				"chance": 0.3
+			},
+			{
+				"id": "seed_shuangcao",
+				"weight": 5,
+				"amount": "1~5",
+				"chance": 0.75
+			},
+			{
+				"id": "seed_qinglian",
+				"weight": 5,
+				"amount": "1~3",
+				"chance": 0.6
+			},
+			{
+				"id": "seed_xuetree",
+				"weight": 5,
+				"amount": "1~2",
+				"chance": 0.4
+			},
+			{
+				"id": "thread_kettel",
+				"weight": 5,
+				"amount": "1~1",
+				"chance": 0.9
+			},
+			{
+				"id": "farmer_hoe",
+				"weight": 5,
+				"amount": "1~1",
+				"chance": 0.9
+			},
+			{
+				"id": "farmer_treasure",
+				"weight": 3,
+				"amount": "1~1",
+				"chance": 0.01
+			},
+			{
+				"id": "farmer_treasure_rare",
+				"weight": 2,
+				"amount": "1~1",
+				"chance": 0.003
+			}
+		]
+	},
+	{
+		"id": "item_group_myth_book",
+		"item":[{"id":"chronicle_of_nath","weight":5,"amount":"1~1","chance":0.6},{"id":"yellow_sign","weight":5,"amount":"1~1","chance":0.6},{"id":"book_of_eibon","weight":5,"amount":"1~1","chance":0.6},{"id":"eltdown_shards","weight":5,"amount":"1~1","chance":0.6},{"id":"xuanjun_qizhang_mijing","weight":5,"amount":"1~1","chance":0.6},{"id":"lingbao_jingwen","weight":5,"amount":"1~1","chance":0.6},{"id":"taihua_xinyu","weight":5,"amount":"1~1","chance":0.6},{"id":"baochujing_yinshu","weight":5,"amount":"1~1","chance":0.6},{"id":"tianjing_bagua","weight":5,"amount":"1~1","chance":0.6},{"id":"sanhuang_neiwei","weight":5,"amount":"1~1","chance":0.6},{"id":"luoshu_wujun","weight":5,"amount":"1~1","chance":0.6},{"id":"huayang_guozhi","weight":5,"amount":"1~1","chance":0.6},{"id":"heitu_zhi","weight":5,"amount":"1~1","chance":0.6},{"id":"ming_jiaolu","weight":5,"amount":"1~1","chance":0.6},{"id":"xiezhi_dianji","weight":5,"amount":"1~1","chance":0.6},{"id":"sanmao_liantu","weight":5,"amount":"1~1","chance":0.6},{"id":"shenxian_zhuan","weight":5,"amount":"1~1","chance":0.6},{"id":"baisheng_tianzi","weight":5,"amount":"1~1","chance":0.6},{"id":"taiyi_jinbuanshu","weight":5,"amount":"1~1","chance":0.6}]
+	},
+	{
+		"id": "item_group_c_furniture",
+		"item":[
+			{"id": "p_c_finebox","weight": 5,"amount": "1~5","chance": 0.9},
+			{"id": "p_c_logbox","weight": 4,"amount": "1~5","chance": 0.8},
+			{"id": "p_c_metalbox","weight": 4,"amount": "1~4","chance": 0.65},
+			{"id": "p_c_mini_treasurebox","weight": 2,"amount": "1~4","chance": 0.6},
+			{"id": "p_c_treasurebox","weight": 2,"amount": "1~4","chance": 0.4},
+			{"id": "p_c_mini_wheelgenrator","weight": 2,"amount": "1~2","chance": 0.2},
+			{"id": "p_c_mini_heatgenrator","weight": 2,"amount": "1~2","chance": 0.15},
+			{"id": "p_c_small_heatgenrator","weight": 2,"amount": "1~3","chance": 0.1}
+		]
+	},
+	{
+		"id": "item_group_c_butcher",
+		"item":[
+			{"id": "_meat","weight": 8,"amount": "3~6","chance": 1},
+			{"id": "boning_knife","weight": 5,"amount": "1~1","chance": 0.7}
+		]
+	},
+	{
+		"id": "item_group_c_danshi_que",
+		"item":[
+			{"id": "kqs","weight": 5,"amount": "10~11","chance": 0.9},
+			{"id": "liaoshangyao","weight": 5,"amount": "3~6","chance": 0.9},
+			{"id": "potion_xuexing","weight": 5,"amount": "2~4","chance": 0.7},
+			{"id": "potion_brokeheart","weight": 5,"amount": "3~6","chance": 0.7},
+			{"id": "potion_aichejianxing","weight": 5,"amount": "3~6","chance": 0.7},
+			{"id": "potion_jiancilinglong","weight": 5,"amount": "3~6","chance": 0.7},
+			{"id": "potion_zhirensuanji","weight": 5,"amount": "3~6","chance": 0.7},
+			{"id": "potion_yurenbingqi","weight": 5,"amount": "3~6","chance": 0.7},
+			{"id": "potion_qizhonghuoxin","weight": 5,"amount": "3~6","chance": 0.7}
+		]
+	}
+]

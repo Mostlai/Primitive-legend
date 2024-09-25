@@ -1,0 +1,5497 @@
+[
+	{
+		"id": "e_phy_overload",
+		"name":"失去平衡",
+		"school": "越层效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "e_e_phy_overload",
+			"name": "失去平衡",
+			"desc":"当此状态存在时，每次造成的伤害降低15%。",
+			"duration": 1,
+			"dot_effect":{
+				"damage_scale":{
+					"num": 0.85
+				}
+			}
+		}
+	},
+	{
+		"id": "e_spe_overload",
+		"name":"法术冲击",
+		"school": "越层效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "e_e_spe_overload",
+			"name": "法术冲击",
+			"desc":"当此状态存在时，抗性效果下降20%。",
+			"duration": 1,
+			"dot_effect":{
+				"resist_mod_val":{
+					"num": -0.2
+				}
+			}
+		}
+	},
+	{
+		"id": "ske_normal_attack",
+		"name":"普通攻击模板",
+		"school": "越层效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"attack": {
+			"bonus_class": 1,
+			"kind": "heli",
+			"damage": 1
+		}
+	},
+	{
+		"id": "tiaoxie_perk_dot",
+		"name":"调谐晶粹效果",
+		"school": "效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "equip_txpd_tpd",
+			"name": "调谐",
+			"desc":"当此状态存在时，抗性效果上升5%。",
+			"duration": 10000,
+			"dot_effect":{
+				"resist_mod_val":{
+					"num": 0.05
+				}
+			}
+		}
+	},
+	{
+		"id": "zuoyanzhihuan_perk_dot",
+		"name":"灼焰之环效果",
+		"school": "效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "equip_zyzhpd_tpd",
+			"name": "灼焰",
+			"desc":"当此状态存在时，每被敌人攻击命中时，10%几率对敌人释放法术(灼魂),对敌人造成40%物理属性的基础武器伤害并尝试附加10s的烧伤状态。",
+			"duration": 10000,
+			"dot_effect":{
+				"cast_spell":{
+					"if": "bedmg",
+					"spell": "zuoyanzhihuan_perk_spell",
+					"num": 1,
+					"percent": 10
+				}
+			}
+		}
+	},
+	{
+		"id": "zuoyanzhihuan_perk_spell",
+		"name":"灼魂",
+		"school": "效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"tili": 1
+		},
+		"attack": {
+			"damage": "(a.weapon.damage+a.weapon_bonus)*0.4",
+			"kind": "physical",
+			"bonus_class": 0,
+			"dot": {
+				"id": "syzhps_dot__bf",
+				"name": "烧伤",
+				"kind": "fire",
+				"duration": 10,
+				"damage": 20
+			}
+		}
+	},
+	{
+		"id": "heli_enchant_1",
+		"name": "合理之行",
+		"level": 1,
+		"locked":true,
+		"school": "附魔",
+		"desc": "将合理的力量运用到躲闪上,在没有掌握合理实质化前,这是早期运用合理到战斗的方式。",
+		"buy": {
+			"ganwu": 5,
+			"exe_paper": 1
+		},
+		"flavor": "锋利",
+		"cost": {
+			"heli": 1
+		},
+		"dot": {
+			"id": "weapon_enchat_1",
+			"name": "合理之行I",
+			"duration": 20,
+			"mod": {
+				"self.dodge": 1
+			}
+		}
+	},
+	{
+		"id": "chaos_enchant_1",
+		"name": "混沌之行",
+		"level": 1,
+		"require": "g.chaos>=1",
+		"school": "附魔",
+		"desc": "将混沌运用在躲闪上,这比合理更加难以琢磨",
+		"buy": {
+			"books": 3,
+			"star_map": 5,
+			"exe_paper": 7
+		},
+		"flavor": "捉摸不透",
+		"cost": {
+			"chaos": 2
+		},
+		"dot": {
+			"id": "weapon_enchat_2",
+			"name": "混沌之行I",
+			"duration": 13,
+			"mod": {
+				"self.dodge": 2
+			}
+		}
+	},
+	{
+		"id": "heli_missile",
+		"name": "低能飞弹",
+		"tag":"低能级",
+		"level": 1,
+		"locked":true,
+		"school": "合理",
+		"desc": "将合理转化为纯粹的能量形式并发射出去",
+		"buy": {
+			"ganwu": 5,
+			"exe_paper": 1,
+			"zero_crystal":1
+		},
+		"cost": {
+			"heli": 2
+		},
+		"attack": {
+			"bonus_class": 1,
+			"damage": "10~12",
+			"dot": {
+				"kind": "heli",
+				"duration": 10,
+				"damage": 0.7
+			}
+		}
+	},
+	{
+		"id": "hundun_missile",
+		"name": "混沌飞弹",
+		"tag":"低能级",
+		"level": 2,
+		"require": "g.chaos>=1",
+		"school": "混沌",
+		"desc": "将混沌转化为纯粹的能量形式并发射出去",
+		"buy": {
+			"ganwu": 5,
+			"chaos": 3,
+			"books":1,
+			"exe_paper": 2,
+			"zero_crystal":2
+		},
+		"cost": {
+			"chaos": 2
+		},
+		"attack": {
+			"bonus_class": 1,
+			"damage": "15~18"
+		}
+	},
+	{
+		"id": "guihuafa",
+		"name": "归化法",
+		"desc": "利用合理来强固防御",
+		"school": "合理",
+		"locked":true,
+		"level": 2,
+		"buy": {
+			"ganwu": 22,
+			"zero_crystal": 6,
+			"heli": 3,
+			"books":1
+		},
+		"cost": {
+			"heli": 6
+		},
+		"dot": {
+			"duration": 5,
+			"mod": {
+				"self.defense": 6
+			}
+		}
+	},
+	{
+		"id": "cure_1",
+		"name": "治愈",
+		"desc": "治疗自己的伤势",
+		"school": "合理",
+		"locked":true,
+		"level": 4,
+		"cd": 2,
+		"buy": {
+			"ganwu": 22,
+			"zero_crystal": 6,
+			"heli": 3,
+			"books":1
+		},
+		"cost": {
+			"heli": 6
+		},
+		"dot": {
+			"duration": 5,
+			"effect": {
+				"hp": 1
+			}
+		}
+	},
+	{
+		"id": "flbl",
+		"name": "反理壁垒",
+		"desc": "加强对合理和混沌的抗性",
+		"school": "附魔",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"ganwu": 200,
+			"money": 300,
+			"zero_crystal": 12,
+			"heli": 3,
+			"chaos":3,
+			"books":1
+		},
+		"cost": {
+			"heli": 12,
+			"chaos": 12
+		},
+		"dot": {
+			"duration": 10,
+			"mod": {
+				"self.resist.chaos": 10,
+				"self.resist.heli": 7
+			}
+		}
+	},
+	{
+		"id": "dhf",
+		"name": "大化法",
+		"desc": "降低敌人对合理的抗性",
+		"school": "附魔",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"ganwu": 200,
+			"money": 100,
+			"zero_crystal": 12,
+			"heli": 3,
+			"chaos":3,
+			"elect": 20,
+			"books":1
+		},
+		"cost": {
+			"heli": 10,
+			"chaos": 10,
+			"shenshi": 1
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"kind": "heli",
+				"duration": 100,
+				"mod": {
+					"self.resist.heli": -12
+				}
+			}
+		}
+	},
+	{
+		"id": "jsfw",
+		"name": "归综妙法",
+		"level": 2,
+		"school": "合理",
+		"locked":true,
+		"desc": "平息躁动",
+		"buy": {
+			"ganwu": 70,
+			"star_map": 30,
+			"zero_crystal": 5
+		},
+		"cost": {
+			"chaos": 8,
+			"heli": 6
+		},
+		"dot": {
+			"duration": 20,
+			"effect": {
+				"bf": -0.3,
+				"rage": -0.3,
+				"weary": -0.3,
+				"madness": -0.3
+			}
+		}
+	},
+	{
+		"id": "hundun_missile_2",
+		"name": "高能混沌打击",
+		"tag":"低能级",
+		"level": 1,
+		"locked":true,
+		"school": "混沌",
+		"desc": "混合混沌和电流进行远程投射",
+		"buy": {
+			"ganwu": 90,
+			"exe_paper": 3,
+			"star_map": 30,
+			"paper": 20,
+			"zero_crystal":6
+		},
+		"flavor": "电眼逼人",
+		"cost": {
+			"chaos": 8,
+			"elect": 16
+		},
+		"attack": {
+			"bonus_class": 1,
+			"damage": "19~22",
+			"dot": {
+				"kind": "chaos",
+				"duration": 3,
+				"damage": 1.2
+			}
+		}
+	},
+	{
+		"id": "solid_1",
+		"name": "召唤贴身侍卫",
+		"school": "人力",
+		"require": "g.rlgl>=1",
+		"level": 5,
+		"buy": {
+			"human_power": 60,
+			"money": 100
+		},
+		"cost": {
+			"human_power": 50,
+			"money":100,
+			"zero_crystal": 2
+		},
+		"result": "m_solid_1"
+	},
+	{
+		"id": "solid_2",
+		"name": "召唤士兵",
+		"school": "人力",
+		"require": "g.rlgl>=1",
+		"level": 5,
+		"buy": {
+			"human_power": 100,
+			"money": 200
+		},
+		"cost": {
+			"human_power": 50,
+			"money":150,
+			"zero_crystal": 4
+		},
+		"result": "m_solid_2"
+	},
+	{
+		"id": "solid_3",
+		"name": "治愈鼠召唤",
+		"desc": "需要【白白鼠控制接口】",
+		"school": "生物",
+		"need": "g.bbskzjk>=1",
+		"require": "g.quntizysw>=1",
+		"level": 5,
+		"cd": 10,
+		"buy": {
+			"human_power": 1000,
+			"money": 200
+		},
+		"cost": {
+			"baibaishu": 10,
+			"heli": 20,
+			"chaos": 20
+		},
+		"result": "zhiyushu"
+	},
+	{
+		"id": "solid_4",
+		"name": "守御龟召唤",
+		"desc": "需要【剑背龟控制接口】",
+		"school": "生物",
+		"need": "g.jbgckzjk>=1",
+		"require": "g.quntifysw>=1",
+		"level": 5,
+		"cd": 10,
+		"buy": {
+			"human_power": 1000,
+			"money": 200
+		},
+		"cost": {
+			"jbgui": 5,
+			"heli": 20,
+			"chaos": 20
+		},
+		"result": "shouyugui"
+	},
+	{
+		"id": "solid_5",
+		"name": "猛攻螳螂召唤",
+		"desc": "需要【钳尾刀虫控制接口】",
+		"school": "生物",
+		"need": "g.qwdckzjk>=1",
+		"require": "g.quntijgsw>=1",
+		"level": 5,
+		"cd": 10,
+		"buy": {
+			"human_power": 1000,
+			"money": 200
+		},
+		"cost": {
+			"qianwdc": 5,
+			"heli": 20,
+			"chaos": 20
+		},
+		"result": "mgtangl"
+	},
+	{
+		"id": "solid_6",
+		"name": "碎魂群召唤",
+		"desc": "需要【碎魂散列控制器】",
+		"school": "生物",
+		"need": "g.suihunslkzq>=1",
+		"require": "g.fuhexsw>=1",
+		"level": 5,
+		"cd": 10,
+		"buy": {
+			"human_power": 1000,
+			"money": 200
+		},
+		"cost": {
+			"money": 1000,
+			"hp": 30,
+			"dirty_lingti": 5,
+			"zhenhun_pice_1": 5,
+			"shenshi": 5,
+			"super_mind": 2,
+			"heli": 20,
+			"chaos": 20
+		},
+		"result": [
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi"
+		]
+	},
+	{
+		"id": "wmgxj",
+		"name": "万木归心决[筑基]",
+		"school": "源泉",
+		"require": "g.yqlife>=4",
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"yqlm": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 5
+		},
+		"attack": {
+			"damage": "19~25",
+			"kind": "wood",
+			"bonus_class": 1,
+			"dot": {
+				"kind": "wood",
+				"name": "万木[筑基]",
+				"duration": 10,
+				"damage": 5
+			}
+		}
+	},
+	{
+		"id": "frjxf",
+		"name": "浮日净心法[筑基]",
+		"level": 5,
+		"require": "g.yqlife>=4",
+		"school": "源泉",
+		"buy": {
+			"sp": 2,
+			"yqlm": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 10
+		},
+		"dot": {
+			"id": "frjxfb",
+			"name": "浮日净心",
+			"duration": 30,
+			"effect": {
+				"tili": 1,
+				"stamina": 0.6,
+				"bf": -0.4,
+				"rage": -0.4,
+				"weary": -0.4,
+				"madness": -0.4
+			}
+		}
+	},
+	{
+		"id": "prhss",
+		"name": "破落化伤术[筑基]",
+		"level": 5,
+		"cd": 20,
+		"require": "g.yqlife>=4",
+		"school": "源泉",
+		"buy": {
+			"sp": 2,
+			"yqlm": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 13
+		},
+		"dot": {
+			"id": "plhs",
+			"name": "破落化伤",
+			"duration": 10,
+			"effect": {
+				"hp": 6
+			}
+		}
+	},
+	{
+		"id": "ylzsf",
+		"name": "源灵障土法[筑基]",
+		"desc": "提高对木和土的抗性",
+		"level": 5,
+		"require": "g.yqlife>=4",
+		"school": "源泉",
+		"buy": {
+			"sp": 2,
+			"yqlm": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"dot": {
+			"id": "ylzs",
+			"name": "源灵障土",
+			"duration": 20,
+			"mod": {
+				"self.resist.wood": 5,
+				"self.resist.land": 10
+			}
+		}
+	},
+	{
+		"id": "zsbhf",
+		"name": "真水避火法[筑基]",
+		"desc": "提高对水和火的抗性",
+		"level": 5,
+		"require": "g.jsnlx>=4",
+		"school": "真水",
+		"buy": {
+			"sp": 2,
+			"wgys": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"dot": {
+			"id": "zsbh",
+			"name": "真水避火",
+			"duration": 20,
+			"mod": {
+				"self.resist.water": 5,
+				"self.resist.fire": 10
+			}
+		}
+	},
+	{
+		"id": "ljzj",
+		"name": "雷诀[筑基]",
+		"school": "真水",
+		"require": "g.jsnlx>=4",
+		"cd": 1,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"wgys": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"elect": 30
+		},
+		"attack": {
+			"damage": "39~42",
+			"kind": "water",
+			"dot": {
+				"kind": "water",
+				"name": "雷诀[筑基]",
+				"duration": 1,
+				"damage": 10
+			}
+		}
+	},
+	{
+		"id": "spell_red_laser",
+		"name": "红极激光",
+		"desc":"",
+		"school": "激光",
+		"require": "g.red_jgsys>=1",
+		"level": 7,
+		"buy": {
+			"money": 5
+		},
+		"cost": {
+			"laser_ene":0.3,
+			"elect": 30
+		},
+		"attack": {
+			"damage": "62~67",
+			"kind": "fire",
+			"dot": {
+				"kind": "fire",
+				"name": "激光烧伤",
+				"duration": 5,
+				"damage": 16
+			}
+		}
+	},
+	{
+		"id": "spell_red_laser_jujiao",
+		"name": "血色万华流",
+		"desc":"超高能红极激光造成的毁灭性打击",
+		"school": "激光",
+		"require": "g.chaoshujujiao>=1",
+		"level": 9,
+		"buy": {
+			"red_jgsys": 1
+		},
+		"cost": {
+			"laser_ene":7.5,
+			"elect": 30,
+			"money": 200
+		},
+		"attack": {
+			"damage": "190~243",
+			"kind": "fire",
+			"dot": {
+				"kind": "fire",
+				"name": "高能激光烧伤",
+				"duration": 40,
+				"damage": 34
+			}
+		}
+	},
+	{
+		"id": "cjpk",
+		"name": "长金破空[筑基]",
+		"desc": "勤加练习,越战越强",
+		"school": "锐金",
+		"require": "g.jjclx>=4",
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"cbjs": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"chaos": 6
+		},
+		"at": {
+			"30": {
+				"attack.damage.max": 5
+			},
+			"60": {
+				"attack.damage.max": 10
+			},
+			"65": {
+				"attack.damage.max": 10
+			},
+			"70": {
+				"attack.damage.max": 5
+			},
+			"75": {
+				"attack.damage.min": 2
+			},
+			"300": {
+				"attack.damage.max": 5,
+				"attack.damage.min": 5,
+				"attack.tohit": 4
+			}
+		},
+		"attack": {
+			"bonus_class": 1,
+			"damage": "3~5",
+			"tohit": 8,
+			"kind": "gold"
+		}
+	},
+	{
+		"id": "rjzy",
+		"name": "锐金之意[筑基]",
+		"desc": "大幅度降低敌人对金的抗性",
+		"school": "锐金",
+		"require": "g.jjclx>=4",
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"cbjs": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 10,
+			"chaos": 10,
+			"shenshi": 2
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"kind": "gold",
+				"duration": 10,
+				"mod": {
+					"self.resist.gold": -50
+				}
+			}
+		}
+	},
+	{
+		"id": "hjbms",
+		"name": "化金败木术[筑基]",
+		"desc": "提高对金和木的抗性",
+		"level": 5,
+		"require": "g.jjclx>=4",
+		"school": "锐金",
+		"buy": {
+			"sp": 2,
+			"wgys": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"dot": {
+			"id": "hjbm",
+			"name": "化金败木",
+			"duration": 20,
+			"mod": {
+				"self.resist.gold": 5,
+				"self.resist.wood": 10
+			}
+		}
+	},
+	{
+		"id": "yyj",
+		"name": "炎炎诀[筑基]",
+		"school": "真火",
+		"require": "g.gwwlx>=4",
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"yxls": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 6
+		},
+		"attack": {
+			"bonus_class": 1,
+			"damage": "18~20",
+			"kind": "fire",
+			"dot": {
+				"kind": "fire",
+				"name": "炎炎诀[筑基]",
+				"duration": 3,
+				"damage": 10
+			}
+		}
+	},
+	{
+		"id": "zhyjf",
+		"name": "真火掩金法[筑基]",
+		"desc": "提高对火和金的抗性",
+		"level": 5,
+		"require": "g.gwwlx>=4",
+		"school": "真火",
+		"buy": {
+			"sp": 2,
+			"yxls": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"dot": {
+			"id": "zhyj",
+			"name": "真火掩金",
+			"duration": 20,
+			"mod": {
+				"self.resist.fire": 5,
+				"self.resist.gold": 10
+			}
+		}
+	},
+	{
+		"id": "htymj",
+		"name": "厚土抑水诀[筑基]",
+		"desc": "提高对土和水的抗性",
+		"level": 5,
+		"require": "g.htgcx>=4",
+		"school": "厚土",
+		"buy": {
+			"sp": 2,
+			"zdht": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"dot": {
+			"id": "gtym",
+			"name": "厚土抑水",
+			"duration": 20,
+			"mod": {
+				"self.resist.land": 5,
+				"self.resist.water": 10
+			}
+		}
+	},
+	{
+		"id": "kss",
+		"name": "困兽术[筑基]",
+		"desc": "降低敌人的速度和闪避",
+		"school": "厚土",
+		"require": "g.htgcx>=4",
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"zdht": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"attack": {
+			"damage": "10~20",
+			"targets": "enemies",
+			"kind": "land",
+			"dot": {
+				"duration": 30,
+				"dmg": "5~9",
+				"mod": {
+					"self.speed": -5,
+					"self.dodge": -5
+				}
+			}
+		}
+	},
+	{
+		"id": "sgfszj",
+		"name": "死骨复苏[筑基]",
+		"desc": "从黄泉引导三位【黄泉灵体】帮助你作战",
+		"school": "源泉",
+		"require": "g.xiulian_eye_huangquan>=1",
+		"cd": 10,
+		"level": 5,
+		"buy": {
+			"human_power": 100,
+			"yqlm": 10,
+			"zero_crystal": 20,
+			"money": 1000
+		},
+		"cost": {
+			"heli": 20,
+			"chaos": 10,
+			"shenshi": 3,
+			"human_power": 50
+		},
+		"result": [
+			"hqsl_1",
+			"hqsl_1",
+			"hqsl_1"
+		]
+	},
+	{
+		"id": "ngjyw",
+		"name": "凝界歌于我",
+		"desc": "提高防御和速度",
+		"school": "混沌",
+		"require": "g.mima_xue>=3",
+		"level": 4,
+		"buy": {
+			"ganwu": 200,
+			"money": 300,
+			"dirty_core": 25,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"dot": {
+			"duration": 10,
+			"mod": {
+				"self.resist.chaos": 20,
+				"self.resist.heli": -10,
+				"self.speed": 5,
+				"self.defense": 10
+			}
+		}
+	},
+	{
+		"id": "xclyt",
+		"name": "星辰落于天",
+		"school": "混沌",
+		"require": "g.mima_xue>=3",
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"dirty_core": 25,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"attack": {
+			"bonus_class": 1,
+			"damage": "18~20",
+			"kind": "chaos",
+			"dot": {
+				"kind": "chaos",
+				"name": "落天",
+				"duration": 300,
+				"damage": 2
+			}
+		}
+	},
+	{
+		"id": "bdjgk",
+		"name": "百代皆过客[筑基]",
+		"school": "混沌",
+		"require": "g.nolight_mishu>=2",
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"nolight_core": 10,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"attack": {
+			"bonus_class": 1,
+			"damage": "30~35",
+			"kind": "chaos",
+			"dot": {
+				"kind": "chaos",
+				"name": "过客",
+				"duration": 300,
+				"damage": 5
+			}
+		}
+	},
+	{
+		"id": "dmrg",
+		"name": "大梦如歌[筑基]",
+		"desc": "恢复自己",
+		"school": "混沌",
+		"require": "g.nolight_mishu>=2",
+		"level": 6,
+		"cd": 25,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"nolight_core": 10,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"dot": {
+			"id": "dmrgbf",
+			"name": "大梦如歌",
+			"duration": 20,
+			"effect": {
+				"hp": 12
+			}
+		}
+	},
+	{
+		"id": "wywgll",
+		"name": "午夜无归[落日]",
+		"desc": "恢复自己",
+		"school": "混沌",
+		"require": "g.luorxiushi>=1 && g.zlssx>=2",
+		"level": 9,
+		"cd": 45,
+		"buy": {
+			"sp": 2,
+			"ganwu": 1000,
+			"nolight_core": 10,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"dot": {
+			"id": "wywgllf",
+			"name": "午夜无归",
+			"duration": 30,
+			"effect": {
+				"hp": 18
+			}
+		}
+	},
+	{
+		"id": "ziranslpd",
+		"name": "自然生灵[破道]",
+		"desc": "恢复自己",
+		"school": "合理",
+		"require": "g.podaoxius>=1 && g.zlssx>=2",
+		"level": 9,
+		"cd": 120,
+		"buy": {
+			"sp": 2,
+			"ganwu": 1000,
+			"heli":30
+		},
+		"cost": {
+			"heli": 10
+		},
+		"dot": {
+			"id": "ziranslpd",
+			"name": "自然生灵",
+			"duration": 60,
+			"effect": {
+				"hp": 18
+			}
+		}
+	},
+	{
+		"id": "xkzspd",
+		"name": "星空震慑[破道]",
+		"school": "合理",
+		"require": "g.podaoxius>=1 && g.zlssx>=2",
+		"level": 9,
+		"buy": {
+			"sp": 2,
+			"ganwu": 1000,
+			"heli":30
+		},
+		"cost": {
+			"heli": 10,
+			"chaos": 10,
+			"ganwu": 10
+		},
+		"attack": {
+			"damage": "71~75",
+			"kind": "heli"
+		}
+	},
+	{
+		"id": "yuanzhipod",
+		"name": "源知[破道]",
+		"desc": "大幅提高防御和感悟获取速度",
+		"school": "合理",
+		"require": "g.podaoxius>=1 && g.zlssx>=2",
+		"level": 9,
+		"buy": {
+			"ganwu": 200,
+			"money": 2000,
+			"heli":30,
+			"dirty_lingti": 20,
+			"dirty_core": 10,
+			"cold_core": 40
+		},
+		"cost": {
+			"heli": 10,
+			"ganwu": 50
+		},
+		"dot": {
+			"duration": 30,
+			"mod": {
+				"ganwu.rate": 5,
+				"self.defense": 30
+			}
+		}
+	},
+	{
+		"id": "zylr",
+		"name": "真夜[落日]",
+		"school": "混沌",
+		"require": "g.luorxiushi>=1 && g.zlssx>=2",
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"ganwu": 1000,
+			"nolight_core": 10,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"attack": {
+			"bonus_class": 1,
+			"damage": "52~61",
+			"kind": "chaos",
+			"dot": {
+				"kind": "chaos",
+				"name": "真夜",
+				"duration": 20,
+				"damage": 21
+			}
+		}
+	},
+	{
+		"id": "wchys",
+		"name": "万草荒于沙",
+		"desc": "大幅度降低敌人对混沌和木的抗性",
+		"school": "混沌",
+		"require": "g.mima_xue>=3",
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"dirty_core": 25,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"kind": "chaos",
+				"duration": 10,
+				"mod": {
+					"self.resist.chaos": -35,
+					"self.resist.wood": -10
+				}
+			}
+		}
+	},
+	{
+		"id": "lsszy",
+		"name": "流水送昼夜",
+		"desc": "恢复自己",
+		"school": "混沌",
+		"require": "g.mima_xue>=3",
+		"level": 6,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"dirty_core": 25,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"dot": {
+			"id": "lsszybf",
+			"name": "流水送昼夜",
+			"duration": 20,
+			"effect": {
+				"tili": 2,
+				"stamina": 0.6,
+				"bf": -0.5,
+				"rage": -0.5,
+				"weary": -0.5,
+				"madness": -0.5
+			}
+		}
+	},
+	{
+		"id": "hwxlmx",
+		"name": "化物行理[命玄]",
+		"school": "合理",
+		"require": "g.xiulian_lizu_wxyh>=1",
+		"level": 6,
+		"buy": {
+			"money": 100
+		},
+		"cost": {
+			"heli": 10,
+			"stamina": 1
+		},
+		"attack": {
+			"bonus_class": 1,
+			"damage": "43~48",
+			"kind": "wuhuan",
+			"dot": {
+				"kind": "wuhuan",
+				"name": "化物行理[命玄]",
+				"duration": 10,
+				"damage": 7
+			}
+		}
+	},
+	{
+		"id": "yqwks",
+		"name": "云气望空式",
+		"school": "归藏",
+		"require": "g.canglanxiezou>=1",
+		"level": 4,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3
+		},
+		"cost": {
+			"tili": 9,
+			"stamina": 9
+		},
+		"attack": {
+			"damage": "39~42",
+			"kind": "body",
+			"dot": {
+				"kind": "body",
+				"name": "云气望空式",
+				"duration": 1,
+				"damage": 14
+			}
+		}
+	},
+	{
+		"id": "cdfxs",
+		"name": "抽刀封隙式",
+		"school": "归藏",
+		"require": "g.canglanxiezou>=1",
+		"level": 5,
+		"cd": 25,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3
+		},
+		"cost": {
+			"tili": 6,
+			"stamina": 10
+		},
+		"dot": {
+			"id": "cdfxbf",
+			"name": "抽刀封隙式",
+			"duration": 10,
+			"effect": {
+				"hp": 15
+			}
+		}
+	},
+	{
+		"id": "lzgxs",
+		"name": "浪子归乡式",
+		"desc": "短时间内提升大量躲闪和速度",
+		"school": "归藏",
+		"require": "g.canglanxiezou>=1",
+		"level": 5,
+		"cd": 30,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 25,
+			"stamina": 7
+		},
+		"dot": {
+			"id": "lzgxsbf",
+			"name": "浪子归乡式",
+			"duration": 4,
+			"mod": {
+				"self": {
+					"dodge": 50,
+					"speed": 60
+				}
+			}
+		}
+	},
+	{
+		"id": "assault_attack",
+		"name": "惊神斩击",
+		"desc": "快速冲向敌人,造成120%的基础武器伤害。如果此次攻击命中,那么目标会被恍惚10s(减少30躲闪和20命中)。",
+		"school": "归藏",
+		"require": "g.guixuan>=1",
+		"level": 5,
+		"cd": 7,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 12,
+			"stamina": 7
+		},
+		"attack": {
+			"damage": "(a.weapon.damage+a.weapon_bonus)*1.2",
+			"kind": "body",
+			"bonus_class": 0,
+			"dot": {
+				"id": "assault_attack_bf",
+				"name": "恍惚",
+				"desc": "减少30躲闪和20命中",
+				"duration": 10,
+				"mod": {
+					"self": {
+						"dodge": -30,
+						"tohit": -20
+					}
+				}
+			}
+		}
+	},
+	{
+		"id": "accuracy_tohit",
+		"name": "精准打击",
+		"desc": "你集中精神攻击，减少你10%速度并增加你25点命中和9%物理暴击率。",
+		"school": "归藏",
+		"require": "g.guixuan>=1",
+		"level": 5,
+		"cd": 20,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 25,
+			"stamina": 7
+		},
+		"dot": {
+			"id": "accuracy_tohit_bf",
+			"name": "精准打击",
+			"desc": "你集中精神攻击，减少你10%速度并增加你25点命中和9%物理暴击率。",
+			"duration": 10000,
+			"mod": {
+				"self": {
+					"physical_critical": 9,
+					"speed": "-10%",
+					"tohit": 25
+				}
+			}
+		}
+	},
+	{
+		"id": "perfect_tohit",
+		"name": "完美打击",
+		"desc": "你已经学会专注你的攻击来命中目标,在10s内增加你的30点命中。",
+		"school": "归藏",
+		"require": "g.guixuan>=1",
+		"level": 5,
+		"cd": 20,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 20
+		},
+		"dot": {
+			"id": "perfect_tohit_bf",
+			"name": "完美打击",
+			"duration": 10,
+			"mod": {
+				"self": {
+					"tohit": 30
+				}
+			}
+		}
+	},
+	{
+		"id": "speed_up",
+		"name": "急速",
+		"desc": "通过严格的训练你已经学会在短时间内爆发你的速度，10s内提高你15速度。",
+		"school": "归藏",
+		"require": "g.guixuan>=1",
+		"level": 5,
+		"cd": 15,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 20
+		},
+		"dot": {
+			"id": "speed_up_bf",
+			"name": "急速",
+			"duration": 10,
+			"mod": {
+				"self": {
+					"speed": 15
+				}
+			}
+		}
+	},
+	{
+		"id": "blood_sum_1",
+		"name": "渴望血",
+		"desc":"消耗0.3血核碎片召唤【残缺的渴血野兽】",
+		"school": "血术",
+		"require": "g.xl_lj_blood_1>=1",
+		"level": 7,
+		"buy": {
+			"blood_soulcore_pice": 0.3,
+			"element_blood": 20,
+			"zhenhun_pice_1": 5,
+			"money": 1000
+		},
+		"cost": {
+			"blood_soulcore_pice": 1
+		},
+		"result": "kexuebeast_player"
+	},
+	{
+		"id": "yiwangxue",
+		"name": "遗忘血",
+		"desc":"损失气血来获取气血恢复",
+		"school": "血术",
+		"require": "g.xl_lj_blood_1>=1",
+		"level": 7,
+		"cd": 14,
+		"buy": {
+			"zhenhun_pice_1": 5,
+			"element_blood": 20
+		},
+		"cost": {
+			"hp": 30
+		},
+		"dot": {
+			"id": "yiwangxuebf",
+			"name": "遗忘血",
+			"duration": 10,
+			"effect": {
+				"hp": 10
+			}
+		}
+	},
+	{
+		"id": "smxue",
+		"name": "生命血",
+		"school": "血术",
+		"require": "g.xl_lj_blood_1>=1",
+		"level": 7,
+		"buy": {
+			"zhenhun_pice_1": 5,
+			"element_blood": 20
+		},
+		"cost": {
+			"heli": 1,
+			"tili": 1,
+			"hp": 10
+		},
+		"attack": {
+			"damage": "30~31",
+			"kind": "chaos",
+			"dot": {
+				"kind": "chaos",
+				"name": "生命血",
+				"duration": 1,
+				"damage": 10
+			}
+		}
+	},
+	{
+		"id": "balck_firestorm",
+		"name": "皆受黑焰",
+		"school": "真火",
+		"level": 10,
+		"desc": "引导曾经的火惩罚每个人",
+		"cd": 10,
+		"require": "g.xl_lj_zhenhun_12>=1",
+		"need": "g.heisezhist>=1",
+		"buy": {
+			"ganwu": 2000,
+			"heiyan": 10
+		},
+		"cost": {
+			"heli": 10,
+			"heiyan": 3
+		},
+		"attack": {
+			"hits": [
+				{
+					"targets": "all",
+					"dot": {
+						"id": "jieshouheiyan_effect",
+						"name":"皆受黑焰",
+						"kind": "fire",
+						"dmg": "87~92",
+						"duration": 30
+					}
+				},
+				{
+					"targets": "allies",
+					"dot": {
+						"id": "bfirestormprotection",
+						"name": "黑焰防护",
+						"duration": 30,
+						"mod": {
+							"self.resist.fire": 80
+						}
+					}
+				}
+			]
+		},
+		"flavor": "需要有【黑色置书台】家具"
+	},
+	{
+		"id": "balck_firestorm_cure",
+		"name": "皆享黑焰",
+		"school": "真火",
+		"level": 10,
+		"desc": "引导曾经的火治愈每个人",
+		"cd": 10,
+		"require": "g.xl_lj_zhenhun_12>=1",
+		"need": "g.heisezhist>=1",
+		"buy": {
+			"ganwu": 2000,
+			"heiyan": 10
+		},
+		"cost": {
+			"heli": 10,
+			"heiyan": 3
+		},
+		"attack": {
+			"hits": [
+				{
+					"targets": "all",
+					"dot": {
+						"id": "jiexhy_all",
+						"name": "皆享黑焰",
+						"kind": "fire",
+						"duration": 30,
+						"effect": {
+							"hp": 20
+						}
+					}
+				},
+				{
+					"id": "jiexhy_all_p",
+					"name": "皆享黑焰[友方额外加成]",
+					"targets": "allies",
+					"dot": {
+						"duration": 30,
+						"effect": {
+							"hp": 15
+						}
+					}
+				}
+			]
+		},
+		"flavor": "需要有【黑色置书台】家具"
+	},
+	{
+		"id": "shouhunchang",
+		"name": "狩魂场【狩魂】",
+		"desc": "激活狩魂场",
+		"school": "神机",
+		"require": "g.kangjuxingzj>=1",
+		"need": "g.shouhun_chang>=1",
+		"level": 1,
+		"cd": 20,
+		"buy": {
+			"elect": 1
+		},
+		"cost": {
+			"elect": 1
+		},
+		"dot": {
+			"duration": 10,
+			"targets": "allies",
+			"mod": {
+				"self.defense": 100,
+				"elect.rate": -20
+			}
+		},
+		"flavor": "需要装备【狩魂场发生器【AL-T】】"
+	},
+	{
+		"id": "suihun_zhushe",
+		"level": 1,
+		"name": "碎魂注射【狩魂】",
+		"desc": "注射大量神经活性物质以恢复活力",
+		"school": "神机",
+		"require": "g.zhushemokuai>=1",
+		"cd": 10,
+		"need": "g.jisu_zhushe>=1",
+		"buy": {
+			"elect": 1
+		},
+		"cost": {
+			"elect": 30
+		},
+		"result": {
+			"self.hp": 88
+		},
+		"flavor": "需要装备【碎魂注射模块【AL-T】】"
+	},
+	{
+		"id": "sijue_defense_1",
+		"name": "思觉动魄",
+		"school": "混沌",
+		"level": 10,
+		"desc": "而人自幽诸秘史观诸生灵，知彼之伤衰残寡孤害，汝当庆贺见证三害三败。",
+		"cd": 25,
+		"require": "g.crzj_zhujierchong>=1",
+		"buy": {
+			"ganwu": 2000,
+			"gubenxianling": 5,
+			"shenglingshi": 20,
+			"lxue": 20,
+			"money": 8000
+		},
+		"cost": {
+			"shenshi": 25,
+			"heli": 10,
+			"chaos": 20
+		},
+		"attack": {
+			"tohit": 60,
+			"hits": [
+				{
+					"targets": "enemies",
+					"dot": {
+						"mod": {
+							"self.defense": -200
+						},
+						"duration": 23
+					}
+				}
+			]
+		}
+	},
+	{
+		"id": "sijue_attack_1",
+		"name": "元素轰鸣",
+		"school": "合理",
+		"level": 10,
+		"desc": "",
+		"cd": 4,
+		"locked":true,
+		"buy": {
+			"ganwu": 2000,
+			"gubenxianling": 5,
+			"shenglingshi": 20,
+			"lxue": 20,
+			"money": 8000
+		},
+		"cost": {
+			"gold": 60,
+			"wood": 60,
+			"water": 60,
+			"fire": 60,
+			"land": 60
+		},
+		"attack": {
+			"tohit": 100,
+			"damage": "352~410",
+			"bonus_class": 1,
+			"kind": "wuhuan",
+			"dot": {
+				"kind": "wuhuan",
+				"name": "元素滞留",
+				"duration": 1,
+				"damage": 50
+			}
+		}
+	},
+	{
+		"id": "yinyingmiansha",
+		"name": "阴影面纱",
+		"desc": "将自己融入于阴影中，在效果持续时间内，你的命中降低20，造成的伤害提高150%，受到的伤害提高250%。物理强度仅加成造成伤害百分比。",
+		"school": "混沌",
+		"require": "g.xiulian_jj_jclr>=1",
+		"level": 5,
+		"cd": 60,
+		"buy": {
+			"chaos": 20,
+			"money": 2000,
+			"paper": 100,
+			"sp": 1
+		},
+		"cost": {
+			"heli": 12,
+			"chaos": 12
+		},
+		"dot": {
+			"duration": 30,
+			"id": "effect_dark_mask",
+			"name": "阴影面纱",
+			"desc":"将自己融入于阴影中，在效果持续时间内，你的命中降低20，造成的伤害提高150%，受到的伤害提高250%。物理强度仅加成造成伤害百分比。",
+			"dot_effect":{
+				"damage_scale":{
+					"amsg": "于暗影中袭击!",
+					"num": 1.5,
+					"bonus_class": 0
+				},
+				"be_damage_scale":{
+					"num": 2.5
+				}
+			},
+			"mod": {
+				"self.tohit": -20
+			}
+		}
+	},
+	{
+		"id": "xuejiewuying",
+		"name": "血界无影",
+		"desc": "消耗50气血，普通召唤【无影】至友方场上。",
+		"school": "血术",
+		"locked":true,
+		"level": 6,
+		"buy": {
+			"ganwu": 2
+		},
+		"cost": {
+			"hp": 50
+		},
+		"result": [
+			"un_shadow",
+			"un_shadow"
+		]
+	},
+	{
+		"id": "xuejieliutianling",
+		"name": "血界流天灵",
+		"sp": "superior",
+		"desc": "消耗50气血。若场上至少存在2个【无影】字段的友方单位，则将2个【无影】字段单位牺牲，特殊召唤1个【血界-流天灵】至友方场上。",
+		"more_info":"此召唤物每次攻击命中时均有20%几率对全部敌方单位添加-20防御的临时效果",
+		"school": "血术",
+		"locked":true,
+		"level": 9,
+		"buy": {
+			"ganwu": 2
+		},
+		"cost": {
+			"hp": 50
+		},
+		"superior_target":{
+			"tags": "无影",
+			"number": 2,
+			"msg": "聚集的群星化为一体时，新的羁绊将照亮未来！化作光芒闪耀的道路吧！上级召唤！血色之影，血界-流天灵！ ",
+			"result": "xuejieliutianling_mon",
+			"keep": false,
+			"result_number": 1
+		},
+		"attack": {
+			"damage": 1
+		}
+	},
+	{
+		"id": "shenshidun",
+		"name":"神识盾",
+		"school": "神识",
+		"level": 9,
+		"desc": "用神识保护自己。当受到伤害且伤害大于0时,如果神识大于10，则有10%几率转化10神识为50护盾。当此状态存在时，提高50护盾上限和降低10神识上限和降低3神识速率。",
+		"require": "g.techo_phy_sszdyy>=1",
+		"buy": {
+			"ganwu": 2000,
+			"paper": 200,
+			"books": 50,
+			"jingdian": 20,
+			"super_mind": 20,
+			"sp": 3
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "effect_shenshidun",
+			"name": "神识盾",
+			"duration": 10000,
+			"desc":"当受到伤害且伤害大于0时,如果神识大于10，则有10%几率转化10神识为50护盾。当此状态存在时，提高50护盾上限和降低10神识上限和降低3神识速率。",
+			"dot_effect":{
+				"shiled": {
+					"if": "bedmg",
+					"bonus_class": 1,
+					"num": 50,
+					"euse":{
+						"shenshi": 10
+					},
+					"amsg": "生成了一面护盾",
+					"percent": 10
+				}
+			},
+			"mod":{
+				"self.shiled_max": 50,
+				"shenshi.max": -10,
+				"shenshi.rate": -3
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "ruodianzhencha",
+		"name":"弱点侦察",
+		"school": "神识",
+		"level": 9,
+		"desc": "使用神识感知敌人弱点。当此状态存在时，物理暴击率和法术暴击率提高5%。",
+		"require": "g.techo_phy_sszdyy>=1",
+		"buy": {
+			"shenshi": 10,
+			"ganwu": 2000,
+			"paper": 200,
+			"books": 50,
+			"jingdian": 20,
+			"super_mind": 20,
+			"sp": 3
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "effect_ruodianzhencha",
+			"name": "弱点侦察",
+			"desc":"当此状态存在时，物理暴击率和法术暴击率提高5%。",
+			"duration": 10000,
+			"mod": {
+				"self": {
+					"physical_critical": 5,
+					"spell_critical": 5
+				}
+			}
+		},
+		"dot_unused": {
+			"id": "effect_ruodianzhencha",
+			"name": "弱点侦察",
+			"desc":"当此状态存在时，每次造成的最终伤害有5%几率提高20%。",
+			"duration": 10000,
+			"dot_effect":{
+				"damage_scale":{
+					"amsg": "侦察到了弱点",
+					"num": 1.2,
+					"percent": 5,
+					"bonus_class": 1
+				}
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "sheshengtongji",
+		"name":"舍身痛击",
+		"school": "神识",
+		"level": 9,
+		"desc": "勇猛之姿。当此状态存在时，每次造成伤害时，有1%几率额外造成你55%气血上限的伤害，当对方的层级高于你时，触发几率提升至2%。此效果触发时，降低自身60气血。",
+		"locked": true,
+		"buy": {
+			"shenshi": 10,
+			"ganwu": 2000,
+			"paper": 200,
+			"books": 50,
+			"jingdian": 20,
+			"super_mind": 20,
+			"sp": 3
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "effect_sheshengtongji",
+			"name": "舍身痛击",
+			"desc":"当此状态存在时，每次造成伤害时，有1%几率额外造成你55%气血上限的伤害，当对方的层级比你大于1时，触发几率提升至2%。此效果触发时，降低自身60气血。",
+			"duration": 10000,
+			"dot_effect":{
+				"damage_add_transfer":{
+					"target": "hp",
+					"brave": 1,
+					"brave_percent": 2,
+					"num": 0.55,
+					"percent": 1,
+					"euse":{
+						"hp": 60
+					},
+					"bonus_class": 1
+				}
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "overlord_symbol_1",
+		"name":"天誓",
+		"school": "神识",
+		"level": 1,
+		"desc": "霸王天誓，必承霸者之重。施法后，额外受到30%伤害，遇到的敌人将获得额外加强效果。敌人死亡后掉落稀有装备。",
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"buy": {
+			"shenshi": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "effect_overlord_symbol_1",
+			"name": "天誓",
+			"desc":"霸王天誓，必承霸者之重。此效果存在时，额外受到30%伤害，遇到的敌人将获得额外加强效果。敌人死亡后掉落稀有装备。",
+			"duration": 10000,
+			"dot_effect":{
+				"be_damage_scale":{
+					"num": 1.3
+				}
+			},
+			"mod": {
+				"overlord_symbol.max": 1,
+				"overlord_symbol": 1
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "hujiashibapai_1",
+		"name": "胡笳十八拍·起势",
+		"school": "归藏",
+		"level": 10,
+		"desc": "鞞鼓喧兮从夜达明，胡风浩浩兮暗塞营。感今伤昔兮三拍成，衔悲畜恨兮何时平。\n对周围敌人造成150%基础武器伤害,此攻击获得3命中加成,如果此次攻击未命中,为自己叠加一层胡笳起势,每层增加2气血恢复。",
+		"cd": 1,
+		"locked":true,
+		"buy": {
+			"ganwu": 2000
+		},
+		"cost": {
+			"tili": 15,
+			"heli": 5,
+			"chaos": 5
+		},
+		"attack": {
+			"damage": "(a.weapon.damage+a.weapon_bonus)*1.5",
+			"targets": "enemies",
+			"kind": "body",
+			"tohit": 3,
+			"bonus_class": 0,
+			"unhit_dot": {
+				"add_target": "self",
+				"id": "hujiashibapai_1_bf",
+				"name": "胡笳起势",
+				"desc": "增加2气血恢复",
+				"maxstack": 5,
+				"duration": 10,
+				"effect": {
+					"hp": 2
+				}
+			}
+		}
+	},
+	{
+		"id": "thunder_light",
+		"name": "闪空雷光",
+		"school": "真水",
+		"level": 10,
+		"desc": "用法力引动雷电攻击一名敌人,并将战斗环境更改为雷天。\n此攻击获得-10命中加成,如果此次攻击未命中,为自己增加5命中10s。",
+		"cd": 4,
+		"locked":true,
+		"buy": {
+			"ganwu": 2000
+		},
+		"cost": {
+			"tili": 15,
+			"heli": 15,
+			"alculation": 5,
+			"shenshi": 1
+		},
+		"attack": {
+			"damage": "120",
+			"kind": "water",
+			"tohit": -10,
+			"bonus_class": 1,
+			"unhit_dot": {
+				"add_target": "self",
+				"id": "thunder_light_bf",
+				"name": "闪空雷光",
+				"desc": "增加5命中",
+				"duration": 10,
+				"mod": {
+					"self.tohit": 5
+				}
+			},
+			"change_env":"env_thunder",
+			"change_env_log":"天空布满乌云"
+		}
+	},
+	{
+		"id": "land_shake",
+		"name": "地震",
+		"school": "厚土",
+		"level": 10,
+		"desc": "引发地震攻击所有敌人,并将战斗环境更改为地震。",
+		"cd": 4,
+		"locked":true,
+		"buy": {
+			"ganwu": 2000
+		},
+		"cost": {
+			"tili": 15,
+			"heli": 15,
+			"alculation": 5,
+			"shenshi": 1
+		},
+		"attack": {
+			"damage": "110",
+			"kind": "land",
+			"targets": "enemies",
+			"bonus_class": 0,
+			"change_env":"env_landshake",
+			"change_env_log":"大地摇晃"
+		}
+	},
+	{
+		"id": "spell_ske_c_elysium_radiance_2",
+		"name": "裁决-乐土光辉",
+		"school": "光",
+		"level": 10,
+		"desc":"向一位敌人发起乐土裁决。\n造成l*武器伤害/3的光系伤害，并治疗你10%伤害量的生命值。\n所有被你的裁决击中的目标都将受到光的照耀，降低{l*10}的全抵抗，降低{25%+l*5%}的暴击伤害，拥有裁决效果时受到光系伤害将会对另外一个敌人产生溅射，造成{20%+l*2%}的光系伤害。\n持续10s。",
+		"cd": 8,
+		"belong": "ske_c_elysium_radiance_2",
+		"show_require": "g.ske_c_elysium_radiance_2>0",
+		"require": "g.ske_c_elysium_radiance_2>0",
+		"cost": {
+			"tili": 20,
+			"heli": 20,
+			"alculation": 10,
+			"shenshi": 1
+		},
+		"attack": {
+			"damage": "a.ske.ske_c_elysium_radiance_2*((a.weapon.damage+a.weapon_bonus)/3)",
+			"belong": "ske_c_elysium_radiance_2",
+			"kind": "light",
+			"bonus_class": 1,
+			"leech_msg":"耀眼之光携带着生命的气息。",
+			"leech": 0.1,
+			"a_dot": {
+				"id": "dot_spell_ske_c_elysium_radiance_2",
+				"name": "裁决",
+				"duration": 10,
+				"mod": {
+					"self.physical_save": -10,
+					"self.spell_save": -10,
+					"self.critical_damage": -25
+				}
+			}
+		}
+	},
+	{
+		"id": "spell_ske_c_towside_dream_4",
+		"name": "彼界降临",
+		"school": "混沌",
+		"level": 10,
+		"desc":"你对梦的研究让你能把梦中彼界也就是黄泉的一部分拖入战场。\n此攻击获得10命中加成,如果此次攻击未命中,在10s内为自己增加10命中。\n攻击造成{10+l*17}的混沌伤害，并更改战斗环境为彼界\n位于彼界环境下的生物对类人生物造成的伤害+30，防御和闪避下降10，气血每秒降低10，混沌速率+10。",
+		"cd": 6,
+		"belong": "ske_c_towside_dream_4",
+		"show_require": "g.ske_c_towside_dream_4>0",
+		"require": "g.ske_c_towside_dream_4>0",
+		"cost": {
+			"tili": 20,
+			"chaos": 40,
+			"alculation": 20,
+			"shenshi": 3
+		},
+		"attack": {
+			"damage": "10+a.ske.ske_c_towside_dream_4*17",
+			"kind": "chaos",
+			"tohit": 10,
+			"bonus_class": 1,
+			"unhit_dot": {
+				"add_target": "self",
+				"id": "spell_ske_c_towside_dream_4_bf",
+				"name": "彼界降临",
+				"desc": "增加10命中",
+				"duration": 10,
+				"mod": {
+					"self.tohit": 10
+				}
+			},
+			"change_env":"env_ske_c_towside_dream_4_all",
+			"change_env_log":"双世交汇，同坠黄泉。"
+		}
+	},
+	{
+		"id": "spell_ske_c_wuhuanxuezhe_4",
+		"name":"初等源泉形态",
+		"school": "源泉",
+		"level": 10,
+		"desc":"你使用周围的源泉要素改造自己，在{10+l*2}秒内种族转变为初等源泉/类人生物/植物。\n持续时间内自身源泉伤害增加{5+l*5},护甲值上升{20+l},真火抗性-70%,闪避降低{30-l*3}。",
+		"cd": 19,
+		"belong": "ske_c_wuhuanxuezhe_4",
+		"show_require": "g.ske_c_wuhuanxuezhe_4>0",
+		"require": "g.ske_c_wuhuanxuezhe_4>0",
+		"cost": {
+			"tili": 50,
+			"heli": 10,
+			"alculation": 10,
+			"shenshi": 5
+		},
+		"dot": {
+			"id": "effect_spell_ske_c_wuhuanxuezhe_4",
+			"name": "初等源泉形态",
+			"desc":"你使用周围的源泉要素改造自己，在10+天理等级*2秒内种族转变为初等源泉/类人生物/植物。\n持续时间内自身源泉伤害增加5+天理等级*5,护甲值上升20+天理等级,真火抗性-70%,闪避降低30-天理等级*3。",
+			"duration": 10,
+			"race_transform":"woodform_1/humanoid/plant",
+			"mod": {
+				"self.resist.fire": -70,
+				"self.dodge": -20,
+				"player.bonuses.wood": 5,
+				"self.defense": 20
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "spell_ske_c_wuhuanxuezhe_6",
+		"name":"天江尘五劫",
+		"school": "合理",
+		"level": 10,
+		"desc":"引动天江座的力量，对敌人强制进行渡劫。\n此法术分为六次攻击。\n1.对敌人造成{l*10}的真火伤害，并尝试添加火印\n2.对敌人造成{l*10}的源泉伤害，并尝试添加木印\n3.对敌人造成{l*10}的厚土伤害，并尝试添加土印\n4.对敌人造成{l*10}的锐金伤害，并尝试添加金印\n5.对敌人造成{l*10}的真水伤害，并尝试添加水印\n6.对敌人造成{l*10}的天江劫伤害，不可被除了全体抗性之外的任何抗性抵抗，敌人每有一个上述印记，伤害乘以170%(加算)，并降低1s此法术冷却",
+		"cd": 19,
+		"belong": "ske_c_wuhuanxuezhe_6",
+		"show_require": "g.ske_c_wuhuanxuezhe_6>0",
+		"require": "g.ske_c_wuhuanxuezhe_6>0",
+		"cost": {
+			"tili": 10,
+			"heli": 40,
+			"alculation": 50,
+			"shenshi": 5
+		},
+		"attack": {
+			"damage": "5",
+			"kind": "physical",
+			"belong": "ske_c_wuhuanxuezhe_6",
+			"belong_spell": "spell_ske_c_wuhuanxuezhe_6",
+			"tohit": 10,
+			"bonus_class": 1
+		},
+		"attack1": {
+			"name": "火劫",
+			"kind": "fire",
+			"damage": 10,
+			"msg":"天江星等四三，三日同炼真火",
+			"dot": {
+				"%": "55%",
+				"id": "spell_ske_c_wuhuanxuezhe_6_fire",
+				"name":"火印",
+				"duration": 10
+			}
+		},
+		"attack2": {
+			"name": "木劫",
+			"kind": "wood",
+			"damage": 10,
+			"msg":"天地颠倒推，万木莫可知",
+			"dot": {
+				"%": "55%",
+				"id": "spell_ske_c_wuhuanxuezhe_6_wood",
+				"name":"木印",
+				"duration": 10
+			}
+		},
+		"attack3": {
+			"name": "土劫",
+			"kind": "land",
+			"damage": 10,
+			"msg":"地烈练出分浊厚，上雷下火太无情",
+			"dot": {
+				"%": "55%",
+				"id": "spell_ske_c_wuhuanxuezhe_6_land",
+				"name":"土印",
+				"duration": 10
+			}
+		},
+		"attack4": {
+			"name": "金劫",
+			"kind": "gold",
+			"damage": 10,
+			"msg":"兵戈杀劫不可阻，须臾形化更难禁",
+			"dot": {
+				"%": "55%",
+				"id": "spell_ske_c_wuhuanxuezhe_6_gold",
+				"name":"金印",
+				"duration": 10
+			}
+		},
+		"attack5": {
+			"name": "水劫",
+			"kind": "water",
+			"damage": 10,
+			"msg":"遥星之洪泽，今世没千山",
+			"dot": {
+				"%": "55%",
+				"id": "spell_ske_c_wuhuanxuezhe_6_water",
+				"name":"水印",
+				"duration": 10
+			}
+		},
+		"attack_final": {
+			"final": true,
+			"name": "天江劫",
+			"msg":"五劫今成，动心不灭，千年修为也作尘。",
+			"kind": "天江劫",
+			"damage": 10
+		}
+	},
+	{
+		"id": "spell_ske_c_ascend_1",
+		"name":"登升之印",
+		"school": "合理",
+		"level": 10,
+		"desc":"此法术获得50额外强度加值和50命中加值，释放之后，标记一个敌人使其获得「登升」印记，拥有标记的敌人死亡时，如果可以进行登升，则此敌人进入「登升」形态",
+		"cd": 1,
+		"belong": "ske_c_ascend_1",
+		"show_require": "g.ske_c_ascend_1>0",
+		"require": "g.ske_c_ascend_1>0",
+		"cost": {
+			"tili": 25,
+			"heli": 25,
+			"alculation": 100
+		},
+		"attack": {
+			"tohit": 50,
+			"dot": {
+				"id": "effect_spell_ske_c_ascend_1",
+				"name": "「登升」",
+				"kind": "heli",
+				"class_bonus": 50,
+				"duration": 600
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "spell_ske_c_ascend_2",
+		"name":"攀见石术",
+		"school": "合理",
+		"level": 10,
+		"desc":"对登升者的特殊仪式。释放之后，如果目标具有「登升」印记，降低他{10+15*l}的防御和闪避。",
+		"cd": 33,
+		"belong": "ske_c_ascend_2",
+		"show_require": "g.ske_c_ascend_2>0",
+		"require": "g.ske_c_ascend_2>0",
+		"cost": {
+			"tili": 25,
+			"heli": 25,
+			"alculation": 100
+		},
+		"attack": {
+			"dot": {
+				"id": "effect_spell_ske_c_ascend_1",
+				"name": "「登升」",
+				"kind": "heli",
+				"duration": 600,
+				"damage": "2~4"
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "spell_ske_c_ascend_3",
+		"name":"朝蛇之印",
+		"school": "合理",
+		"level": 10,
+		"desc":"对登升者的特殊仪式。释放之后，如果目标具有「登升」印记，则释放者获得「朝蛇」印记，「朝蛇」印记提供{15*l}的气血上限和{5*l}的气血恢复速度以及{l}的物理暴击率。",
+		"cd": 33,
+		"belong": "ske_c_ascend_3",
+		"show_require": "g.ske_c_ascend_3>0",
+		"require": "g.ske_c_ascend_3>0",
+		"cost": {
+			"tili": 25,
+			"heli": 25,
+			"alculation": 100
+		},
+		"attack": {
+			"dot": {
+				"id": "effect_spell_ske_c_ascend_1",
+				"name": "「登升」",
+				"kind": "heli",
+				"duration": 600,
+				"damage": "2~4"
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "spell_ske_c_ascend_4",
+		"name":"拙降",
+		"school": "合理",
+		"level": 10,
+		"desc":"释放之后，如果敌人具有「登升」印记，则造成{10+25*l}的混沌伤害并移除「登升」印记。",
+		"cd": 33,
+		"belong": "ske_c_ascend_4",
+		"show_require": "g.ske_c_ascend_4>0",
+		"require": "g.ske_c_ascend_4>0",
+		"cost": {
+			"tili": 25,
+			"heli": 25,
+			"alculation": 100
+		},
+		"attack": {
+			"dot": {
+				"id": "effect_spell_ske_c_ascend_1",
+				"name": "「登升」",
+				"kind": "heli",
+				"duration": 600,
+				"damage": "2~4"
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "stam1",
+		"name": "minor fount",
+		"level": 1,
+		"require": "g.spellbook.value>0&&g.waterlore>0",
+		"school": "water",
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"flavor": "Come thou fount",
+		"cost": {
+			"water": 1
+		},
+		"dot": {
+			"id": "fount",
+			"name": "minor fount",
+			"duration": 30,
+			"effect": {
+				"stamina": 0.3
+			}
+		}
+	},
+	{
+		"id": "clarity",
+		"level": 7,
+		"school": "charms",
+		"require": "g.charms>2",
+		"desc": "Cure yourself or an ally of a charm.",
+		"silent": true,
+		"cost": {
+			"spiritgem": 1
+		},
+		"action": {
+			"cure": "charmed",
+			"targets": "ally,self"
+		}
+	},
+	{
+		"id": "wake",
+		"level": 5,
+		"school": "mana",
+		"require": "g.lore>10",
+		"desc": "Wake a slumbering ally.",
+		"silent": true,
+		"cost": {
+			"mana": 1,
+			"herbs": 1
+		},
+		"action": {
+			"cure": "sleep",
+			"targets": "ally,self"
+		}
+	},
+	{
+		"id": "embolden",
+		"level": 3,
+		"school": "fire",
+		"require": "g.firelore>5",
+		"silent": true,
+		"desc": "Remove fear from yourself or a frightened creature.",
+		"cost": {
+			"fire": 1
+		},
+		"action": {
+			"cure": "fear",
+			"targets": "ally,self"
+		}
+	},
+	{
+		"id": "speak",
+		"level": 8,
+		"school": "air",
+		"require": "g.airlore>5",
+		"desc": "Breaks a curse of silence.",
+		"silent": true,
+		"cost": {
+			"air": 2,
+			"managem": 1
+		},
+		"action": {
+			"cure": "silence",
+			"targets": "ally,self"
+		}
+	},
+	{
+		"id": "cureparalyze",
+		"name": "cure paralysis",
+		"level": 7,
+		"school": "mana",
+		"require": "g.lore>10",
+		"silent": true,
+		"desc": "Loosens rigid muscles, nerves, and bones.",
+		"cost": {
+			"mana": 2,
+			"gems": 1
+		},
+		"action": {
+			"cure": "paralysis",
+			"targets": "ally,self"
+		}
+	},
+	{
+		"id": "curesick",
+		"level": 1,
+		"school": "light",
+		"silent": true,
+		"require": "g.lightlore>1",
+		"desc": "Cure sickness on yourself or an ally.",
+		"cost": {
+			"light": 1
+		},
+		"action": {
+			"cure": "sick",
+			"targets": "ally,self"
+		}
+	},
+	{
+		"id": "stam2",
+		"name": "fount",
+		"level": 5,
+		"require": "g.stam1>0&&g.waterlore>=5",
+		"school": "water",
+		"buy": {
+			"watergem": 10,
+			"tomes": 3
+		},
+		"cost": {
+			"water": 1
+		},
+		"dot": {
+			"id": "fount",
+			"name": "fount",
+			"duration": 60,
+			"effect": {
+				"stamina": 0.7
+			}
+		}
+	},
+	{
+		"id": "stam3",
+		"name": "greater fount",
+		"level": 10,
+		"school": "water",
+		"require": "g.stam2>0&&g.waterlore>=10&&g.tier2>0",
+		"buy": {
+			"watergem": 10,
+			"waterrune": 20,
+			"tomes": 20
+		},
+		"flavor": "Come thou fount",
+		"cost": {
+			"water": 1.5
+		},
+		"dot": {
+			"id": "fount",
+			"name": "greater fount",
+			"duration": 90,
+			"effect": {
+				"stamina": 2
+			}
+		}
+	},
+	{
+		"id": "darkbolt",
+		"name": "dark bolt",
+		"level": 1,
+		"require": "g.spellbook.value>0&&g.shadowlore>0",
+		"school": "shadow",
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"cost": {
+			"shadow": 1
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 1
+			},
+			"75": {
+				"attack.damage.min": 1
+			},
+			"300": {
+				"attack.damage.max": 2,
+				"attack.damage.min": 1,
+				"attack.tohit": 2
+			}
+		},
+		"attack": {
+			"damage": "0.5~2",
+			"dot": {
+				"kind": "shadow",
+				"duration": 15,
+				"damage": 1
+			}
+		}
+	},
+	{
+		"id": "blast",
+		"name": "blasting curse",
+		"level": 3,
+		"require": "g.shadowlore>=5&&g.evil>0",
+		"school": "shadow",
+		"buy": {
+			"research": 750,
+			"shadowgem": 1
+		},
+		"cost": {
+			"shadow": 3
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 3
+			},
+			"75": {
+				"attack.damage.min": 3
+			},
+			"300": {
+				"attack.damage.max": 3,
+				"attack.damage.min": 3,
+				"attack.tohit": 4
+			}
+		},
+		"attack": {
+			"damage": "4~7",
+			"dot": {
+				"kind": "shadow",
+				"duration": 10,
+				"damage": 0.7,
+				"leech": 1
+			}
+		}
+	},
+	{
+		"id": "deathbolt",
+		"name": "death bolt",
+		"level": 7,
+		"require": "g.darkbolt>0&&g.shadowlore>=7&&g.tier1>0",
+		"school": "shadow",
+		"buy": {
+			"shadowgem": 10,
+			"tomes": 3
+		},
+		"cost": {
+			"shadow": 5
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 4
+			},
+			"75": {
+				"attack.damage.min": 5
+			},
+			"300": {
+				"attack.damage.max": 4,
+				"attack.damage.min": 4,
+				"attack.tohit": 4
+			}
+		},
+		"attack": {
+			"damage": "15~20",
+			"dot": {
+				"kind": "drain",
+				"duration": 30,
+				"damage": 3
+			}
+		}
+	},
+	{
+		"id": "quell",
+		"level": 15,
+		"school": "mana",
+		"require": "g.lore>=35&&g.tier5>0",
+		"desc": "The full weight of a wizard's gaze is often overpowering.",
+		"cd": 200,
+		"buy": {
+			"arcana": 30
+		},
+		"cost": {
+			"mana": 5
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"duration": 60,
+				"mod": {
+					"self.speed": -20
+				}
+			}
+		}
+	},
+	{
+		"id": "lifedrain",
+		"name": "drain life",
+		"level": 12,
+		"school": "shadow",
+		"require": "g.necromancy>=8&&g.shadowlore>=25",
+		"buy": {
+			"research": 5000,
+			"shadowgem": 20,
+			"tomes": 10
+		},
+		"cost": {
+			"shadow": 7
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 5
+			},
+			"75": {
+				"attack.damage.min": 5
+			},
+			"300": {
+				"attack.damage.max": 5,
+				"attack.damage.min": 5
+			}
+		},
+		"attack": {
+			"damage": "0~5",
+			"dot": {
+				"kind": "drain",
+				"leech": 0.75,
+				"duration": 60,
+				"damage": "15~30"
+			}
+		}
+	},
+	{
+		"id": "gloom",
+		"level": 2,
+		"require": "g.shadowlore>=5&&g.shadow>8",
+		"school": "shadow",
+		"desc": "Decreases the target's resistance to shadow magic.",
+		"buy": {
+			"research": 100,
+			"codices": 1,
+			"shadowgem": 1
+		},
+		"cost": {
+			"shadow": 2
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"kind": "shadow",
+				"duration": 100,
+				"self.resist.shadow": -10
+			}
+		}
+	},
+	{
+		"id": "poisonnettle",
+		"name": "poison nettle",
+		"level": 1,
+		"require": "g.spellbook.value>0&&g.naturelore>0",
+		"school": "nature",
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"cost": {
+			"nature": 1
+		},
+		"attack": {
+			"dot": {
+				"kind": "poison",
+				"duration": 10,
+				"damage": "0.5~1"
+			}
+		}
+	},
+	{
+		"id": "whirl1",
+		"name": "whirling step",
+		"level": 1,
+		"require": "g.spellbook.value>0&&g.airlore>0",
+		"school": "air",
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"cost": {
+			"air": 1
+		},
+		"dot": {
+			"id": "whirlingstep",
+			"name": "whirling step",
+			"duration": 45,
+			"mod": {
+				"self.dodge": 1
+			}
+		}
+	},
+	{
+		"id": "whirl2",
+		"name": "whirling step II",
+		"level": 3,
+		"school": "air",
+		"require": "g.whirl1>0&&g.airlore>=5",
+		"buy": {
+			"research": 500,
+			"codices": 5,
+			"airgem": 1
+		},
+		"cost": {
+			"air": 4
+		},
+		"dot": {
+			"id": "whirlingstep",
+			"name": "whirling step",
+			"duration": 60,
+			"mod": {
+				"self": {
+					"dodge": 2,
+					"speed": 0.3
+				}
+			}
+		}
+	},
+	{
+		"id": "whirl3",
+		"name": "whirling step III",
+		"level": 5,
+		"require": "g.whirl2>0&&g.airlore>=10&&g.tier2>0",
+		"school": "air",
+		"buy": {
+			"airgem": 10,
+			"tomes": 1
+		},
+		"cost": {
+			"air": 7
+		},
+		"dot": {
+			"id": "whirlingstep",
+			"name": "whirling step",
+			"duration": 80,
+			"mod": {
+				"self": {
+					"dodge": 5,
+					"speed": 0.55
+				}
+			}
+		}
+	},
+	{
+		"id": "mana1",
+		"name": "minor mana",
+		"school": "mana",
+		"require": "g.spellbook.value>0&&g.lore>=4",
+		"level": 1,
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"cost": {
+			"mana": 0.1
+		},
+		"dot": {
+			"id": "dotmana",
+			"name": "minor mana",
+			"duration": 30,
+			"effect": {
+				"mana": 0.25
+			}
+		}
+	},
+	{
+		"id": "mana2",
+		"name": "lesser mana",
+		"school": "mana",
+		"level": 2,
+		"require": "g.mana1>0&&g.lore>=8&&g.tier1>0",
+		"buy": {
+			"research": 30,
+			"codices": 1,
+			"managem": 1
+		},
+		"cost": {
+			"mana": 0.3
+		},
+		"dot": {
+			"id": "dotmana",
+			"name": "lesser mana",
+			"duration": 60,
+			"effect": {
+				"mana": 0.45
+			}
+		}
+	},
+	{
+		"id": "mana3",
+		"name": "mana",
+		"school": "mana",
+		"require": "g.mana2>0&&g.lore>=12&&g.tier3>0",
+		"level": 5,
+		"buy": {
+			"research": 200,
+			"codices": 10,
+			"managem": 5
+		},
+		"cost": {
+			"mana": 1
+		},
+		"dot": {
+			"id": "dotmana",
+			"name": "mana",
+			"duration": 120,
+			"effect": {
+				"mana": 0.8
+			}
+		}
+	},
+	{
+		"id": "lightregen1",
+		"name": "pulsing light",
+		"require": "g.spellbook.value>0&&g.lightlore>0",
+		"school": "light",
+		"desc": "A small pulse of light zips around you, mending injuries.",
+		"level": 1,
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"cost": {
+			"light": 1
+		},
+		"dot": {
+			"duration": 45,
+			"effect": {
+				"hp": 1.1
+			}
+		}
+	},
+	{
+		"id": "lightregen2",
+		"name": "pulsing light II",
+		"school": "light",
+		"require": "g.lightregen1>0&&g.lightlore>=5",
+		"desc": "A pulse of light zips around you, mending injuries.",
+		"level": 3,
+		"buy": {
+			"research": 100,
+			"codices": 1,
+			"lightgem": 3
+		},
+		"cost": {
+			"light": 5
+		},
+		"dot": {
+			"duration": 60,
+			"effect": {
+				"hp": 2
+			}
+		}
+	},
+	{
+		"id": "lightregen3",
+		"name": "pulsing light III",
+		"school": "light",
+		"desc": "A large pulse of light zips around you, mending injuries.",
+		"level": 5,
+		"require": "g.lightregen2>0&&g.lightlore>=8&&g.tier1>0",
+		"buy": {
+			"research": 100,
+			"tomes": 1,
+			"lightgem": 10
+		},
+		"cost": {
+			"light": 10
+		},
+		"dot": {
+			"duration": 120,
+			"effect": {
+				"hp": 5
+			}
+		}
+	},
+	{
+		"id": "magicmissile",
+		"name": "magic missile",
+		"level": 1,
+		"school": "mana",
+		"require": "g.spellbook.value>0&&g.lore>0",
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"at": {
+			"10": {
+				"attack.damage.max": 1
+			},
+			"50": {
+				"attack.damage.min": 1
+			},
+			"200": {
+				"attack.damage.max": 1,
+				"attack.damage.min": 1
+			}
+		},
+		"cost": {
+			"mana": 1
+		},
+		"attack": {
+			"damage": "1.5~2.5",
+			"kind": "mana",
+			"tohit": 2
+		}
+	},
+	{
+		"id": "prismaticspray",
+		"name": "prismatic spray",
+		"level": 1,
+		"school": "mana",
+		"require": "g.spellbook.value>0&&g.lore>0",
+		"desc": "Lines of arcane energy damage all enemies.",
+		"buy": {
+			"research": 100,
+			"scrolls": 10
+		},
+		"at": {
+			"25": {
+				"attack.tohit": 1,
+				"attack.damage.max": 1
+			},
+			"100": {
+				"attack.tohit": 2,
+				"attack.damage.min": 1
+			}
+		},
+		"cost": {
+			"mana": 1
+		},
+		"attack": {
+			"targets": "enemies",
+			"damage": "0~2",
+			"kind": "mana",
+			"tohit": 1
+		}
+	},
+	{
+		"id": "prismaticspray2",
+		"name": "greater prismatic spray",
+		"level": 9,
+		"school": "mana",
+		"require": "g.tier3>0",
+		"desc": "Lines of arcane energy strike all enemies.",
+		"buy": {
+			"research": 100,
+			"scrolls": 10
+		},
+		"at": {
+			"25": {
+				"attack.tohit": 3,
+				"attack.damage.max": 3
+			},
+			"100": {
+				"attack.tohit": 3,
+				"attack.damage.min": 3
+			}
+		},
+		"cost": {
+			"mana": 8
+		},
+		"attack": {
+			"targets": "enemies",
+			"damage": "12~30",
+			"kind": "mana",
+			"tohit": 4
+		}
+	},
+	{
+		"id": "moveearth",
+		"name": "fling stone",
+		"desc": "Throw a rock using magic",
+		"school": "earth",
+		"require": "g.earthlore>=5",
+		"level": 1,
+		"buy": {
+			"research": 30,
+			"scrolls": 5
+		},
+		"cost": {
+			"earth": 1
+		},
+		"attack": {
+			"damage": "2~6",
+			"kind": "earth",
+			"tohit": 4
+		}
+	},
+	{
+		"id": "slow1",
+		"name": "mud",
+		"desc": "Engulfs target in mud",
+		"school": "earth",
+		"require": "g.player.level>=4&&g.earthlore>=5",
+		"level": 2,
+		"buy": {
+			"research": 30,
+			"scrolls": 5,
+			"earthgem": 1
+		},
+		"cost": {
+			"earth": 5
+		},
+		"attack": {
+			"dot": {
+				"duration": 20,
+				"mod": {
+					"self.speed": -0.2
+				}
+			}
+		}
+	},
+	{
+		"id": "mk_spirit",
+		"name": "call spirit",
+		"school": "spirit",
+		"level": 1,
+		"require": "g.spiritlore>0",
+		"buy": {
+			"research": 30,
+			"scrolls": 5
+		},
+		"cost": {
+			"spirit": 5
+		},
+		"result": "wisp"
+	},
+	{
+		"id": "mk_zombie",
+		"name": "raise zombie",
+		"desc": "Summon a zombie to fight for you",
+		"school": "shadow",
+		"require": "g.shadowlore>0&&g.reanimation>0",
+		"level": 2,
+		"buy": {
+			"research": 30,
+			"scrolls": 5,
+			"shadowgem": 1
+		},
+		"cost": {
+			"shadow": 7
+		},
+		"result": "zombie"
+	},
+	{
+		"id": "firedart",
+		"name": "fire dart",
+		"level": 1,
+		"require": "g.spellbook.value>0&&g.firelore>0",
+		"school": "fire",
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 1.5
+			},
+			"75": {
+				"attack.damage.min": 1.5
+			},
+			"300": {
+				"attack.damage.max": 2,
+				"attack.damage.min": 1,
+				"attack.tohit": 2
+			}
+		},
+		"cost": {
+			"fire": 1
+		},
+		"attack": {
+			"damage": "3~5",
+			"kind": "fire",
+			"tohit": 1
+		}
+	},
+	{
+		"id": "firebolt",
+		"name": "fire bolt",
+		"level": 2,
+		"desc": "A small bolt of flame.",
+		"require": "g.firedart>0&&g.firelore>=5",
+		"school": "fire",
+		"buy": {
+			"research": 30,
+			"scrolls": 5,
+			"firegem": 1
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 2
+			},
+			"75": {
+				"attack.damage.min": 2
+			},
+			"300": {
+				"attack.damage.max": 2,
+				"attack.damage.min": 2,
+				"attack.tohit": 3
+			}
+		},
+		"cost": {
+			"fire": 4
+		},
+		"attack": {
+			"damage": "4~5",
+			"tohit": 3,
+			"kind": "fire"
+		}
+	},
+	{
+		"id": "searingbolt",
+		"name": "searing bolt",
+		"level": 3,
+		"desc": "A bolt of fire with lingering flames",
+		"school": "fire",
+		"require": "g.firebolt>0&&g.firelore>=8&&g.tier1>0",
+		"buy": {
+			"research": 100,
+			"codices": 10,
+			"firegem": 3
+		},
+		"cost": {
+			"fire": 5
+		},
+		"at": {
+			"30": {
+				"attack.damage.max": 3
+			},
+			"100": {
+				"attack.damage.min": 3
+			},
+			"300": {
+				"attack.damage.max": 4,
+				"attack.damage.min": 3,
+				"attack.tohit": 5
+			}
+		},
+		"attack": {
+			"damage": "7~10",
+			"tohit": 5,
+			"kind": "fire",
+			"dot": {
+				"dmg": "2~3",
+				"duration": 10
+			}
+		}
+	},
+	{
+		"id": "lightspear",
+		"name": "light spear",
+		"level": 3,
+		"desc": "A barb of solid light",
+		"require": "g.lightlore>0",
+		"school": "light",
+		"buy": {
+			"research": 100,
+			"codices": 10,
+			"lightgem": 3
+		},
+		"cost": {
+			"light": 2
+		},
+		"at": {
+			"30": {
+				"attack.damage.min": 3,
+				"attack.tohit": 2
+			},
+			"100": {
+				"attack.damage.max": 3,
+				"attack.tohit": 3
+			},
+			"300": {
+				"attack.damage.max": 4,
+				"attack.damage.min": 3
+			}
+		},
+		"attack": {
+			"damage": "5~8",
+			"tohit": 8,
+			"kind": "light"
+		}
+	},
+	{
+		"id": "lightspear2",
+		"name": "greater light spear",
+		"level": 7,
+		"desc": "A lance of solid light",
+		"school": "light",
+		"require": "g.lightspear>0&&g.lightlore>=5",
+		"buy": {
+			"research": 100,
+			"codices": 10,
+			"lightgem": 3
+		},
+		"cost": {
+			"light": 4
+		},
+		"at": {
+			"30": {
+				"attack.damage.min": 3,
+				"attack.tohit": 2
+			},
+			"100": {
+				"attack.damage.max": 3,
+				"attack.tohit": 3
+			},
+			"300": {
+				"attack.damage.max": 4,
+				"attack.damage.min": 3,
+				"attack.tohit": 4
+			}
+		},
+		"attack": {
+			"damage": "21~29",
+			"tohit": 8,
+			"kind": "light"
+		}
+	},
+	{
+		"id": "magmabolt",
+		"name": "magma bolt",
+		"level": 5,
+		"desc": "A bolt of liquid-hot magma",
+		"school": "fire",
+		"require": "g.searingbolt>0&&g.firelore>=12&&g.tier3>0",
+		"buy": {
+			"research": 100,
+			"tomes": 1,
+			"firegem": 10
+		},
+		"cost": {
+			"fire": 7
+		},
+		"at": {
+			"50": {
+				"attack.damage.max": 4
+			},
+			"150": {
+				"attack.damage.min": 4
+			},
+			"500": {
+				"attack.damage.max": 5,
+				"attack.damage.min": 4,
+				"attack.tohit": 7
+			}
+		},
+		"attack": {
+			"damage": "15~20",
+			"tohit": 7,
+			"kind": "fire",
+			"dot": {
+				"dmg": "5~7",
+				"duration": 20
+			}
+		}
+	},
+	{
+		"id": "waterblast",
+		"name": "water spray",
+		"level": 3,
+		"desc": "A violent burst of water.",
+		"school": "water",
+		"require": "g.waterlore>0",
+		"buy": {
+			"research": 30,
+			"scrolls": 10
+		},
+		"cost": {
+			"water": 1
+		},
+		"attack": {
+			"damage": "2~5",
+			"tohit": 3,
+			"kind": "water"
+		}
+	},
+	{
+		"id": "frostbolt",
+		"name": "frost bolt",
+		"level": 2,
+		"require": "g.spellbook.value>0&&g.waterlore>0",
+		"desc": "A sharp shard of ice.",
+		"school": "water",
+		"buy": {
+			"research": 30,
+			"scrolls": 10,
+			"watergem": 1
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 1.5
+			},
+			"75": {
+				"attack.damage.min": 1.5
+			},
+			"300": {
+				"attack.damage.max": 2,
+				"attack.damage.min": 1,
+				"attack.tohit": 2
+			}
+		},
+		"cost": {
+			"water": 2
+		},
+		"attack": {
+			"damage": "6~11",
+			"tohit": 5,
+			"kind": "water"
+		}
+	},
+	{
+		"id": "frostbolt2",
+		"name": "frost bolt II",
+		"level": 6,
+		"require": "g.frostbolt>0&&g.waterlore>=5",
+		"desc": "Fling a large shard of ice.",
+		"school": "water",
+		"buy": {
+			"codices": 10,
+			"watergem": 6
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 2
+			},
+			"75": {
+				"attack.damage.min": 2
+			},
+			"300": {
+				"attack.damage.max": 3,
+				"attack.damage.min": 2,
+				"attack.tohit": 7
+			}
+		},
+		"cost": {
+			"water": 4
+		},
+		"attack": {
+			"damage": "16~21",
+			"tohit": 8,
+			"kind": "water"
+		}
+	},
+	{
+		"id": "frostbolt3",
+		"name": "frost bolt III",
+		"level": 10,
+		"require": "g.frostbolt2>0&&g.waterlore>=8&&g.tier1>0",
+		"desc": "A heavy shard of ice.",
+		"school": "water",
+		"buy": {
+			"codices": 10,
+			"watergem": 6
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 2
+			},
+			"75": {
+				"attack.damage.min": 2
+			},
+			"300": {
+				"attack.damage.max": 3,
+				"attack.damage.min": 2,
+				"attack.tohit": 7
+			}
+		},
+		"cost": {
+			"water": 7
+		},
+		"attack": {
+			"damage": "36~45",
+			"tohit": 8,
+			"kind": "water"
+		}
+	},
+	{
+		"id": "poisonward",
+		"name": "poison ward",
+		"require": "g.spellbook.value>0&&g.naturelore>0",
+		"level": 2,
+		"school": "nature",
+		"desc": "Reduce the efficacy of common venoms",
+		"buy": {
+			"research": 50,
+			"scrolls": 10
+		},
+		"cost": {
+			"nature": 3
+		},
+		"dot": {
+			"duration": 30,
+			"mod": {
+				"self.resist.poison": 20
+			}
+		}
+	},
+	{
+		"id": "vinewhip",
+		"name": "vine whip",
+		"level": 3,
+		"desc": "Vines lash out from the ground.",
+		"school": "nature",
+		"require": "g.player.level>=4&&g.naturelore>=5",
+		"buy": {
+			"research": 50,
+			"scrolls": 5,
+			"naturegem": 1
+		},
+		"at": {
+			"25": {
+				"attack.damage.max": 1.5
+			},
+			"75": {
+				"attack.damage.min": 1.5
+			},
+			"300": {
+				"attack.damage.max": 2,
+				"attack.damage.min": 1,
+				"attack.tohit": 2
+			}
+		},
+		"cost": {
+			"nature": 3
+		},
+		"attack": {
+			"damage": "6.5~10.5",
+			"tohit": 3,
+			"kind": "nature"
+		}
+	},
+	{
+		"id": "mk_hobgoblin",
+		"name": "summon hobgoblin",
+		"school": "mana",
+		"desc": "In combat, summon an hobboblin to fight for you",
+		"level": 6,
+		"require": "g.conjuration>4",
+		"buy": {
+			"research": 100,
+			"tomes": 1
+		},
+		"cost": {
+			"mana": 10
+		},
+		"result": "hobgoblin"
+	},
+	{
+		"id": "mk_spider",
+		"name": "summon spider",
+		"desc": "Summon a spider to fight for you",
+		"school": "nature",
+		"require": "g.conjuration>2&&g.naturelore>=5",
+		"level": 5,
+		"buy": {
+			"research": 100,
+			"scrolls": 20
+		},
+		"cost": {
+			"nature": 4
+		},
+		"result": "lgspider"
+	},
+	{
+		"id": "mk_raven",
+		"name": "summon raven",
+		"desc": "In combat, summon a raven to fight for you",
+		"school": "nature",
+		"require": "g.conjuration>2&&g.naturelore>=3",
+		"level": 3,
+		"buy": {
+			"research": 100,
+			"scrolls": 20
+		},
+		"cost": {
+			"nature": 4
+		},
+		"result": "raven"
+	},
+	{
+		"id": "reanimate",
+		"level": 3,
+		"only": "undead",
+		"school": "shadow",
+		"require": "g.reanimation>0",
+		"desc": "Reanimate a weak (up to level 6) undead minion. From the \"Minions\" tab only",
+		"tags": "rez",
+		"buy": {
+			"research": 50,
+			"scrolls": 25
+		},
+		"cost": {
+			"bonedust": 5,
+			"shadow": 5
+		}
+	},
+	{
+		"id": "reanimate2",
+		"name": "greater reanimate",
+		"desc": "Reanimate a stronger (up to level 10) undead minion. From the \"Minions\" tab only",
+		"level": 5,
+		"only": "undead",
+		"school": "shadow",
+		"tags": "rez",
+		"require": "g.reanimation>=7&&g.tier1>0",
+		"buy": {
+			"codices": 10,
+			"research": 500
+		},
+		"cost": {
+			"bonedust": 10,
+			"bones": 3,
+			"shadow": 5
+		}
+	},
+	{
+		"id": "revive",
+		"only": "humanoid,goblinoid",
+		"level": 3,
+		"school": "spirit",
+		"desc": "Call back to life a weak (up to level 6) humanoid or goblinoid minion. From the \"Minions\" tab only",
+		"tags": "rez",
+		"require": "g.spiritlore>=4",
+		"buy": {
+			"research": 100,
+			"scrolls": 20
+		},
+		"cost": {
+			"scrolls": 5,
+			"mana": 5
+		}
+	},
+	{
+		"id": "tend",
+		"name": "magic tending",
+		"only": "beast",
+		"level": 3,
+		"school": "nature",
+		"desc": "Revive a weak (up to level 6) beast minion. From the \"Minions\" tab only",
+		"tags": "rez",
+		"require": "g.naturelore>=4",
+		"buy": {
+			"research": 100,
+			"scrolls": 20
+		},
+		"cost": {
+			"herbs": 5,
+			"nature": 5
+		}
+	},
+	{
+		"id": "wildtend",
+		"name": "wild tending",
+		"tags": "rez",
+		"only": "beast",
+		"require": "(g.druid+g.warden+g.kell+g.fey)>0",
+		"level": 5,
+		"school": "nature",
+		"desc": "Revive a stronger (up to level 10) beast minion. From the \"Minions\" tab only",
+		"buy": {
+			"research": 100,
+			"codices": 25
+		},
+		"cost": {
+			"herbs": 10,
+			"nature": 7
+		}
+	},
+	{
+		"id": "flamestrike",
+		"school": "fire",
+		"desc": "Imbue your weapon with flame before striking.",
+		"level": 4,
+		"require": "g.bladelore>=4&&g.firelore>=8",
+		"buy": {
+			"tomes": 5,
+			"firegem": 10
+		},
+		"cost": {
+			"fire": 3,
+			"hp": 10,
+			"stamina": 1
+		},
+		"attack": {
+			"kind": "fire",
+			"bonus": 5,
+			"dmg": "(a.weapon.damage+a.getBonus( a.weapon.kind ))*2"
+		}
+	},
+	{
+		"id": "mk_blade",
+		"name": "summon blade",
+		"school": "blade",
+		"desc": "In combat, summon a magical blade to fight for you",
+		"require": "(g.battlemage+g.spellblade+g.dreadlord+g.summoner)>0",
+		"level": 7,
+		"buy": {
+			"research": 5000,
+			"tomes": 5
+		},
+		"cost": {
+			"mana": 12
+		},
+		"result": "magicblade"
+	},
+	{
+		"id": "mk_murder",
+		"name": "summon murder",
+		"school": "nature",
+		"desc": "In combat, summon a squad of murdering raven to fight for you",
+		"require": "summoner",
+		"level": 5,
+		"cd": 150,
+		"buy": {
+			"research": 1000,
+			"codices": 10,
+			"managem": 3
+		},
+		"cost": {
+			"mana": 7
+		},
+		"result": [
+			"raven",
+			"raven",
+			"raven",
+			"raven",
+			"raven"
+		]
+	},
+	{
+		"id": "mk_unicorn",
+		"name": "summon unicorn",
+		"school": "light",
+		"desc": "In combat, summon an unicorn to fight for you",
+		"require": "g.evil==0&&(g.seer+g.oracle+g.summoner)>0&&g.magicbeasts>=5",
+		"level": 5,
+		"cd": 150,
+		"buy": {
+			"research": 1000,
+			"tomes": 10,
+			"lightgem": 5
+		},
+		"cost": {
+			"light": 10
+		},
+		"result": "unicorn"
+	},
+	{
+		"id": "tosand",
+		"name": "to sand",
+		"desc": "Transform your body into fine-grained sand.",
+		"school": "earth",
+		"require": "g.titan>0&&g.geosculpting>11",
+		"level": 15,
+		"buy": {
+			"research": 8000,
+			"tomes": 25,
+			"earthrune": 25
+		},
+		"cost": {
+			"earth": 15
+		},
+		"dot": {
+			"duration": 10,
+			"mod": {
+				"self.defense": 200
+			}
+		}
+	},
+	{
+		"id": "quicksand",
+		"desc": "Command the earth to swallow the enemy",
+		"school": "earth",
+		"require": "g.geosculpting>7",
+		"level": 15,
+		"buy": {
+			"sp": 1,
+			"research": 8000,
+			"tomes": 25,
+			"earthrune": 25
+		},
+		"cost": {
+			"earth": 15
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"duration": 15,
+				"dmg": "15~25",
+				"mod": {
+					"self.speed": -12
+				}
+			}
+		}
+	},
+	{
+		"id": "entomb",
+		"desc": "Bury your enemies deep beneath the ground.",
+		"school": "earth",
+		"require": "g.titan>0",
+		"level": 25,
+		"buy": {
+			"sp": 15,
+			"research": 30000,
+			"tomes": 200,
+			"codices": 700,
+			"earthrune": 60,
+			"earthgem": 350
+		},
+		"cost": {
+			"earth": 25,
+			"sindel": 2
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"duration": 30,
+				"dmg": "50~75",
+				"mod": {
+					"self.speed": -25
+				}
+			}
+		}
+	},
+	{
+		"id": "smite",
+		"school": "earth",
+		"require": "g.hammerlore>=5&&g.earthlore>=8&&g.tier1>0",
+		"level": 5,
+		"cd": 2,
+		"buy": {
+			"research": 500
+		},
+		"cost": {
+			"earth": 3,
+			"stamina": 1
+		},
+		"attack": {
+			"damage": "(a.weapon.damage+a.getBonus( a.weapon.kind ))*2.5",
+			"tohit": 3,
+			"kind": "earth"
+		}
+	},
+	{
+		"id": "fissure",
+		"desc": "Crack the earth beneath the feet of your enemy.",
+		"cd": 200,
+		"school": "earth",
+		"require": "g.hammerlore>=10&&g.earthlore>=12&&g.tier3>0",
+		"level": 5,
+		"buy": {
+			"research": 12000
+		},
+		"cost": {
+			"earth": 8,
+			"stamina": 12
+		},
+		"attack": {
+			"damage": "(a.weapon.damage+a.getBonus( a.weapon.kind ))*6",
+			"tohit": 5,
+			"kind": "earth",
+			"dot": {
+				"kind": "earth",
+				"duration": 4,
+				"id": "prone"
+			}
+		}
+	},
+	{
+		"id": "prolight",
+		"name": "protection: light",
+		"school": "shadow",
+		"require": "g.player.level>=4&&g.shadowlore>=3",
+		"level": 2,
+		"buy": {
+			"research": 100,
+			"scrolls": 10
+		},
+		"cost": {
+			"shadow": 2
+		},
+		"dot": {
+			"duration": 20,
+			"mod": {
+				"self.resist.holy": 10,
+				"self.resist.light": 10
+			}
+		}
+	},
+	{
+		"id": "proshadow",
+		"name": "protection: shadow",
+		"school": "light",
+		"require": "g.player.level>=4&&g.lightlore>=3",
+		"level": 2,
+		"buy": {
+			"research": 100,
+			"scrolls": 5
+		},
+		"cost": {
+			"light": 2
+		},
+		"dot": {
+			"duration": 20,
+			"mod": {
+				"self.resist.shadow": 10,
+				"self.resist.undead": 10
+			}
+		}
+	},
+	{
+		"id": "profire",
+		"name": "protection: fire",
+		"school": "fire",
+		"level": 2,
+		"require": "g.player.level>=4&&g.firelore>=2",
+		"buy": {
+			"research": 100,
+			"scrolls": 10
+		},
+		"cost": {
+			"fire": 1
+		},
+		"dot": {
+			"duration": 20,
+			"mod": {
+				"self.resist.fire": 10
+			}
+		}
+	},
+	{
+		"id": "prowater",
+		"name": "protection: water",
+		"school": "water",
+		"level": 2,
+		"require": "g.player.level>=4&&g.waterlore>=3",
+		"buy": {
+			"research": 100,
+			"scrolls": 5
+		},
+		"cost": {
+			"water": 1
+		},
+		"dot": {
+			"duration": 20,
+			"mod": {
+				"self.resist.water": 10,
+				"self.resist.cold": 10
+			}
+		}
+	},
+	{
+		"id": "pronature",
+		"name": "protection: nature",
+		"school": "nature",
+		"level": 2,
+		"require": "g.player.level>=4&&g.naturelore>=3",
+		"buy": {
+			"research": 25,
+			"scrolls": 5
+		},
+		"cost": {
+			"nature": 1
+		},
+		"dot": {
+			"duration": 20,
+			"mod": {
+				"self.resist.nature": 10,
+				"self.resist.poison": 10
+			}
+		}
+	},
+	{
+		"id": "heal1",
+		"level": 2,
+		"name": "sealing light",
+		"desc": "Seams of light close your wounds.",
+		"school": "light",
+		"require": "g.player.level>=4&&g.lightlore>=4",
+		"buy": {
+			"research": 30,
+			"scrolls": 5,
+			"lightgem": 1
+		},
+		"cost": {
+			"light": 5
+		},
+		"result": {
+			"self.hp": 20
+		}
+	},
+	{
+		"id": "unseenservant",
+		"level": 2,
+		"name": "unseen servant",
+		"desc": "An invisible servant manages your affairs.",
+		"school": "air",
+		"require": "g.player.level>=4&&g.airlore>=4",
+		"buy": {
+			"research": 30,
+			"scrolls": 5,
+			"airgem": 1
+		},
+		"cost": {
+			"air": 5
+		},
+		"dot": {
+			"duration": 45,
+			"effect": {
+				"gold": 2
+			}
+		}
+	},
+	{
+		"id": "insight",
+		"name": "insight",
+		"level": 3,
+		"desc": "All your studies fall neatly into place.",
+		"flavor": "I know the pieces fit",
+		"school": "light",
+		"require": "g.player.level>=5&&g.lightlore>=5",
+		"buy": {
+			"research": 500,
+			"codices": 1,
+			"lightgem": 1
+		},
+		"cost": {
+			"light": 5
+		},
+		"mod": {
+			"lore.rate": "0.005",
+			"naturelore.rate": "0.01",
+			"lightlore.rate": "0.01",
+			"languages.rate": "0.01"
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"lore.rate": 0.5,
+				"naturelore.rate": "0.2+2%",
+				"lightlore.rate": "0.2+2%",
+				"languages.rate": "0.2+2%"
+			}
+		}
+	},
+	{
+		"id": "fireinsight",
+		"name": "fire sense",
+		"desc": "Temporarily increase your natural aptitude for fire.",
+		"level": 2,
+		"school": "fire",
+		"require": "g.firelore>=1",
+		"buy": {
+			"research": 100,
+			"codices": 1,
+			"firegem": 1
+		},
+		"cost": {
+			"fire": 2
+		},
+		"mod": {
+			"lore.rate": "0.005",
+			"firelore.rate": "0.01"
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"lore.rate": 0.5,
+				"firelore.rate": "0.2+2%"
+			}
+		}
+	},
+	{
+		"id": "waterinsight",
+		"name": "water sense",
+		"desc": "Temporarily increase your natural aptitude for water.",
+		"level": 2,
+		"school": "water",
+		"require": "g.waterlore>=1",
+		"cost": {
+			"water": 2
+		},
+		"buy": {
+			"research": 100,
+			"codices": 1,
+			"watergem": 1
+		},
+		"mod": {
+			"lore.rate": "0.005",
+			"waterlore.rate": "0.01"
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"lore.rate": 0.5,
+				"waterlore.rate": "0.2+2%"
+			}
+		}
+	},
+	{
+		"id": "airinsight",
+		"name": "wind sense",
+		"desc": "Temporarily increase your natural aptitude for air.",
+		"level": 2,
+		"school": "air",
+		"require": "g.airlore>=1",
+		"cost": {
+			"air": 2
+		},
+		"buy": {
+			"research": 100,
+			"codices": 1,
+			"airgem": 1
+		},
+		"mod": {
+			"lore.rate": "0.005",
+			"airlore.rate": "0.01"
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"lore.rate": 0.5,
+				"airlore.rate": "0.2+2%"
+			}
+		}
+	},
+	{
+		"id": "darkpromptings",
+		"name": "dark promptings",
+		"level": 3,
+		"desc": "Malevolent voices whisper secrets to your mind.",
+		"require": "g.player.level>=5&&g.shadowlore>=5",
+		"school": "shadow",
+		"buy": {
+			"research": 500,
+			"codices": 1,
+			"shadowgem": 1
+		},
+		"cost": {
+			"shadow": 5,
+			"bonedust": 1
+		},
+		"mod": {
+			"dissection.rate": "0.01",
+			"shadowlore.rate": "0.01",
+			"demonology.rate": "0.01",
+			"reanimation.rate": "0.01"
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"lore.rate": 0.5,
+				"dissection.rate": "0.3+2%",
+				"shadowlore.rate": "0.3+2%",
+				"demonology.rate": "0.3+2%",
+				"reanimation.rate": "0.3+2%"
+			}
+		}
+	},
+	{
+		"id": "wildgrowth",
+		"name": "wild growth",
+		"level": 1,
+		"desc": "Herbs sprout more quickly from the earth.",
+		"school": "nature",
+		"require": "g.spellbook.value>0&&g.herbalism>=3&&g.naturelore>0",
+		"buy": {
+			"research": 50,
+			"scrolls": 5
+		},
+		"cost": {
+			"nature": 2
+		},
+		"dot": {
+			"duration": 45,
+			"mod": {
+				"herbs.rate": 0.5
+			}
+		}
+	},
+	{
+		"id": "magebolt",
+		"name": "mage bolt",
+		"level": 9,
+		"require": "(g.mage+g.wizard+g.wizard2+g.highmage)>0",
+		"school": "mana",
+		"buy": {
+			"research": 5000,
+			"tomes": 5,
+			"managem": 20
+		},
+		"at": {
+			"10": {
+				"attack.damage.max": 5
+			},
+			"50": {
+				"attack.damage.min": 5
+			},
+			"200": {
+				"attack.damage.max": 5,
+				"attack.damage.min": 5
+			}
+		},
+		"cost": {
+			"mana": 4
+		},
+		"attack": {
+			"damage": "10~20",
+			"kind": "mana",
+			"tohit": 10
+		}
+	},
+	{
+		"id": "whisper",
+		"level": 2,
+		"desc": "Spirits whisper hidden truths as you study.",
+		"school": "spirit",
+		"require": "g.player.level>=4&&g.spiritlore>=4",
+		"buy": {
+			"research": 100,
+			"scrolls": 5,
+			"spiritgem": 1
+		},
+		"cost": {
+			"spirit": 5,
+			"mana": 2
+		},
+		"dot": {
+			"duration": 50,
+			"effect": {
+				"research": 1,
+				"sp": 0.001,
+				"arcana": 0.001
+			}
+		},
+		"flavor": "Did you hear something?"
+	},
+	{
+		"id": "venom1",
+		"name": "venom I",
+		"level": 5,
+		"require": "g.player.level>=7&&g.naturelore>=6&&g.tier1>0",
+		"school": "nature",
+		"buy": {
+			"research": 500,
+			"codices": 5,
+			"naturegem": 3
+		},
+		"cost": {
+			"nature": 5
+		},
+		"attack": {
+			"dot": {
+				"id": "venom",
+				"kind": "poison",
+				"duration": 30,
+				"damage": "2~4"
+			}
+		}
+	},
+	{
+		"id": "hex1",
+		"name": "spiteful hex",
+		"level": 4,
+		"require": "g.witch>0",
+		"school": "spirit",
+		"buy": {
+			"research": 1000,
+			"codices": 10,
+			"spiritgem": 1
+		},
+		"cost": {
+			"spirit": 7
+		},
+		"attack": {
+			"dot": {
+				"id": "hex1",
+				"kind": "hex",
+				"duration": 15,
+				"damage": "5~7"
+			}
+		}
+	},
+	{
+		"id": "jinx",
+		"level": 2,
+		"require": "trickster",
+		"desc": "Curse an enemy with a streak of bad luck.",
+		"school": "trickery",
+		"buy": {
+			"research": 75
+		},
+		"cost": {
+			"mana": 2
+		},
+		"attack": {
+			"dot": {
+				"id": "jinx",
+				"kind": "curse",
+				"mod": {
+					"self.tohit": -5
+				},
+				"duration": 20
+			}
+		}
+	},
+	{
+		"id": "speed1",
+		"level": 3,
+		"name": "dust devil",
+		"desc": "A whirl of wind at your feet",
+		"school": "air",
+		"require": "g.airlore>=4",
+		"buy": {
+			"research": 500,
+			"codices": 1,
+			"airgem": 3
+		},
+		"cost": {
+			"air": 1
+		},
+		"dot": {
+			"id": "dustdevil",
+			"name": "dust devil",
+			"duration": 20,
+			"mod": {
+				"self.speed": 1
+			}
+		}
+	},
+	{
+		"id": "speed2",
+		"level": 5,
+		"name": "dust devil II",
+		"desc": "A whirl of wind at your feet",
+		"school": "air",
+		"require": "g.airlore>=8&&g.speed1>0&&g.tier1>0",
+		"buy": {
+			"research": 500,
+			"tomes": 1,
+			"airgem": 5
+		},
+		"cost": {
+			"air": 3
+		},
+		"dot": {
+			"id": "dustdevil",
+			"name": "dust devil",
+			"duration": 45,
+			"mod": {
+				"self.speed": 2
+			}
+		}
+	},
+	{
+		"id": "massjinx",
+		"name": "mass jinx",
+		"level": 4,
+		"require": "trickster",
+		"desc": "Curse all enemies with a streak of bad luck.",
+		"school": "trickery",
+		"buy": {
+			"research": 1000,
+			"codices": 10
+		},
+		"cost": {
+			"chaos": 1
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"id": "jinx",
+				"kind": "curse",
+				"duration": 30,
+				"mod": {
+					"self.tohit": -10
+				}
+			}
+		}
+	},
+	{
+		"id": "guidestr",
+		"name": "guided strike",
+		"level": 1,
+		"require": "g.divination>=3",
+		"school": "spirit",
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"cost": {
+			"spirit": 1
+		},
+		"dot": {
+			"duration": 45,
+			"mod": {
+				"self.tohit": 3
+			}
+		}
+	},
+	{
+		"id": "truestrike",
+		"name": "true strike",
+		"level": 3,
+		"require": "g.scrying>=1",
+		"school": "spirit",
+		"buy": {
+			"codices": 1,
+			"research": 100
+		},
+		"cost": {
+			"spirit": 2
+		},
+		"dot": {
+			"duration": 45,
+			"mod": {
+				"self.tohit": 7
+			}
+		}
+	},
+	{
+		"id": "perfectstrike",
+		"name": "perfect strike",
+		"level": 5,
+		"require": "g.scrying>=5",
+		"school": "spirit",
+		"buy": {
+			"tomes": 1,
+			"research": 100,
+			"spiritgem": 5
+		},
+		"cost": {
+			"spirit": 2
+		},
+		"dot": {
+			"duration": 45,
+			"mod": {
+				"self.tohit": 15
+			}
+		}
+	},
+	{
+		"id": "heal2",
+		"level": 4,
+		"name": "sealing light II",
+		"desc": "Seams of light close your wounds.",
+		"require": "g.heal1>0&&g.lightlore>=6",
+		"school": "light",
+		"buy": {
+			"research": 1000,
+			"codices": 10,
+			"lightgem": 1
+		},
+		"cost": {
+			"light": 5
+		},
+		"result": {
+			"hp": 75
+		}
+	},
+	{
+		"id": "soothing",
+		"name": "soothing breeze",
+		"level": 2,
+		"school": "air",
+		"desc": "A light wind steadies your nerves.",
+		"require": "g.airlore>=3",
+		"buy": {
+			"research": 200,
+			"codices": 5,
+			"airgem": 1
+		},
+		"cost": {
+			"air": 3
+		},
+		"dot": {
+			"duration": 45,
+			"effect": {
+				"unease": -0.2,
+				"madness": -0.2,
+				"weary": -0.2
+			}
+		}
+	},
+	{
+		"id": "airburst",
+		"name": "burst",
+		"level": 1,
+		"school": "air",
+		"require": "g.airlore>0",
+		"buy": {
+			"research": 100,
+			"scrolls": 10
+		},
+		"cost": {
+			"air": 1
+		},
+		"attack": {
+			"damage": "1~4",
+			"tohit": 3,
+			"kind": "air"
+		}
+	},
+	{
+		"id": "zap",
+		"level": 3,
+		"desc": "An electric shock leaps from your fingers",
+		"require": "g.lightlore>=5||g.airlore>=5",
+		"school": "air",
+		"buy": {
+			"research": 100,
+			"scrolls": 10
+		},
+		"cost": {
+			"air": 2
+		},
+		"at": {
+			"30": {
+				"attack.damage.max": 3
+			},
+			"100": {
+				"attack.damage.min": 1
+			},
+			"300": {
+				"attack.damage.max": 6,
+				"attack.tohit": 2
+			}
+		},
+		"attack": {
+			"damage": "1~2",
+			"tohit": 5,
+			"kind": "air",
+			"dot": {
+				"name": "blind",
+				"duration": 5,
+				"mod": {
+					"self.tohit": -3
+				}
+			}
+		}
+	},
+	{
+		"id": "elec1",
+		"name": "lightning",
+		"level": 6,
+		"desc": "An arc of lightning flashes from the sky.",
+		"require": "g.airlore>=8&&g.zap>0&&g.tier1>0",
+		"school": "air",
+		"buy": {
+			"research": 500,
+			"codices": 10,
+			"airgem": 5,
+			"lightgem": 5
+		},
+		"flavor": "Shazaaam?",
+		"cost": {
+			"air": 5
+		},
+		"at": {
+			"30": {
+				"attack.damage.max": 3
+			},
+			"150": {
+				"attack.damage.max": 3
+			},
+			"400": {
+				"attack.damage.max": 4,
+				"attack.tohit": 4
+			}
+		},
+		"attack": {
+			"damage": "5~10",
+			"tohit": 7,
+			"kind": "air",
+			"dot": {
+				"name": "blind",
+				"duration": 5,
+				"mod": {
+					"self.tohit": -4
+				}
+			}
+		}
+	},
+	{
+		"id": "elec2",
+		"name": "doublestrike",
+		"level": 9,
+		"desc": "Twin arcs of lightning flash from the sky.",
+		"flavor": "Sometimes lightning does strike twice.",
+		"require": "g.airlore>=12&&g.elec1>0&&g.tier3>0",
+		"school": "air",
+		"buy": {
+			"research": 1000,
+			"tomes": 3,
+			"airgem": 10
+		},
+		"cost": {
+			"air": 5
+		},
+		"at": {
+			"30": {
+				"attack.damage.max": 4
+			},
+			"100": {
+				"attack.damage.max": 4
+			},
+			"300": {
+				"attack.damage.max": 5,
+				"attack.tohit": 5
+			}
+		},
+		"attack": {
+			"damage": "7~15",
+			"tohit": 12,
+			"kind": "air",
+			"dot": {
+				"name": "blind",
+				"duration": 1,
+				"damage": "7~15",
+				"mod": {
+					"self.tohit": -7
+				}
+			}
+		}
+	},
+	{
+		"id": "elec3",
+		"name": "thunderstrike",
+		"level": 12,
+		"desc": "A blinding storm of lightning.",
+		"require": "g.airlore>=15&&g.elec2>0&&g.tier3>0",
+		"school": "air",
+		"buy": {
+			"research": 5000,
+			"tomes": 10,
+			"airgem": 15
+		},
+		"cost": {
+			"air": 10
+		},
+		"at": {
+			"30": {
+				"attack.dmg.max": 2
+			},
+			"100": {
+				"attack.dmg.min": 3,
+				"attack.dmg.max": 2
+			},
+			"300": {
+				"attack.dmg.max": 3,
+				"attack.dmg.min": 2,
+				"attack.tohit": 5
+			}
+		},
+		"attack": {
+			"tohit": 15,
+			"targets": "enemies",
+			"damage": "1~3",
+			"dot": {
+				"kind": "air",
+				"duration": 15,
+				"damage": "10~15",
+				"mod": {
+					"self.tohit": -5
+				}
+			}
+		}
+	},
+	{
+		"id": "calming",
+		"name": "calming murmurs",
+		"level": 2,
+		"school": "spirit",
+		"require": "g.spiritlore>=5",
+		"desc": "Whispers on the wind calm your troubled mind.",
+		"buy": {
+			"research": 200,
+			"codices": 5,
+			"spiritgem": 1
+		},
+		"cost": {
+			"spirit": 3
+		},
+		"action": {
+			"cure": "enrage",
+			"targets": "self,ally"
+		},
+		"dot": {
+			"duration": 45,
+			"effect": {
+				"bf": -0.2,
+				"rage": -0.2,
+				"madness": -0.2
+			}
+		}
+	},
+	{
+		"id": "downswinging",
+		"level": 7,
+		"name": "down swinging",
+		"school": "blood",
+		"cd": 120,
+		"require": "bloodmage",
+		"desc": "You won't go down without a fight.",
+		"buy": {
+			"research": 1000,
+			"tomes": 1,
+			"bloodgem": 10
+		},
+		"cost": {
+			"mana": 10
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"self": {
+					"hp": {
+						"max": 75,
+						"rate": -1
+					},
+					"tohit": 10,
+					"damage": 10
+				}
+			}
+		},
+		"result": {
+			"hp": 75
+		},
+		"flavor": "Am I more than you bargained for yet?"
+	},
+	{
+		"id": "bodyisdry",
+		"level": 10,
+		"name": "last stand",
+		"school": "blood",
+		"require": "g.bloodmage>0&&g.tier5>0",
+		"desc": "Before your body is dry",
+		"cd": 120,
+		"buy": {
+			"research": 3000,
+			"tomes": 10,
+			"bloodgem": 30
+		},
+		"cost": {
+			"mana": 10
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"self": {
+					"hp": {
+						"max": 200,
+						"rate": -3
+					},
+					"tohit": 20,
+					"damage": 20
+				}
+			}
+		},
+		"result": {
+			"hp": 200
+		},
+		"flavor": "Don't lose your way"
+	},
+	{
+		"id": "bloodshot",
+		"level": 8,
+		"school": "blood",
+		"cd": 15,
+		"require": "g.bloodlore>=3",
+		"buy": {
+			"research": 1000,
+			"tomes": 5,
+			"bloodgem": 15
+		},
+		"cost": {
+			"hp": "a.hp/3"
+		},
+		"attack": {
+			"kind": "blood",
+			"dmg": "15+a.hp/33"
+		},
+		"at": {
+			"20": {
+				"attack.dmg": "10+a.hp/33"
+			},
+			"100": {
+				"attack.dmg": "10+a.hp/33"
+			}
+		},
+		"flavor": "Costs 1/3 of your health and deals part of it as damage!"
+	},
+	{
+		"id": "bloodspike",
+		"desc": "Blast all enemies with crystallized shards of magically charged blood",
+		"level": 5,
+		"school": "blood",
+		"require": "g.bloodlore>=5",
+		"buy": {
+			"research": 1000,
+			"tomes": 5,
+			"bloodgem": 15
+		},
+		"cost": {
+			"hp": "15"
+		},
+		"attack": {
+			"kind": "blood",
+			"dmg": "16",
+			"targets": "enemies"
+		},
+		"at": {
+			"100": {
+				"attack.dmg": "7",
+				"cost.hp": "2"
+			},
+			"500": {
+				"attack.dmg": "7",
+				"cost.hp": "3"
+			}
+		}
+	},
+	{
+		"id": "unearth",
+		"desc": "Raise precious stones from the ground.",
+		"school": "earth",
+		"require": "g.earthlore>=8&&g.tier1>0",
+		"level": 3,
+		"buy": {
+			"research": 300,
+			"codices": 5,
+			"earthgem": 5
+		},
+		"cost": {
+			"scrolls": 2,
+			"earth": 5
+		},
+		"dot": {
+			"duration": 120,
+			"mod": {
+				"gems.rate": 0.1
+			}
+		},
+		"flavor": "Hi-Ho, Hi-Ho"
+	},
+	{
+		"id": "apiary",
+		"name": "dbulm's apiary",
+		"desc": "In combat, summon a really angry bee to fight for you",
+		"require": "g.tier5>0&&g.conjuration>=5&&g.summoning>=10",
+		"school": "conjuration",
+		"level": 10,
+		"cd": 200,
+		"buy": {
+			"research": 2000,
+			"tomes": 15,
+			"arcana": 10,
+			"airgem": 15
+		},
+		"cost": {
+			"airgem": 1
+		},
+		"dot": {
+			"duration": 10,
+			"effect": "stingybee"
+		},
+		"flavor": "Beees"
+	},
+	{
+		"id": "starfall",
+		"desc": "You can't escape the sky.",
+		"school": "astral",
+		"level": 10,
+		"require": "g.tier5>0&&(g.astralseer+g.wizard3+g.wizard2)>0&&g.astronomy>=15&&g.evil==0",
+		"cd": 55,
+		"buy": {
+			"research": 2000,
+			"tomes": 15,
+			"arcana": 10,
+			"managem": 15
+		},
+		"cost": {
+			"managem": 1
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"duration": 30,
+				"kind": "astral",
+				"dmg": "20~30"
+			}
+		}
+	},
+	{
+		"id": "stoneskin",
+		"name": "stone skin",
+		"level": 1,
+		"require": "g.spellbook.value>0&&g.earthlore>0",
+		"school": "earth",
+		"buy": {
+			"research": 25,
+			"scrolls": 1
+		},
+		"cost": {
+			"earth": 1
+		},
+		"dot": {
+			"id": "toughskin",
+			"name": "stone skin",
+			"duration": 30,
+			"mod": {
+				"self.defense": 2
+			}
+		}
+	},
+	{
+		"id": "copperskin",
+		"name": "copper skin",
+		"desc": "Hardens the skin of the self.",
+		"school": "earth",
+		"require": "g.earthlore>=8&&g.tier0>0",
+		"level": 1,
+		"buy": {
+			"research": 30,
+			"scrolls": 5,
+			"earthgem": 1
+		},
+		"cost": {
+			"earth": 2
+		},
+		"dot": {
+			"id": "toughskin",
+			"name": "copper skin",
+			"duration": 50,
+			"mod": {
+				"self.defense": 5
+			}
+		}
+	},
+	{
+		"id": "ironskin",
+		"name": "iron skin",
+		"desc": "Hardens the skin of the self.",
+		"school": "earth",
+		"require": "g.stoneskin>0&&g.earthlore>=8&&g.tier1>0",
+		"level": 3,
+		"buy": {
+			"research": 750,
+			"codices": 5,
+			"earthgem": 5
+		},
+		"cost": {
+			"earth": 5
+		},
+		"dot": {
+			"id": "toughskin",
+			"name": "iron skin",
+			"duration": 60,
+			"mod": {
+				"self.defense": 10
+			}
+		}
+	},
+	{
+		"id": "steelskin",
+		"name": "steel skin",
+		"desc": "Hardens the skin of the self.",
+		"school": "earth",
+		"require": "g.ironskin>0&&g.earthlore>=12&&g.tier2>0",
+		"level": 5,
+		"buy": {
+			"research": 1000,
+			"tomes": 1,
+			"earthgem": 10
+		},
+		"cost": {
+			"earth": 7
+		},
+		"dot": {
+			"id": "toughskin",
+			"name": "steel skin",
+			"duration": 120,
+			"mod": {
+				"self.defense": 25
+			}
+		}
+	},
+	{
+		"id": "adamantshell",
+		"name": "adamant shell",
+		"desc": "Your skin becomes adamant.",
+		"school": "earth",
+		"require": "g.steelskin>0&&g.earthlore>=15&&g.tier3>0",
+		"level": 10,
+		"buy": {
+			"research": 4000,
+			"tomes": 5,
+			"earthgem": 30
+		},
+		"cost": {
+			"earth": 10
+		},
+		"dot": {
+			"id": "toughskin",
+			"name": "adamant shell",
+			"duration": 180,
+			"mod": {
+				"self.defense": 50
+			}
+		}
+	},
+	{
+		"id": "tremor",
+		"level": 5,
+		"desc": "The earth shakes beneath your enemies' feet",
+		"require": "g.slow1>0&&g.earthlore>=8&&g.tier1>0",
+		"school": "earth",
+		"buy": {
+			"research": 100,
+			"codices": 30,
+			"earthgem": 5
+		},
+		"cost": {
+			"earth": 5
+		},
+		"at": {
+			"30": {
+				"attack.tohit": 1
+			},
+			"100": {
+				"attack.tohit": 2
+			},
+			"300": {
+				"attack.tohit": 2
+			}
+		},
+		"attack": {
+			"tohit": 2,
+			"targets": "enemies",
+			"kind": "earth",
+			"dot": {
+				"dmg": "2~3",
+				"duration": 3,
+				"mod": {
+					"self.speed": -10
+				}
+			}
+		}
+	},
+	{
+		"id": "quake",
+		"alias": "earthquake",
+		"desc": "The earth shakes at your command",
+		"school": "earth",
+		"require": "g.earthlore>=10&&g.tier2>0",
+		"level": 9,
+		"buy": {
+			"sp": 1,
+			"research": 1750,
+			"tomes": 5,
+			"earthgem": 10
+		},
+		"cost": {
+			"earth": 5
+		},
+		"attack": {
+			"targets": "enemies",
+			"kind": "earth",
+			"dot": {
+				"duration": 30,
+				"dmg": "5~12",
+				"mod": {
+					"self.speed": -7
+				}
+			}
+		}
+	},
+	{
+		"id": "resistparalysis",
+		"name": "resist paralysis",
+		"school": "water",
+		"level": 7,
+		"require": "g.waterlore>=10&&g.tier2>0",
+		"desc": "Keep your limbs fluid.",
+		"buy": {
+			"research": 4000,
+			"tomes": 5
+		},
+		"cost": {
+			"water": 2
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"self.resist.paralysis": 50
+			}
+		}
+	},
+	{
+		"id": "resistsilence",
+		"name": "resist silence",
+		"school": "mana",
+		"level": 7,
+		"require": "g.lore>=15",
+		"desc": "Keep your mind active and alert.",
+		"buy": {
+			"research": 5000,
+			"tomes": 20,
+			"managem": 10
+		},
+		"cost": {
+			"mana": 2
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"self.resist.silence": 50
+			}
+		}
+	},
+	{
+		"id": "immunefire1",
+		"name": "quenching sphere",
+		"school": "water",
+		"level": 5,
+		"require": "g.waterlore>=8&&g.tier1>0",
+		"desc": "Temporarily negate all fire damage.",
+		"buy": {
+			"research": 4000,
+			"tomes": 1
+		},
+		"cost": {
+			"water": 5
+		},
+		"dot": {
+			"duration": 20,
+			"mod": {
+				"self.immunities.fire": 1
+			}
+		}
+	},
+	{
+		"id": "splendor",
+		"alias": "magnificence",
+		"level": 7,
+		"school": "light",
+		"require": "g.lightlore>=9&&g.tier1>0",
+		"desc": "",
+		"buy": {
+			"tomes": 1,
+			"lightgem": 10,
+			"runestones": 5
+		},
+		"cost": {
+			"light": 7
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"self": {
+					"tohit": 5,
+					"hp.max": 50,
+					"defense": 10,
+					"speed": 2
+				}
+			}
+		}
+	},
+	{
+		"id": "abundance",
+		"level": 8,
+		"desc": "Herbs sprout more quickly from the earth.",
+		"school": "nature",
+		"require": "g.naturelore>=15&&g.tier3>0",
+		"buy": {
+			"research": 1000,
+			"tomes": 5
+		},
+		"cost": {
+			"nature": 8
+		},
+		"dot": {
+			"duration": 60,
+			"mod": {
+				"herbs.rate": 1.5
+			}
+		}
+	},
+	{
+		"id": "blindflash",
+		"name": "blinding flash",
+		"school": "light",
+		"level": 8,
+		"require": "g.lightlore>=10&&g.tier2>0",
+		"desc": "A flash of pure white light",
+		"buy": {
+			"tomes": 10,
+			"lightgem": 20,
+			"runestones": 5
+		},
+		"cost": {
+			"light": 5
+		},
+		"attack": {
+			"targets": "enemies",
+			"damage": "3~5",
+			"dot": {
+				"id": "blind",
+				"kind": "light",
+				"duration": 60,
+				"mod": {
+					"self.tohit": -30
+				}
+			}
+		}
+	},
+	{
+		"id": "venom2",
+		"level": 9,
+		"name": "venom II",
+		"school": "nature",
+		"require": "g.venom1>0&&g.naturelore>=15&&g.tier3>0",
+		"buy": {
+			"research": 4000,
+			"tomes": 5,
+			"naturegem": 10
+		},
+		"cost": {
+			"nature": 5
+		},
+		"attack": {
+			"dot": {
+				"id": "venom",
+				"kind": "poison",
+				"duration": 30,
+				"damage": "8~15"
+			}
+		}
+	},
+	{
+		"id": "hightide",
+		"name": "high tide",
+		"school": "water",
+		"level": 6,
+		"desc": "Flood the field of battle",
+		"cd": 40,
+		"require": "g.waterlore>=11",
+		"buy": {
+			"research": 400,
+			"watergem": 10,
+			"tomes": 5
+		},
+		"cost": {
+			"water": 5
+		},
+		"attack": {
+			"hits": [
+				{
+					"targets": "all",
+					"dot": {
+						"kind": "water",
+						"dmg": "20~30",
+						"duration": 30
+					}
+				},
+				{
+					"targets": "allies",
+					"dot": {
+						"id": "hightideprotection",
+						"name": "high tide protection",
+						"duration": 30,
+						"mod": {
+							"self.resist.water": 75
+						}
+					}
+				}
+			]
+		}
+	},
+	{
+		"id": "cordyceps",
+		"level": 7,
+		"school": "nature",
+		"require": "g.venom2>0&&(g.druid+g.fey+g.kell)>0",
+		"desc": "A fungal cloud that damages all enemies.",
+		"buy": {
+			"research": 4000,
+			"tomes": 10,
+			"naturegem": 20
+		},
+		"cost": {
+			"nature": 5
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"kind": "poison",
+				"duration": 45,
+				"damage": "7~11"
+			}
+		}
+	},
+	{
+		"id": "heal3",
+		"level": 7,
+		"name": "sealing light III",
+		"desc": "Seams of light close your wounds.",
+		"school": "light",
+		"require": "g.lightlore>=14&&g.heal2>0&&g.tier3>0",
+		"buy": {
+			"research": 1000,
+			"tomes": 10,
+			"lightgem": 10
+		},
+		"cost": {
+			"light": 7
+		},
+		"result": {
+			"hp": 200
+		}
+	},
+	{
+		"id": "forceten",
+		"name": "force ten",
+		"school": "water",
+		"cd": 50,
+		"level": 15,
+		"desc": "The storm before the calm.",
+		"require": "g.waterlore>=18&&g.tier4>0",
+		"buy": {
+			"research": 4000,
+			"watergem": 25,
+			"tomes": 20
+		},
+		"cost": {
+			"water": 8
+		},
+		"attack": {
+			"hits": [
+				{
+					"targets": "all",
+					"dot": {
+						"kind": "water",
+						"dmg": "20~30",
+						"duration": 30
+					}
+				},
+				{
+					"id": "forcetenprotection",
+					"name": "force ten protection",
+					"targets": "allies",
+					"dot": {
+						"duration": 30,
+						"mod": {
+							"self.resist.water": 75
+						}
+					}
+				}
+			]
+		},
+		"flavor": "Force without form"
+	},
+	{
+		"id": "firestorm",
+		"school": "fire",
+		"level": 17,
+		"desc": "Rain hell from above",
+		"cd": 66,
+		"require": "g.firelore>=18&&g.tier4>0",
+		"buy": {
+			"research": 4000,
+			"firegem": 25,
+			"tomes": 20
+		},
+		"cost": {
+			"fire": 8
+		},
+		"attack": {
+			"hits": [
+				{
+					"targets": "all",
+					"dot": {
+						"kind": "fire",
+						"dmg": "30~50",
+						"duration": 30
+					}
+				},
+				{
+					"id": "firestormprotection",
+					"name": "firestorm protection",
+					"targets": "allies",
+					"dot": {
+						"duration": 30,
+						"mod": {
+							"self.resist.fire": 80
+						}
+					}
+				}
+			]
+		},
+		"flavor": ""
+	},
+	{
+		"id": "immunefire2",
+		"name": "greater quenching sphere",
+		"school": "water",
+		"level": 9,
+		"require": "g.waterlore>=15&&g.tier3>0",
+		"desc": "Temporarily negate all fire damage",
+		"buy": {
+			"research": 4000,
+			"tomes": 10
+		},
+		"cost": {
+			"water": 7
+		},
+		"dot": {
+			"duration": 100,
+			"mod": {
+				"self.immunities.fire": 1
+			}
+		}
+	},
+	{
+		"id": "angelofdeath",
+		"name": "angel of death",
+		"desc": "A black spirit arises, reaping souls for your work.",
+		"school": "shadow",
+		"require": [
+			"evil",
+			{
+				"shadow.max": 15
+			}
+		],
+		"level": 5,
+		"buy": {
+			"research": 3000,
+			"tomes": 1,
+			"shadowgem": 5,
+			"spiritgem": 1
+		},
+		"cost": {
+			"shadow": 10,
+			"spirit": 5
+		},
+		"dot": {
+			"duration": 90,
+			"effect": {
+				"bodies": 0.03,
+				"souls": 0.012
+			}
+		}
+	},
+	{
+		"id": "disdream",
+		"name": "dispersal dream",
+		"school": "void",
+		"desc": "",
+		"require": "g.voidlore>0&&g.dreams>0",
+		"buy": {
+			"voidgem": 10
+		},
+		"cost": {
+			"dreams": 1
+		},
+		"attack": {
+			"targets": "all",
+			"dot": {
+				"duration": 30,
+				"dmg": "200~300",
+				"kind": "void"
+			}
+		}
+	}
+]

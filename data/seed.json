@@ -1,0 +1,308 @@
+[
+	{
+		"id": "seed_windgrass",
+		"name": "风声草种子",
+		"desc": "生长在平原上的灵草，服用之后可以从风中辨识方向，人们常用此来对抗旅行中的混沌风干扰。",
+		"require":"g.xiulian_life_swpy>=1",
+		"level": 1,
+		"seed":true,
+		"sell":{
+			"money": 100
+		},
+		"plant_info":{
+			"rarity": 1,
+			"fertility": 3,
+			"max_harvest": 2,
+			"mature": 5,
+			"root": false,
+			"min_temperature": 10,
+			"max_temperature": 30,
+			"harvest": "plant_windgrass"
+		}
+	},
+	{
+		"id": "plant_windgrass",
+		"name": "风声草",
+		"desc": "生长在平原上的灵草，服用之后可以从风中辨识方向，人们常用此来对抗旅行中的混沌风干扰。",
+		"require":"g.xiulian_life_swpy>=1",
+		"level": 1,
+		"sell":{
+			"crystl_brick": 1
+		},
+		"plant_info":{
+			"rarity": 1
+		}
+	},
+	{
+		"id": "seed_starapple",
+		"name": "星苹果树苗",
+		"desc": "汁液从包裹着梅花形核心的闪亮外皮上滴落。在饥渴者眼中，它就像火神盐中的石榴石一样闪闪发光。",
+		"require":"g.xiulian_life_swpy>=1",
+		"level": 1,
+		"seed":true,
+		"sell":{
+			"money": 146
+		},
+		"plant_info":{
+			"rarity": 2,
+			"fertility": 5,
+			"max_harvest": 4,
+			"mature": 9,
+			"root": true,
+			"min_temperature": 10,
+			"max_temperature": 30,
+			"harvest": "plant_starapple"
+		}
+	},
+	{
+		"id": "plant_starapple",
+		"name": "星苹果",
+		"desc": "汁液从包裹着梅花形核心的闪亮外皮上滴落。在饥渴者眼中，它就像火神盐中的石榴石一样闪闪发光。",
+		"require":"g.xiulian_life_swpy>=1",
+		"level": 1,
+		"sell":{
+			"crystl_brick": 1
+		},
+		"plant_info":{
+			"rarity": 2
+		}
+	},
+	{
+		"id": "seed_spine",
+		"name": "癫裂刺梅种子",
+		"desc": "碎裂的肋状物从其被太阳晒至肿胀的枝叶上射出一颗湿润而尖锐的果实。",
+		"require":"g.xiulian_life_swpy>=1",
+		"level": 1,
+		"seed":true,
+		"sell":{
+			"money": 177
+		},
+		"plant_info":{
+			"rarity": 2,
+			"fertility": 7,
+			"max_harvest": 4,
+			"mature": 3,
+			"root": false,
+			"min_temperature": 0,
+			"max_temperature": 10,
+			"harvest": "plant_spine"
+		}
+	},
+	{
+		"id": "plant_spine",
+		"name": "癫裂刺梅",
+		"desc": "碎裂的肋状物从其被太阳晒至肿胀的枝叶上射出一颗湿润而尖锐的果实。",
+		"require":"g.xiulian_life_swpy>=1",
+		"level": 1,
+		"sell":{
+			"crystl_brick": 1
+		},
+		"plant_info":{
+			"rarity": 2
+		}
+	},
+	{
+        "id": "seed_earthgrass",
+        "name": "地心藤种子",
+        "desc": "生长在沼泽地的藤蔓，服用之后可以感应地底泥土中的灵脉走向，对寻宝有帮助。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "seed": true,
+        "sell": {
+            "money": 100
+        },
+        "plant_info": {
+            "rarity": 1,
+            "fertility": 2,
+            "max_harvest": 1,
+            "mature": 4,
+            "root": true,
+            "min_temperature": 15,
+            "max_temperature": 25,
+            "harvest": "plant_earthgrass"
+        }
+    },
+    {
+        "id": "plant_earthgrass",
+        "name": "地心藤",
+        "desc": "生长在沼泽地的藤蔓，服用之后可以感应地底泥土中的灵脉走向，对寻宝有帮助。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "sell": {
+            "crystl_brick": 1
+        },
+        "plant_info": {
+            "rarity": 1
+        }
+    },
+    {
+        "id": "seed_ginseng",
+        "name": "囚云参种子",
+        "desc": "养生之道，以不损为要，延命之术，以有补为先。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "seed": true,
+        "sell": {
+            "money": 340
+        },
+        "plant_info": {
+            "rarity": 4,
+            "fertility": 7,
+            "max_harvest": 1,
+            "mature": 10,
+            "root": false,
+            "min_temperature": 20,
+            "max_temperature": 30,
+            "harvest": "plant_ginseng"
+        }
+    },
+    {
+        "id": "plant_ginseng",
+        "name": "囚云参",
+        "desc": "养生之道，以不损为要，延命之术，以有补为先。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "sell": {
+            "crystl_brick": 1
+        },
+        "plant_info": {
+            "rarity": 4
+        }
+    },
+    {
+        "id": "seed_lingzhi",
+        "name": "释云芝种子",
+        "desc": "玉芝一名释云，洞微种之七八年矣，云更数年可食，许以遗余。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "seed": true,
+        "sell": {
+            "money": 332
+        },
+        "plant_info": {
+            "rarity": 4,
+            "fertility": 8,
+            "max_harvest": 1,
+            "mature": 7,
+            "root": false,
+            "min_temperature": 0,
+            "max_temperature": 17,
+            "harvest": "plant_lingzhi"
+        }
+    },
+    {
+        "id": "plant_lingzhi",
+        "name": "释云芝",
+        "desc": "玉芝一名释云，洞微种之七八年矣，云更数年可食，许以遗余。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "sell": {
+            "crystl_brick": 1
+        },
+        "plant_info": {
+            "rarity": 4
+        }
+    },
+    {
+        "id": "seed_shuangcao",
+        "name": "霜草种子",
+        "desc": "绿叶翠茎，冒霜停雪",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "seed": true,
+        "sell": {
+            "money": 272
+        },
+        "plant_info": {
+            "rarity": 3,
+            "fertility": 1,
+            "max_harvest": 5,
+            "mature": 8,
+            "root": false,
+            "min_temperature": -20,
+            "max_temperature": 5,
+            "harvest": "plant_shuangcao"
+        }
+    },
+    {
+        "id": "plant_shuangcao",
+        "name": "霜草",
+        "desc": "绿叶翠茎，冒霜停雪",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "sell": {
+            "crystl_brick": 1
+        },
+        "plant_info": {
+            "rarity": 3
+        }
+    },
+    {
+        "id": "seed_qinglian",
+        "name": "清莲子",
+        "desc": "谁谓江水清？淆之不必一斗泥。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "seed": true,
+        "sell": {
+            "money": 306
+        },
+        "plant_info": {
+            "rarity": 3,
+            "fertility": 1,
+            "max_harvest": 1,
+            "mature": 12,
+            "root": false,
+            "min_temperature": 12,
+            "max_temperature": 35,
+            "harvest": "plant_qinglian"
+        }
+    },
+    {
+        "id": "plant_qinglian",
+        "name": "清莲",
+        "desc": "谁谓江水清？淆之不必一斗泥。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "sell": {
+            "crystl_brick": 1
+        },
+        "plant_info": {
+            "rarity": 3
+        }
+    },
+    {
+        "id": "seed_xuetree",
+        "name": "血树树苗",
+        "desc": "清血洒不尽，仰天知问谁。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "seed": true,
+        "sell": {
+            "money": 496
+        },
+        "plant_info": {
+            "rarity": 5,
+            "fertility": 10,
+            "max_harvest": 3,
+            "mature": 15,
+            "root": false,
+            "min_temperature": 28,
+            "max_temperature": 53,
+            "harvest": "plant_xuetree"
+        }
+    },
+    {
+        "id": "plant_xuetree",
+        "name": "血树梅",
+        "desc": "清血洒不尽，仰天知问谁。",
+		"require":"g.xiulian_life_swpy>=1",
+        "level": 1,
+        "sell": {
+            "crystl_brick": 1
+        },
+        "plant_info": {
+            "rarity": 5
+        }
+    }
+]

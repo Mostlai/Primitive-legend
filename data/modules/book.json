@@ -1,0 +1,235 @@
+{
+	"module": "book",
+	"data": {
+		"consumables":[
+			{
+		        "id": "chronicle_of_nath",
+		        "name": "纳斯编年史",
+		        "desc": "它以凡人的灵魂为食，那些牺牲者会被梦境引诱，障蔽盲目，直至恐怖与无尽的黑夜降临到他们的身上。",
+		        "locked": false,
+		        "hide": true,
+		        "level": 25,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "book_of_eibon",
+		        "name": "厄拜安抄本",
+		        "desc": "奇怪的书籍",
+		        "locked": false,
+		        "hide": true,
+		        "level": 25,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "eltdown_shards",
+		        "name": "俄尔惇瓷片",
+		        "desc": "奇怪的书籍",
+		        "locked": false,
+		        "hide": true,
+		        "level": 25,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "yellow_sign",
+		        "name": "黄印",
+		        "desc": "奇怪的书籍",
+		        "locked": false,
+		        "hide": true,
+		        "level": 25,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+			{
+		        "id": "xuanjun_qizhang_mijing",
+		        "name": "玄君七章秘经",
+		        "desc": "它有能力呼唤古老的神秘生物，瞬间造成毁灭性的打击。",
+		        "locked": true,
+		        "hide": true,
+		        "level": 40,
+		        "sell": {
+		            "crystl_brick": 25,
+		            "money": 1500
+		        }
+		    },
+		    {
+		        "id": "lingbao_jingwen",
+		        "name": "灵宝香釉笔记",
+		        "desc": "据说读懂它的人可以获得超自然的力量。",
+		        "locked": true,
+		        "hide": false,
+		        "level": 35,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "taihua_xinyu",
+		        "name": "太华堂集注",
+		        "desc": "隐藏着召唤异界生物的方法。",
+		        "locked": true,
+		        "hide": true,
+		        "level": 45,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "baochujing_yinshu",
+		        "name": "抱朴经·言枢",
+		        "desc": "解密了古代洞穴的位置，里面封印着古老的邪神。",
+		        "locked": false,
+		        "hide": true,
+		        "level": 35,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "tianjing_bagua",
+		        "name": "天经八卦",
+		        "desc": "蕴含着预知未来的力量。",
+		        "locked": true,
+		        "hide": true,
+		        "level": 40,
+		        "sell": {
+		            "crystl_brick": 20,
+		            "money": 1200
+		        }
+		    },
+		    {
+		        "id": "sanhuang_neiwei",
+		        "name": "三皇内讳",
+		        "desc": "掌握了它的语言，就可以和外太空生物交流。",
+		        "locked": true,
+		        "hide": false,
+		        "level": 45,
+		        "sell": {
+		            "crystl_brick": 25,
+		            "money": 1500
+		        }
+		    },
+		    {
+		        "id": "luoshu_wujun",
+		        "name": "洛川主人笔记",
+		        "desc": "可以掌控时空间的力量。",
+		        "locked": true,
+		        "hide": true,
+		        "level": 50,
+		        "sell": {
+		            "crystl_brick": 30,
+		            "money": 1800
+		        }
+		    },
+		    {
+		        "id": "huayang_guozhi",
+		        "name": "华阳国志异",
+		        "desc": "记载了古蜀神秘的传说和历史。",
+		        "locked": false,
+		        "hide": true,
+		        "level": 25,
+		        "sell": {
+		            "crystl_brick": 10,
+		            "money": 800
+		        }
+		    },
+		    {
+		        "id": "heitu_zhi",
+		        "name": "黑图志",
+		        "desc": "记载了阴间的地图，可以召唤亡灵。",
+		        "locked": true,
+		        "hide": true,
+		        "level": 40,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "ming_jiaolu",
+		        "name": "冥教录",
+		        "desc": "记载了冥界的信息。",
+		        "locked": true,
+		        "hide": false,
+		        "level": 45,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "xiezhi_dianji",
+		        "name": "獬豸图录",
+		        "desc": "记载了关于獬豸的神话传说。",
+		        "locked": true,
+		        "hide": true,
+		        "level": 35,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "sanmao_liantu",
+		        "name": "三茅山野琐录",
+		        "desc": "丹术典籍，里面记载了长生不老的秘密。",
+		        "locked": true,
+		        "hide": false,
+		        "level": 50,
+		        "sell": {
+		            "crystl_brick": 15,
+		            "money": 1000
+		        }
+		    },
+		    {
+		        "id": "shenxian_zhuan",
+		        "name": "神仙传",
+		        "desc": "记载了古代得道成仙的神话故事。",
+		        "locked": false,
+		        "hide": true,
+		        "level": 30,
+		        "sell": {
+		            "crystl_brick": 10,
+		            "money": 800
+		        }
+		    },
+		    {
+		        "id": "baisheng_tianzi",
+		        "name": "白生灯天",
+		        "desc": "记载了古代僵尸的秘密。",
+		        "locked": true,
+		        "hide": true,
+		        "level": 40,
+		        "sell": {
+		            "crystl_brick": 20,
+		            "money": 1200
+		        }
+		    },
+		    {
+		        "id": "taiyi_jinbuanshu",
+		        "name": "太乙金簿术",
+		        "desc": "记载了古代秘术。",
+		        "locked": true,
+		        "hide": false,
+		        "level": 50,
+		        "sell": {
+		            "crystl_brick": 20,
+		            "money": 1200
+		        }
+		    }
+		]
+	}
+}

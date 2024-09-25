@@ -1,0 +1,195 @@
+{
+	"module": "c_furniture",
+	"data": {
+		"furniture":[
+			{
+				"id": "c_finebox",
+				"name": "结实的箱子",
+				"desc": "一个结实的箱子",
+				"repeat": true,
+				"locked": false,
+				"packed": true,
+				"cost":{},
+				"mod": {
+					"money.max": 10,
+					"space": 1
+				}
+			},
+			{
+				"id": "c_logbox",
+				"name": "硬木箱",
+				"desc": "硬木打造的箱子",
+				"repeat": true,
+				"locked": false,
+				"packed": true,
+				"cost":{},
+				"mod": {
+					"money.max": 15,
+					"space": 5
+				}
+			},
+			{
+				"id": "c_metalbox",
+				"name": "金属箱",
+				"desc": "金属打造的箱子",
+				"repeat": true,
+				"locked": false,
+				"packed": true,
+				"cost":{},
+				"mod": {
+					"money.max": 22,
+					"space": 9
+				}
+			},
+			{
+				"id": "c_mini_treasurebox",
+				"name": "迷你金库",
+				"desc": "",
+				"repeat": true,
+				"locked": false,
+				"packed": true,
+				"cost":{},
+				"mod": {
+					"money.max": 100,
+					"space": 20
+				}
+			},
+			{
+				"id": "c_treasurebox",
+				"name": "金库",
+				"desc": "",
+				"repeat": true,
+				"locked": false,
+				"packed": true,
+				"cost":{},
+				"mod": {
+					"money.max": 250,
+					"space": 100
+				}
+			},
+			{
+				"id": "c_mini_wheelgenrator",
+				"name": "迷你轮式发电机",
+				"desc": "雇个人跑起来？",
+				"repeat": true,
+				"locked": false,
+				"packed": true,
+				"cost":{},
+				"mod": {
+					"human_power.rate": -1,
+					"elect.rate": 2,
+					"space": 10
+				}
+			},
+			{
+				"id": "c_mini_heatgenrator",
+				"name": "迷你热式发电机",
+				"desc": "",
+				"repeat": true,
+				"locked": false,
+				"packed": true,
+				"cost":{},
+				"mod": {
+					"elect.rate": 1,
+					"space": 25
+				}
+			},
+			{
+				"id": "c_small_heatgenrator",
+				"name": "迷你集热发电机",
+				"desc": "",
+				"repeat": true,
+				"locked": false,
+				"packed": true,
+				"cost":{},
+				"mod": {
+					"elect.rate": 9,
+					"space": 100
+				}
+			}
+
+		],
+		"consumables":[
+			{
+		        "id": "p_c_finebox",
+				"name": "结实的箱子",
+				"desc": "一个结实的箱子",
+		        "locked": false,
+		        "hide": true,
+		        "level": 1,
+		        "sell": {"money": 5},
+		        "use":{"c_finebox": 1}
+		    },
+		    {
+		        "id": "p_c_logbox",
+				"name": "硬木箱",
+				"desc": "硬木打造的箱子",
+		        "locked": false,
+		        "hide": true,
+		        "level": 1,
+		        "sell": {"money": 7},
+		        "use":{"c_logbox": 1}
+		    },
+		    {
+		        "id": "p_c_metalbox",
+				"name": "金属箱",
+				"desc": "金属打造的箱子",
+		        "locked": false,
+		        "hide": true,
+		        "level": 1,
+		        "sell": {"money": 20},
+		        "use":{"c_metalbox": 1}
+		    },
+		    {
+		        "id": "p_c_mini_treasurebox",
+				"name": "迷你金库",
+				"desc": "",
+		        "locked": false,
+		        "hide": true,
+		        "level": 1,
+		        "sell": {"money": 80,"crystl_brick":1},
+		        "use":{"c_mini_treasurebox": 1}
+		    },
+		    {
+				"id": "p_c_treasurebox",
+				"name": "金库",
+				"desc": "",
+		        "locked": false,
+		        "hide": true,
+		        "level": 1,
+		        "sell": {"money": 135,"crystl_brick":3},
+		        "use":{"c_treasurebox": 1}
+		    },
+		    {
+				"id": "p_c_mini_wheelgenrator",
+				"name": "迷你轮式发电机",
+				"desc": "雇个人跑起来？",
+		        "locked": false,
+		        "hide": true,
+		        "level": 7,
+		        "sell": {"money": 1000,"crystl_brick":5},
+		        "use":{"c_mini_wheelgenrator": 1}
+		    },
+		    {
+				"id": "p_c_mini_heatgenrator",
+				"name": "迷你热式发电机",
+				"desc": "",
+		        "locked": false,
+		        "hide": true,
+		        "level": 10,
+		        "sell": {"money": 1200,"crystl_brick":6},
+		        "use":{"c_mini_heatgenrator": 1}
+		    },
+		    {
+				"id": "p_c_small_heatgenrator",
+				"name": "迷你集热发电机",
+				"desc": "",
+		        "locked": false,
+		        "hide": true,
+		        "level": 15,
+		        "sell": {"money": 3000,"crystl_brick":8},
+		        "use":{"c_small_heatgenrator": 1}
+		    }
+		]
+	}
+}

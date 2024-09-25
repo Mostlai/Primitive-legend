@@ -1,0 +1,26 @@
+[
+	{
+		"id": "player_techo_stata",
+		"physic": "none",
+		"social": "none",
+		"engineer": "none",
+		"gongfa":{
+			"name":"无功法",
+			"price": 0,
+			"addnum": 0
+		},
+		"autorun":0,
+		"wuqi":{"name":"无","level":0},
+		"toukui":{"name":"无","level":0},
+		"xiongjia":{"name":"无","level":0},
+		"hutui":{"name":"无","level":0},
+		"zhanxue":{"name":"无","level":0},
+		"xianglian":{"name":"无","level":0},
+		"doupeng":{"name":"无","level":0},
+		"cibang":{"name":"无","level":0},
+		"fabao":{"name":"无","level":0},
+		"cje_list":{},
+		"logversion": "",
+		"frecipever": ""
+	}
+]

@@ -1,0 +1,193 @@
+[
+	{
+	  "id": "scena_1",
+	  "name": "分配属性",
+	  "desc": "分配属性",
+	  "branches": [
+	    {
+	      "id": "scena_1_1",
+	      "role": "寒气",
+	      "text": "醒来....",
+	      "choices": [
+	        {
+	          "id": "choice_scena_1_1_1",
+	          "text": "你是谁",
+	          "response_role":"",
+	          "response": "我是你，从你内心走来。",
+	          "next_branch_id": "scena_1_1"
+	        },
+	        {
+	          "id": "choice_scena_1_1_31",
+	          "text": "买个包子",
+	          "check": "money,600",
+	          "response_role":"",
+	          "response": "",
+	          "response_success": "买到了包子",
+	          "response_fail": "没买到",
+	          "next_branch_id": "scena_1_1"
+	        },
+	        {
+	          "id": "choice_scena_1_1_2",
+	          "text": "我在哪",
+	          "check": "heli,50",
+	          "response_role":"",
+	          "response": "",
+	          "response_success": "你记得这个地方，在你精神幻想的一瞬，停留在半梦半醒的时分，这是你意识领域的天然分界，午后的阳光刺透了你的眼，你停留在那虚幻和现实的边界线。",
+	          "response_fail": "头痛欲裂，纷乱的思绪袭来，你什么也感知不到",
+	          "next_branch_id": "scena_1_1"
+	        },
+	        {
+	          "id": "choice_scena_1_1_3",
+	          "text": "你想干什么",
+	          "response": "Response to Choice 1.2",
+	          "next_branch_id": "scena_1_2"
+	        }
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "id": "scena_get_flicense",
+	  "name": "『特使』",
+	  "desc": "",
+	  "val": 0,
+	  "max": 1,
+	  "locked":false,
+	  "branches": [
+	    {
+	      "id": "scena_get_flicense_1",
+	      "role": "『特使』",
+	      "text": "那么，想要拥有一块自己的田地吗？我这有一块抚风物。",
+	      "choices": [
+	        {
+	          "id": "choice_scena_1_1_1",
+	          "text": "你是谁",
+	          "response": "鄙人是来自某处的特使，听闻上仙有这方面的意向，遂携抚风物前来。",
+	          "next_branch_id": "scena_get_flicense_1"
+	        },
+	        {
+	          "id": "choice_scena_1_1_2",
+	          "text": "抚风物是什么",
+	          "response": "枯月洲，也就是这片大陆上有着危险的混沌风，此风神鬼莫测，刮起时乱人心智，损毁建筑。若是贸然开拓田地而不加防护，恐怕颗粒无收。而抚风物正是能使一块区域能免受混沌风干扰的宝物。",
+	          "next_branch_id": "scena_get_flicense_1"
+	        },
+	        {
+	          "id": "choice_scena_1_1_3",
+	          "text": "田地该如何管理",
+	          "response": "在地块上使用此物之后，会进行田地的开辟，田地有着尺寸，肥沃以及气温等属性。种植的植物数量不能超过尺寸，总消耗的肥沃度也需要小于田地本身的肥沃度，此外如果气温不对，也是无法种植的。",
+	          "next_branch_id": "scena_get_flicense_1"
+	        },
+	        {
+	          "id": "choice_scena_1_1_4",
+	          "text": "植物如何生长",
+	          "response": "植物会在每个生长节点发生时进行一次生长，当生长进度足够时，则可进行收割。如果田地的湿润度足够，则每次生长的效果会有所增强，当然，即使湿润度为零，也是能够生长的。",
+	          "next_branch_id": "scena_get_flicense_1"
+	        },
+	        {
+	          "id": "choice_scena_1_1_5",
+	          "text": "有多余的抚风物吗",
+	          "response": "鄙人这仅此一块。",
+	          "next_branch_id": "scena_get_flicense_1"
+	        },
+	        {
+	          "id": "choice_scena_1_1_6",
+	          "text": "那么,我便收下此物了",
+	          "response": "甚好，在此物护佑之下,即使混沌风横行，也望上仙努力耕种。",
+	          "reward": "farm_license",
+	          "next_branch_id": "end"
+	        }
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "id": "scena_trader_templat",
+	  "name": "商人模板",
+	  "desc": "",
+	  "val": 0,
+	  "locked":false,
+	  "refresh":3600,
+	  "branches": [
+	    {
+	      "id": "start",
+	      "role": "商人模板",
+	      "text": "有何贵干",
+	      "choices": [
+	        {
+	          "id": "choice_scena_buy",
+	          "text": "给我看看你的货物",
+	          "response": "请好好鉴赏吧",
+	  		  "stock": "item_group_template",
+	          "next_branch_id": "start"
+	        },
+	        {
+	          "id": "choice_scena_end",
+	          "text": "离开",
+	          "response": "再见",
+	          "next_branch_id": "end"
+	        }
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "id": "scena_seed_trader_sun",
+	  "name": "『农者』 孙祀",
+	  "desc": "",
+	  "val": 0,
+	  "locked":false,
+	  "trader": true,
+	  "hasStock": "item_group_seed_trader",
+	  "refresh":3600
+	},
+	{
+	  "id": "scena_plant_trader_li",
+	  "name": "『易植』 李凡",
+	  "desc": "",
+	  "val": 0,
+	  "locked":false,
+	  "trader": true,
+	  "hasStock": "item_group_seed_trader",
+	  "refresh":3600
+	},
+	{
+	  "id": "scena_xueshi_zhumiu",
+	  "name": "『学士』 追谬",
+	  "desc": "",
+	  "val": 0,
+	  "locked":false,
+	  "trader": true,
+	  "hasStock": "item_group_myth_book",
+	  "refresh":3600
+	},
+	{
+	  "id": "scena_furniture_jiangren",
+	  "name": "『匠人』 公输",
+	  "desc": "",
+	  "val": 0,
+	  "locked":false,
+	  "trader": true,
+	  "hasStock": "item_group_c_furniture",
+	  "refresh":3600
+	},
+	{
+	  "id": "scena_butcher_shiwensong",
+	  "name": "『屠夫』 世文松",
+	  "desc": "",
+	  "val": 0,
+	  "locked":false,
+	  "trader": true,
+	  "hasStock": "item_group_c_butcher",
+	  "refresh":3600
+	},
+	{
+	  "id": "scena_danshi_quezi",
+	  "name": "『丹师』 阙子",
+	  "desc": "",
+	  "val": 0,
+	  "locked":false,
+	  "trader": true,
+	  "hasStock": "item_group_c_danshi_que",
+	  "refresh":3600
+	}
+]

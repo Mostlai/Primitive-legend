@@ -1,0 +1,415 @@
+[
+	{
+		"id": "thread_kettel",
+		"name": "螺纹壶",
+		"desc": "海滨珍品，从中倒出的水有滋养植物之效。",
+		"type": "armor",
+		"slot": "toolbelt",
+		"level": 10,
+		"enchants":0,
+		"alter": {
+			"mod": {
+				"skill_plant.max": 5
+			}
+		},
+		"sell": {
+			"crystl_brick": 5,
+			"money": 400
+		}
+	},
+	{
+		"id": "farmer_hoe",
+		"name": "农者锄",
+		"desc": "合理改造的锄头，能提升种植效率。",
+		"type": "armor",
+		"slot": "toolbelt",
+		"level": 10,
+		"enchants":0,
+		"alter": {
+			"mod": {
+				"skill_plant.max": 2
+			}
+		},
+		"sell": {
+			"crystl_brick": 1,
+			"money": 350
+		}
+	},
+	{
+		"id": "farmer_hoe",
+		"name": "农者锄",
+		"desc": "合理改造的锄头，能提升种植效率。",
+		"type": "armor",
+		"slot": "toolbelt",
+		"level": 10,
+		"enchants":0,
+		"alter": {
+			"mod": {
+				"skill_plant.max": 2
+			}
+		},
+		"sell": {
+			"crystl_brick": 1,
+			"money": 350
+		}
+	},
+	{
+		"id": "farmer_treasure",
+		"name": "☆农者的宝藏",
+		"desc": "农者珍藏的宝石，可以加快作物的生长",
+		"type": "armor",
+		"slot": "toolbelt",
+		"level": 20,
+		"enchants":0,
+		"alter": {
+			"mod": {
+				"player.growthCycle": -50
+			}
+		},
+		"sell": {
+			"crystl_brick": 100,
+			"money": 1000
+		}
+	},
+	{
+		"id": "farmer_treasure_rare",
+		"name": "★农者的秘宝",
+		"desc": "农者珍藏的宝石，可以加快作物的生长",
+		"type": "armor",
+		"slot": "toolbelt",
+		"level": 30,
+		"enchants":0,
+		"alter": {
+			"mod": {
+				"player.growthCycle": -90
+			}
+		},
+		"sell": {
+			"crystl_brick": 300,
+			"money": 5000
+		}
+	},
+	{
+		"id": "boning_knife",
+		"name": "剔骨刀",
+		"desc": "一把锋利的小刀，上面还残留着已经发黑的血渍。",
+		"type": "armor",
+		"slot": "toolbelt",
+		"level": 10,
+		"enchants":0,
+		"alter": {
+			"mod": {
+				"skill_anatomy.max": 2
+			}
+		},
+		"sell": {
+			"crystl_brick": 2,
+			"money": 400
+		}
+	},
+	{
+		"id": "tianlan_cloak",
+		"name": "天澜斗篷",
+		"desc": "从天澜国敌军处缴获的斗篷，看起来曾经属于天澜国某人。",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 2,
+		"slot": "back",
+		"name_keep": true,
+		"regular_perk": true,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.1
+			}
+		},
+		"perk1": "tianlan_1",
+		"perk2": "tianlan_2",
+		"level": 5,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "mutengjia",
+		"name": "木藤甲",
+		"desc": "奇异木藤编制的护甲",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 15,
+		"slot": "chest",
+		"name_keep": true,
+		"regular_perk": true,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.3
+			}
+		},
+		"perk1": "mutengjia_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "huoshangyaodai",
+		"name": "伤火护腰",
+		"desc": "火山深处找到的腰带",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 3,
+		"slot": "waist",
+		"name_keep": true,
+		"regular_perk": true,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.1
+			}
+		},
+		"perk1": "huoshangyaodai_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "gentu_feet",
+		"name": "根土",
+		"desc": "穿上去难以移动",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 3,
+		"slot": "feet",
+		"name_keep": true,
+		"regular_perk": true,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.25
+			}
+		},
+		"perk1": "gentu_feet_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "jinyijian",
+		"name": "金意剑",
+		"desc": "纯白金石天然形成的利器",
+		"color": "#FFD700",
+		"type": "weapon",
+		"attack": {
+			"kind": "gold",
+			"isweapon": true,
+			"damage": "29~30"
+		},
+		"alter": {
+			"mod": {
+				"self.tohit": 3
+			}
+		},
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "jinyijian_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "shuiliu_armor",
+		"name": "水流",
+		"desc": "由不断流动的水组成的护腿",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 7,
+		"slot": "shins",
+		"name_keep": true,
+		"regular_perk": true,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.1
+			}
+		},
+		"perk1": "shuiliu_armor_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "blood_trinket",
+		"name": "血渍护身符",
+		"desc": "从渴血的野兽身上取下的护身符，沾满了血渍。\n在未见村，人们喜爱佩戴护身符驱散邪恶。",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 1,
+		"slot": "trinket",
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "blood_trinket_perk_1",
+		"perk2": "blood_trinket_perk_2",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "silver_scale_wrister",
+		"name": "银鳞护腕",
+		"desc": "银蛇的鳞片制成的护腕。",
+		"color": "#FFD700",
+		"type": "hands",
+		"armor": 0,
+		"slot": "trinket",
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "ssw_perk_1",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "back_homeland",
+		"name": "归国",
+		"desc": "我行远地，茫茫其雪。\n问于青白，何以决绝？",
+		"color": "#FFD700",
+		"type": "weapon",
+		"attack": {
+			"kind": "land",
+			"isweapon": true,
+			"bonus_class": 1,
+			"damage": "34~37"
+		},
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "back_homeland_perk_1",
+		"perk2": "back_homeland_perk_2",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "heavy_guben_sword",
+		"name": "沉重灭刃【AL-T】",
+		"desc": "巨大的刀刃，能对所有敌人同时造成伤害，同时重到难以想象....",
+		"equneed":"g.ALT>=1",
+		"color": "#FFD700",
+		"type": "weapon",
+		"attack": {
+			"id": "hgs_attack",
+			"name": "灭刃挥击",
+			"kind": "land",
+			"isweapon": true,
+			"targets": "enemies",
+			"damage": "42~56"
+		},
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "hgw_perk_1",
+		"perk2": "hgw_perk_2",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "stromagel_cloak",
+		"name": "风暴鹰斗篷",
+		"desc": "由风暴鹰的羽毛制成的斗篷，披上去感觉身体有点酥麻....",
+		"color": "#FFD700",
+		"type": "armor",
+		"slot": "back",
+		"alter": {
+			"mod": {
+				"elect.max": 10,
+				"self.defense": 3
+			}
+		},
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "electthrough",
+		"perk2": "stromagel_1",
+		"perk3": "stromagel_2",
+		"level": 10,
+		"enchants":2,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "zuoyanzhihuan",
+		"name": "灼焰之环【BASE】",
+		"desc": "这条火红的束带不断的往外吐出火舌，装备者虽不会被其伤害，但也会对火焰产生一些畏惧。",
+		"equneed":"g.base>=1",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 4,
+		"slot": "waist",
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "zuoyanzhihuan_perk",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "sulingjingcui",
+		"name": "调谐晶粹【AL-T】",
+		"desc": "从调谐之灵处取得的晶粹，摸上去有些凉...",
+		"equneed":"g.ALT>=1",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 1,
+		"slot": "trinket",
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "sulingjingcui_perk",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "jishuhuanren",
+		"name": "奇术环刃",
+		"desc": "",
+		"color": "#FFD700",
+		"type": "weapon",
+		"attack": {
+			"kind": "wuhuan",
+			"isweapon": true,
+			"damage": "35~40"
+		},
+		"alter": {
+			"mod": {
+				"self.tohit": 20
+			}
+		},
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "jinyijian_perk",
+		"perk2": "gentu_feet_perk",
+		"perk3": "mutengjia_perk",
+		"level": 27,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	}
+]

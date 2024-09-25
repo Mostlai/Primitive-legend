@@ -1,0 +1,497 @@
+[
+	{
+		"id": "pl_apprentice",
+		"name": "劳工",
+		"tags": "t_tier0",
+		"desc": "花费一些金钱来训练你的体力",
+		"actname": "体力训练",
+		"actdesc": "让你的肌肉更结实",
+		"require": "g.money>5",
+		"warn": false,
+		"log": {
+			"name": "体力训练",
+			"desc": "付出了一笔学费之后,教练对你进行了几天的训练"
+		},
+		"cost": {
+			"money": 10
+		},
+		"result": {
+			"time": 3,
+			"tili.max": 5
+		}
+	},
+	{
+		"id": "farmer",
+		"name": "农夫",
+		"tags": "t_tier0",
+		"desc": "租一块田来赚钱",
+		"actname": "成为农夫",
+		"actdesc": "收获....",
+		"require": "g.money>5",
+		"warn": true,
+		"log": {
+			"name": "租凭田地",
+			"desc": "你花了一小笔钱租了一小块地"
+		},
+		"cost": {
+			"money": 10
+		},
+		"disable": "businessman",
+		"result": {
+			"time": 30,
+			"money.rate": 0.01
+		}
+	},
+	{
+		"id": "businessman",
+		"name": "商人",
+		"tags": "t_tier0",
+		"desc": "贸易，赚取差价",
+		"actname": "成为商人",
+		"actdesc": "钱钱钱钱....",
+		"require": "g.money>5",
+		"warn": true,
+		"log": {
+			"name": "支起小摊",
+			"desc": "你花了一小笔钱开设了一个摊位"
+		},
+		"cost": {
+			"money": 10
+		},
+		"disable": "farmer",
+		"result": {
+			"time": 10,
+			"money.rate": 0.01
+		}
+	},
+	{
+		"id": "touch_daoli",
+		"name": "接触道理",
+		"tags": "t_tier0",
+		"desc": "你已经接触了一些东西,通过学习,你得知这种东西名为合理",
+		"actname": "接触道理",
+		"actdesc": "另一个世界",
+		"require": "g.reading>=1 && g.ganwu1>=1",
+		"warn": false,
+		"log": {
+			"name": "接触道理",
+			"desc": "现在你能使用一种名为合理的能量来改造世界了"
+		},
+		"cost": {
+			"ganwu": 4
+		},
+		"result": {
+			"spelllist.max": 1,
+			"heli.max":3,
+			"heli_enchant_1": true,
+			"heli": true
+		}
+	},
+	{
+		"id": "student",
+		"name": "学生",
+		"tags": "t_tier0",
+		"desc": "对力量的探索也是对知识的探索",
+		"actname": "学无止境",
+		"actdesc": "学无止境",
+		"require": "g.books>=1&&g.exe_paper>=1",
+		"warn": false,
+		"cost": {
+			"books": 1,
+			"exe_paper": 1
+		},
+		"result": {
+			"jizhun_1": true,
+			"ganwu.rate": 0.01,
+			"exe_paper.rate": 0.01
+		}
+	},
+	{
+		"id": "xuezhe",
+		"name": "学者",
+		"tags": "t_tier0",
+		"desc": "渊博",
+		"actname": "学无止境",
+		"actdesc": "学无止境",
+		"require": "g.fanshe_math>=1",
+		"warn": false,
+		"cost": {
+			"books": 9,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"super_mind": 9,
+			"snp_data": 21
+		},
+		"result": {
+			"zero_crystal.rate": 0.05,
+			"ganwu.rate": 0.01,
+			"exe_paper.rate": 0.01
+		}
+	},
+	{
+		"id": "zhangguan",
+		"name": "长官",
+		"tags": "t_tier0",
+		"desc": "统帅者",
+		"actname": "统帅",
+		"warn": true,
+		"actdesc": "统帅",
+		"disable": "qsz",
+		"require": "g.human_power>=150",
+		"cost": {
+			"human_power": 150,
+			"money": 500,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"alculation":70,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"super_mind": 9,
+			"snp_data": 21
+		},
+		"result": {
+			"human_power.max": 50
+		}
+	},
+	{
+		"id": "yindaozhe",
+		"name": "引导者",
+		"tags": "t_tier0",
+		"desc": "引导者",
+		"actname": "统帅",
+		"warn": true,
+		"actdesc": "统帅",
+		"require": "g.human_power>=1500 && g.zhangguan>=1",
+		"cost": {
+			"human_power": 1500,
+			"money": 2000,
+			"ganwu": 700,
+			"exe_paper": 20,
+			"alculation":700,
+			"star_map": 70,
+			"super_mind": 12,
+			"snp_data": 30
+		},
+		"result": {
+			"human_power.max": 600
+		}
+	},
+	{
+		"id": "taguang",
+		"name": "塔光",
+		"tags": "t_tier0",
+		"desc": "引领如炬",
+		"actname": "统帅",
+		"warn": true,
+		"disable": "caikuang",
+		"actdesc": "统帅",
+		"require": "g.human_power>=5000 && g.yindaozhe>=1",
+		"cost": {
+			"human_power": 5000,
+			"money": 3000,
+			"ganwu": 1000,
+			"exe_paper": 20,
+			"alculation":2000,
+			"shenglingshi": 20,
+			"lg": 9,
+			"star_map": 70,
+			"super_mind": 12
+		},
+		"result": {
+			"human_power.max": 2000
+		}
+	},
+	{
+		"id": "caikuang",
+		"name": "裁光",
+		"tags": "t_tier0",
+		"desc": "判裁如炬",
+		"actname": "统帅",
+		"warn": true,
+		"disable": "taguang",
+		"actdesc": "统帅",
+		"require": "g.human_power>=5000 && g.yindaozhe>=1",
+		"cost": {
+			"human_power": 5000,
+			"money": 3000,
+			"ganwu": 1000,
+			"exe_paper": 20,
+			"alculation":2000,
+			"shenglingshi": 20,
+			"lg": 9,
+			"star_map": 70,
+			"super_mind": 12
+		},
+		"result": {
+			"max_rs_mod": 5,
+			"command_code.max": 15,
+			"human_power.max": 1000
+		}
+	},
+	{
+		"id": "qsz",
+		"name": "求索者",
+		"tags": "t_tier0",
+		"desc": "追求最庞大的计算能力",
+		"actname": "求索",
+		"warn": true,
+		"actdesc": "求索者",
+		"disable": "zhangguan",
+		"require": "g.alculation>=70",
+		"cost": {
+			"human_power": 150,
+			"money": 500,
+			"ganwu": 380,
+			"alculation":70,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"super_mind": 9,
+			"snp_data": 21
+		},
+		"result": {
+			"alculation.max": 30
+		}
+	},
+	{
+		"id": "jiaoshou",
+		"name": "教授",
+		"tags": "t_tier0",
+		"desc": "追求最庞大的计算能力",
+		"actname": "教授",
+		"warn": true,
+		"actdesc": "教授",
+		"require": "g.alculation>=2000 && g.qsz>=1",
+		"cost": {
+			"human_power": 1000,
+			"money": 2000,
+			"ganwu": 700,
+			"exe_paper": 20,
+			"alculation":2000,
+			"star_map": 70,
+			"super_mind": 12,
+			"snp_data": 30
+		},
+		"result": {
+			"alculation.max": 400
+		}
+	},
+	{
+		"id": "manhaiqiushi",
+		"name": "漫海求识",
+		"tags": "t_tier0",
+		"desc": "漫海求识",
+		"actname": "漫海求识",
+		"warn": true,
+		"disable": "renwenxuetu",
+		"actdesc": "漫海求识",
+		"require": "g.human_power>=5000 && g.jiaoshou>=1",
+		"cost": {
+			"human_power": 2000,
+			"money": 3000,
+			"ganwu": 1000,
+			"exe_paper": 20,
+			"alculation":5000,
+			"shenglingshi": 20,
+			"lg": 9,
+			"star_map": 70,
+			"super_mind": 12
+		},
+		"result": {
+			"command_code.max": 10,
+			"alculation.max": 2500
+		}
+	},
+	{
+		"id": "renwenxuetu",
+		"name": "人文学徒",
+		"tags": "t_tier0",
+		"desc": "人文学徒",
+		"actname": "人文学徒",
+		"warn": true,
+		"disable": "manhaiqiushi",
+		"actdesc": "人文学徒",
+		"require": "g.human_power>=5000 && g.jiaoshou>=1",
+		"cost": {
+			"human_power": 2000,
+			"money": 3000,
+			"ganwu": 1000,
+			"exe_paper": 20,
+			"alculation":5000,
+			"shenglingshi": 20,
+			"lg": 9,
+			"star_map": 70,
+			"super_mind": 12
+		},
+		"result": {
+			"human_power.max": 1000,
+			"alculation.max": 1000
+		}
+	},
+	{
+		"id": "wuhuanxuezhe",
+		"name": "五环学者",
+		"tags": "t_tier1",
+		"desc": "五环下的求知者",
+		"actname": "五环学者",
+		"actdesc": "五环下的求知者",
+		"disable": [
+			"wuguangxuezhe",
+			"benyuanxuezhe",
+			"murder_pl",
+			"huibang",
+			"xueyuantouqie",
+			"nolight_mishu",
+			"nolight_core"
+		],
+		"require": "g.xiulian_zhuji_wuhuan_1>=1",
+		"warn": true,
+		"cost": {
+			"yqlm": 25,
+			"cbjs": 25,
+			"yxls": 25,
+			"wgys": 25,
+			"zdht": 25,
+			"super_mind": 35,
+			"books": 9,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"snp_data": 21,
+			"money": 1600
+		},
+		"result": {
+			"zero_crystal.rate": 0.05,
+			"ganwu.rate": 1,
+			"exe_paper.rate": 0.1
+		}
+	},
+	{
+		"id": "benyuanxuezhe",
+		"name": "本源学者",
+		"tags": "t_tier1",
+		"desc": "本源下的求知者",
+		"actname": "本源学者",
+		"actdesc": "本源下的求知者",
+		"disable": [
+			"wuguangxuezhe",
+			"wuhuanxuezhe",
+			"murder_pl",
+			"huibang",
+			"xueyuantouqie",
+			"nolight_mishu",
+			"nolight_core"
+		],
+		"require": "g.xiulian_zhuji_wuhuan_2>=1",
+		"warn": true,
+		"cost": {
+			"yjdl": 10,
+			"gwl": 10,
+			"super_mind": 35,
+			"books": 9,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"snp_data": 21,
+			"money": 1600
+		},
+		"result": {
+			"zero_crystal.rate": 0.1,
+			"ganwu.rate": 2,
+			"exe_paper.rate": 0.1
+		}
+	},
+	{
+		"id": "wuguangxuezhe",
+		"name": "落日学者",
+		"tags": "t_tier1",
+		"desc": "深夜下的求知者",
+		"actname": "落日学者",
+		"actdesc": "深夜下的求知者",
+		"disable": [
+			"wuhuanxuezhe",
+			"benyuanxuezhe"
+		],
+		"require": "g.xiulian_wuguangzhihuan>=1",
+		"warn": true,
+		"cost": {
+			"nolight_core": 10,
+			"dirty_core": 30,
+			"dirty_lingti": 20,
+			"super_mind": 35,
+			"books": 9,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"snp_data": 21,
+			"money": 1600
+		},
+		"result": {
+			"zero_crystal.rate": 0.05,
+			"ganwu.rate": 1,
+			"exe_paper.rate": 0.1
+		}
+	},
+	{
+		"id": "chugui",
+		"name": "初归",
+		"tags": "t_tier1",
+		"desc": "重返内在潜力",
+		"actname": "初归",
+		"actdesc": "重返内在潜力",
+		"require": "g.xiulian_gcwuguan>=5",
+		"warn": true,
+		"cost": {
+			"neizaiqianli": 2,
+			"super_mind": 35,
+			"ganwu": 600,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"star_map_1": 15,
+			"zero_crystal": 70,
+			"life_crystal": 10,
+			"money": 1600
+		},
+		"result": {
+			"tili.max": 5,
+			"ganwu.rate": 2
+		}
+	},
+	{
+		"id": "guixuan",
+		"name": "归玄",
+		"tags": "t_tier1",
+		"desc": "无垢之体",
+		"actname": "归玄",
+		"actdesc": "无垢之体",
+		"require": "g.xiulian_body_gczf>=3",
+		"warn": true,
+		"cost": {
+			"baizhan": 10,
+			"hunti_core":9,
+			"canglan":9,
+			"huiguang":9,
+			"money": 1600
+		},
+		"result": {
+			"tili.max": 5,
+			"hp.max": 20,
+			"stamina.max": 5,
+			"tili.rate": 2,
+			"stamina.rate": 2,
+			"ganwu.rate": 3
+		}
+	}
+]
