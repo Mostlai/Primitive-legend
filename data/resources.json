@@ -58,6 +58,13 @@
 		"max": -1
 	},
 	{
+		"id": "sealevel",
+		"name": "sealevel",
+		"locked": false,
+		"val": 0,
+		"max": -1
+	},
+	{
 		"id": "fali",
 		"name": "法力",
 		"group": "修为",
