@@ -5,11 +5,17 @@
 		"social": "none",
 		"engineer": "none",
 		"gongfa":{
-			"name":"无功法",
+			"name":"自然呼吸",
+			"price": 0,
+			"addnum": 0
+		},
+		"gongfaBY":{
+			"name":"自然呼吸",
 			"price": 0,
 			"addnum": 0
 		},
 		"gongfaLevel":0,
+		"gongfaJW":0,
 		"autorun":0,
 		"wuqi":{"name":"无","level":0},
 		"toukui":{"name":"无","level":0},
