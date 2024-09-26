@@ -76,7 +76,11 @@
 	--compact-small-font: 0.75em;
 	--compact-small-font: 0.9em;
 }
-
+@media screen and (max-width:800px){
+	body{
+		font-size:70%;
+	}
+}
 
 * { box-sizing: border-box; }
 
