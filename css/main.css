@@ -79,6 +79,8 @@
 @media screen and (max-width:800px){
 	body{
 		font-size:70%;
+		max-height: none;
+    	height: none;
 	}
 }
 
