@@ -9,6 +9,7 @@
 			"price": 0,
 			"addnum": 0
 		},
+		"gongfaLevel":0,
 		"autorun":0,
 		"wuqi":{"name":"无","level":0},
 		"toukui":{"name":"无","level":0},
