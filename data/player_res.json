@@ -17,6 +17,7 @@
 		"gongfaLevel":0,
 		"gongfaJW":0,
 		"autorun":0,
+		"loc":"dbs",
 		"wuqi":{"name":"无","level":0},
 		"toukui":{"name":"无","level":0},
 		"xiongjia":{"name":"无","level":0},
