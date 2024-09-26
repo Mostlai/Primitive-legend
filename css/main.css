@@ -275,10 +275,12 @@ div.full div.game-main {
     flex: 1;
     margin-top: 0;
     min-height: 0;
+    height: 100%;
+    overflow: scroll;
     max-height: calc(100vh - 150px);
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 
