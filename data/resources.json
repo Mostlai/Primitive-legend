@@ -21,6 +21,13 @@
 		"max": -1
 	},
 	{
+		"id": "zstime",
+		"name": "转生次数",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
 		"id": "fstime",
 		"name": "飞升次数",
 		"group": "修为",
