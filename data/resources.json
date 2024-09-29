@@ -18,7 +18,7 @@
 		"name": "灵石",
 		"group": "修为",
 		"locked": false,
-		"max": -1
+		"max": 999999999999999999999999999999999999999999999999
 	},
 	{
 		"id": "zstime",
@@ -26,6 +26,74 @@
 		"group": "修为",
 		"locked": false,
 		"max": -1
+	},
+	{
+		"id": "zsp",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "twtime",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "trdtime",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "ffttime",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "lsautop",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"max": -1,
+		"mod":{
+			"lingshi.rate": 2
+		}
+	},
+	{
+		"id": "xtautop",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"max": -1,
+		"mod":{
+			"xuantie.rate": 2
+		}
+	},
+	{
+		"id": "lmautop",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"max": -1,
+		"mod":{
+			"leimu.rate": 2
+		}
+	},
+	{
+		"id": "tcautop",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"max": -1,
+		"mod":{
+			"tianchansi.rate": 2
+		}
 	},
 	{
 		"id": "fstime",
@@ -189,7 +257,7 @@
 		"group": "",
 		"locked": false,
 		"val": 0,
-		"max": -1
+		"max": 10000000000000000000000000000000000
 	},
 	{
 		"id": "leimu",
@@ -197,7 +265,7 @@
 		"group": "",
 		"locked": false,
 		"val": 0,
-		"max": -1
+		"max": 10000000000000000000000000000000000
 	},
 	{
 		"id": "tianchansi",
@@ -205,7 +273,7 @@
 		"group": "",
 		"locked": false,
 		"val": 0,
-		"max": -1
+		"max": 10000000000000000000000000000000000
 	},
 	{
 		"id": "tianhezhongshui",
@@ -213,7 +281,7 @@
 		"group": "",
 		"locked": false,
 		"val": 0,
-		"max": -1
+		"max": 10000000000000000000000000000000000
 	},
 	{
 	  "id": "wanzaikongjin",
@@ -221,7 +289,7 @@
 	  "group": "",
 	  "locked": false,
 	  "val": 0,
-	  "max": -1
+		"max": 10000000000000000000000000000000000
 	},
 	{
 	  "id": "wulianghengsha",
@@ -229,7 +297,7 @@
 	  "group": "",
 	  "locked": false,
 	  "val": 0,
-	  "max": -1
+		"max": 10000000000000000000000000000000000
 	},
 	{
 	  "id": "tianpolihuo",
@@ -237,7 +305,7 @@
 	  "group": "",
 	  "locked": false,
 	  "val": 0,
-	  "max": -1
+		"max": 10000000000000000000000000000000000
 	},
 	{
 	  "id": "jiuyougumu",
@@ -245,7 +313,7 @@
 	  "group": "",
 	  "locked": false,
 	  "val": 0,
-	  "max": -1
+		"max": 10000000000000000000000000000000000
 	},
 	{
 		"id": "money",
