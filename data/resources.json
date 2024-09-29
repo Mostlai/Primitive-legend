@@ -25,6 +25,7 @@
 		"name": "转生次数",
 		"group": "修为",
 		"locked": false,
+		"val":0,
 		"max": -1
 	},
 	{
@@ -32,6 +33,7 @@
 		"name": "咋普",
 		"group": "修为",
 		"locked": false,
+		"val":0,
 		"max": -1
 	},
 	{
@@ -39,6 +41,7 @@
 		"name": "咋普",
 		"group": "修为",
 		"locked": false,
+		"val":0,
 		"max": -1
 	},
 	{
@@ -46,6 +49,7 @@
 		"name": "咋普",
 		"group": "修为",
 		"locked": false,
+		"val":0,
 		"max": -1
 	},
 	{
@@ -53,6 +57,7 @@
 		"name": "咋普",
 		"group": "修为",
 		"locked": false,
+		"val":0,
 		"max": -1
 	},
 	{
@@ -61,6 +66,7 @@
 		"group": "修为",
 		"locked": false,
 		"max": -1,
+		"val":0,
 		"mod":{
 			"lingshi.rate": 2
 		}
@@ -71,6 +77,7 @@
 		"group": "修为",
 		"locked": false,
 		"max": -1,
+		"val":0,
 		"mod":{
 			"xuantie.rate": 2
 		}
@@ -81,6 +88,7 @@
 		"group": "修为",
 		"locked": false,
 		"max": -1,
+		"val":0,
 		"mod":{
 			"leimu.rate": 2
 		}
@@ -91,6 +99,7 @@
 		"group": "修为",
 		"locked": false,
 		"max": -1,
+		"val":0,
 		"mod":{
 			"tianchansi.rate": 2
 		}
