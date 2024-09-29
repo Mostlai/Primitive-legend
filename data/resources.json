@@ -1426,6 +1426,13 @@
 		"flavor": "There was a GEM here.  It's gone now"
 	},
 	{
+		"id": "mobgames",
+		"name": "mobgames",
+		"group": "reagent",
+		"desc": "",
+		"max": 1
+	},
+	{
 		"id": "chaosgem",
 		"name": "chaos gem",
 		"tags": "magicgems,primordialgems",
@@ -1474,11 +1481,19 @@
 		"max": 1
 	},
 	{
-		"id": "potionessence",
+		"id": "potionessenca",
 		"name": "potion base",
 		"group": "reagent",
 		"desc": "Basic essence for creating advanced potions.",
 		"flavor": "Smells faintly of milk.",
+		"max": 1
+	},
+	{
+		"id": "fatas",
+		"name": "fatas",
+		"group": "reagent",
+		"desc": "",
+		"flavor": "milk.",
 		"max": 3
 	},
 	{
