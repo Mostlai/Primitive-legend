@@ -113,6 +113,14 @@
 		"val":0
 	},
 	{
+		"id": "zdzsok",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"max": -1,
+		"val":0
+	},
+	{
 		"id": "fstime",
 		"name": "飞升次数",
 		"group": "修为",
