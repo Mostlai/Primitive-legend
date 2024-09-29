@@ -1138,6 +1138,54 @@
 		"flavor": ""
 	},
 	{
+		"id": "firegam",
+		"name": "firegam",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "goldgam",
+		"name": "goldgam",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "greengam",
+		"name": "greengam",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "mongam",
+		"name": "mongam",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "tringam",
+		"name": "tringam",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "fifngam",
+		"name": "fifngam",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "watergam",
+		"name": "watergam",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "stormrgam",
+		"name": "stormrgam",
+		"locked": false,
+		"max": -1
+	},
+	{
 		"id": "chaosruna",
 		"name": "chaos runes",
 		"tags": "primordialrunes",
