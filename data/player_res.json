@@ -28,6 +28,8 @@
 		"cibang":{"name":"无","level":0},
 		"fabao":{"name":"无","level":0},
 		"cje_list":{},
+		"lsl_list":{},
+		"ls":{},
 		"logversion": "",
 		"frecipever": ""
 	}
