@@ -253,6 +253,14 @@
 		"max": -1
 	},
 	{
+		"id": "zdyuanshenfenshen",
+		"name": "元神分身",
+		"group": "修为",
+		"locked": false,
+		"val": 0,
+		"max": -1
+	},
+	{
 		"id": "yuanshenqiangdu",
 		"name": "元神强度",
 		"group": "修为",
@@ -261,11 +269,27 @@
 		"max": -1
 	},
 	{
+		"id": "zdyuanshenqiangdu",
+		"name": "元神分身",
+		"group": "修为",
+		"locked": false,
+		"val": 0,
+		"max": -1
+	},
+	{
 		"id": "yuanshenshentong",
 		"name": "元神神通",
 		"group": "修为",
 		"locked": false,
 		"val": 5,
+		"max": -1
+	},
+	{
+		"id": "zdyuanshenshentong",
+		"name": "元神神通",
+		"group": "修为",
+		"locked": false,
+		"val": 0,
 		"max": -1
 	},
 	{
