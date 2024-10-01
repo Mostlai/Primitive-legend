@@ -249,7 +249,7 @@
 		"name": "元神分身",
 		"group": "修为",
 		"locked": false,
-		"val": 0,
+		"val": 1,
 		"max": -1
 	},
 	{
