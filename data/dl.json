@@ -1,0 +1,163 @@
+[
+  {
+    "id": "xis",
+    "name": "西施",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 50
+  },
+  {
+    "id": "wangz",
+    "name": "王昭君",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 100
+  },
+  {
+    "id": "diaoy",
+    "name": "貂蝉",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 190
+  },
+  {
+    "id": "yangy",
+    "name": "杨玉环",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 250
+  },
+  {
+    "id": "zhaof",
+    "name": "赵飞燕",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 500
+  },
+  {
+    "id": "zhuol",
+    "name": "卓文君",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 700
+  },
+  {
+    "id": "liny",
+    "name": "李师师",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 1000
+  },
+  {
+    "id": "chenyu",
+    "name": "陈圆圆",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 1500
+  },
+  {
+    "id": "shangg",
+    "name": "上官婉儿",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 2000
+  },
+  {
+    "id": "caow",
+    "name": "蔡文姬",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 2800
+  },
+  {
+    "id": "liqing",
+    "name": "云霄",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 3700
+  },
+  {
+    "id": "mu lan",
+    "name": "彩霞",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 4900
+  },
+  {
+    "id": "lvzhi",
+    "name": "绿珠",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 6100
+  },
+  {
+    "id": "yujiruo",
+    "name": "虞姬",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 7800
+  },
+  {
+    "id": "wangqf",
+    "name": "王蔷凤",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 8900
+  },
+  {
+    "id": "xunr",
+    "name": "荀灌",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 10000
+  },
+  {
+    "id": "suxiaoxiao",
+    "name": "苏小小",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 13000
+  },
+  {
+    "id": "xiaoqing",
+    "name": "小青",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 18000
+  },
+  {
+    "id": "yunxiao",
+    "name": "云霄",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 30000
+  },
+  {
+    "id": "qiongxiao",
+    "name": "琼霄",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 40000
+  },
+  {
+    "id": "bixiao",
+    "name": "碧霄",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 60000
+  },
+  {
+    "id": "yaoji",
+    "name": "妲己",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 90000
+  },
+  {
+     "id": "nvyi",
+    "name": "女夷",
+    "haogan": 0,
+    "level": 0,
+    "baseadd": 150000
+  }
+]

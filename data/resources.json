@@ -21,6 +21,13 @@
 		"max": 999999999999999999999999999999999999999999999999
 	},
 	{
+		"id": "ssstone",
+		"name": "三生石",
+		"group": "修为",
+		"locked": false,
+		"max": 999999999999999999999999999999999999999999999999
+	},
+	{
 		"id": "zstime",
 		"name": "转生次数",
 		"group": "修为",
@@ -54,6 +61,14 @@
 	},
 	{
 		"id": "ffttime",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"val":0,
+		"max": -1
+	},
+	{
+		"id": "hhttime",
 		"name": "咋普",
 		"group": "修为",
 		"locked": false,
@@ -153,6 +168,13 @@
 	},
 	{
 		"id": "cttime",
+		"name": "超脱次数",
+		"group": "修为",
+		"locked": false,
+		"max": -1
+	},
+	{
+		"id": "dytime",
 		"name": "超脱次数",
 		"group": "修为",
 		"locked": false,

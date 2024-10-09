@@ -12,7 +12,8 @@
 		"weapons",
 		"sections",
 		"stressors",
-		"player_res"
+		"player_res",
+		"dl"
 	],
 	"modules": [
 	]
