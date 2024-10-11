@@ -76,6 +76,38 @@
 		"max": -1
 	},
 	{
+		"id": "thhttime",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"val":0,
+		"max": -1
+	},
+	{
+		"id": "fhhttime",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"val":0,
+		"max": -1
+	},
+	{
+		"id": "shhttime",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"val":0,
+		"max": -1
+	},
+	{
+		"id": "sshhttime",
+		"name": "咋普",
+		"group": "修为",
+		"locked": false,
+		"val":0,
+		"max": -1
+	},
+	{
 		"id": "lsautop",
 		"name": "咋普",
 		"group": "修为",
